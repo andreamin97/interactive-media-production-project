@@ -14,8 +14,30 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define DES203_PROJECT_DES203_ProjectGameMode_generated_h
 
 #define DES203_Project_Source_DES203_Project_DES203_ProjectGameMode_h_12_SPARSE_DATA
-#define DES203_Project_Source_DES203_Project_DES203_ProjectGameMode_h_12_RPC_WRAPPERS
-#define DES203_Project_Source_DES203_Project_DES203_ProjectGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define DES203_Project_Source_DES203_Project_DES203_ProjectGameMode_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execChangeHUDState) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_NewState); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ChangeHUDState(Z_Param_NewState); \
+		P_NATIVE_END; \
+	}
+
+
+#define DES203_Project_Source_DES203_Project_DES203_ProjectGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execChangeHUDState) \
+	{ \
+		P_GET_PROPERTY(UByteProperty,Z_Param_NewState); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ChangeHUDState(Z_Param_NewState); \
+		P_NATIVE_END; \
+	}
+
+
 #define DES203_Project_Source_DES203_Project_DES203_ProjectGameMode_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesADES203_ProjectGameMode(); \
@@ -58,7 +80,13 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADES203_ProjectGameMode); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADES203_ProjectGameMode)
 
 
-#define DES203_Project_Source_DES203_Project_DES203_ProjectGameMode_h_12_PRIVATE_PROPERTY_OFFSET
+#define DES203_Project_Source_DES203_Project_DES203_ProjectGameMode_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__IngameHUDClass() { return STRUCT_OFFSET(ADES203_ProjectGameMode, IngameHUDClass); } \
+	FORCEINLINE static uint32 __PPO__InventoryHUDClass() { return STRUCT_OFFSET(ADES203_ProjectGameMode, InventoryHUDClass); } \
+	FORCEINLINE static uint32 __PPO__ShopGeneralHUDClass() { return STRUCT_OFFSET(ADES203_ProjectGameMode, ShopGeneralHUDClass); } \
+	FORCEINLINE static uint32 __PPO__CurrentWidget() { return STRUCT_OFFSET(ADES203_ProjectGameMode, CurrentWidget); }
+
+
 #define DES203_Project_Source_DES203_Project_DES203_ProjectGameMode_h_9_PROLOG
 #define DES203_Project_Source_DES203_Project_DES203_ProjectGameMode_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

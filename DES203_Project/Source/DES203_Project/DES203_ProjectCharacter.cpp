@@ -8,14 +8,23 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/PlayerController.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Components/SphereComponent.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Materials/Material.h"
+#include "Interactable.h"
+#include "Pickup.h"
 #include "Engine/World.h"
+#include "Engine/CollisionProfile.h"
 
 ADES203_ProjectCharacter::ADES203_ProjectCharacter()
 {
 	// Set size for player capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
+	InteractSphereSize = 150.0f;
+
+	InteractSphere = CreateDefaultSubobject<USphereComponent>(TEXT("InteractSphere"));
+	InteractSphere->InitSphereRadius(InteractSphereSize);
+	InteractSphere->SetupAttachment(RootComponent);
 
 	// Don't rotate character to camera direction
 	bUseControllerRotationPitch = false;
@@ -55,6 +64,18 @@ ADES203_ProjectCharacter::ADES203_ProjectCharacter()
 	// Activate ticking in order to update the cursor every frame.
 	PrimaryActorTick.bCanEverTick = true;
 	PrimaryActorTick.bStartWithTickEnabled = true;
+
+	InteractSphere->OnComponentBeginOverlap.AddDynamic(this, &ADES203_ProjectCharacter::BeginOverlap);
+	InteractSphere->OnComponentEndOverlap.AddDynamic(this, &ADES203_ProjectCharacter::EndOverlap);
+
+}
+
+void ADES203_ProjectCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+
+	Inventory.SetNum(10);
+	CurrentInteractable = nullptr;
 }
 
 void ADES203_ProjectCharacter::Tick(float DeltaSeconds)
@@ -63,21 +84,7 @@ void ADES203_ProjectCharacter::Tick(float DeltaSeconds)
 
 	if (CursorToWorld != nullptr)
 	{
-		if (UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayEnabled())
-		{
-			if (UWorld* World = GetWorld())
-			{
-				FHitResult HitResult;
-				FCollisionQueryParams Params(NAME_None, FCollisionQueryParams::GetUnknownStatId());
-				FVector StartLocation = TopDownCameraComponent->GetComponentLocation();
-				FVector EndLocation = TopDownCameraComponent->GetComponentRotation().Vector() * 2000.0f;
-				Params.AddIgnoredActor(this);
-				World->LineTraceSingleByChannel(HitResult, StartLocation, EndLocation, ECC_Visibility, Params);
-				FQuat SurfaceRotation = HitResult.ImpactNormal.ToOrientationRotator().Quaternion();
-				CursorToWorld->SetWorldLocationAndRotation(HitResult.Location, SurfaceRotation);
-			}
-		}
-		else if (APlayerController* PC = Cast<APlayerController>(GetController()))
+		if (APlayerController* PC = Cast<APlayerController>(GetController()))
 		{
 			FHitResult TraceHitResult;
 			PC->GetHitResultUnderCursor(ECC_Visibility, true, TraceHitResult);
@@ -86,5 +93,93 @@ void ADES203_ProjectCharacter::Tick(float DeltaSeconds)
 			CursorToWorld->SetWorldLocation(TraceHitResult.Location);
 			CursorToWorld->SetWorldRotation(CursorR);
 		}
+	}
+
+}
+
+void ADES203_ProjectCharacter::UpdateGold(int32 Amount)
+{
+	Gold += Amount;
+}
+
+bool ADES203_ProjectCharacter::AddItemToInventory(APickup* Item)
+{
+	if ( Item != NULL)
+	{
+		const int32 AvailableSlot = Inventory.Find(nullptr); // Finds the first empty  slot
+
+			if (AvailableSlot != INDEX_NONE)
+			{
+				Inventory[AvailableSlot] = Item;
+				return true;
+			}
+			else
+			{
+				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("You can't varry any more items."));
+				return false;
+			}
+	}
+	else return false;
+}
+
+UTexture2D* ADES203_ProjectCharacter::GetThumbnailAtInventorySlot(int32 Slot)
+{
+	if (Inventory[Slot] != NULL)
+	{
+		return Inventory[Slot]->PickupThumbnail;
+	}
+	else return nullptr;
+}
+
+FString ADES203_ProjectCharacter::GetItemNameAtInventorySlot(int32 Slot)
+{
+	if (Inventory[Slot] != NULL)
+	{
+		return Inventory[Slot]->itemName;
+	}
+	return FString("None");
+}
+
+void ADES203_ProjectCharacter::UseItemAtInventorySlot(int32 Slot)
+{
+
+	if (Inventory[Slot] != NULL)
+	{
+		Inventory[Slot]->Use_Implementation();
+		//deletes item from the inventory once used
+		//Inventory[Slot] = NULL 
+	}
+
+}
+
+void ADES203_ProjectCharacter::ToggleInventory()
+{
+
+	// toggle the inventory UI
+}
+
+void ADES203_ProjectCharacter::Interact()
+{
+	if (CurrentInteractable != nullptr)
+	{
+		CurrentInteractable->Interact_Implementation();
+	}
+}
+
+void ADES203_ProjectCharacter::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if ((CurrentInteractable = Cast<AInteractable>(OtherActor)) != NULL)
+	{
+		HelpText = CurrentInteractable->HelpText;
+		GLog->Log(HelpText);
+	}
+}
+
+void ADES203_ProjectCharacter::EndOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	if (CurrentInteractable == Cast<AInteractable>(OtherActor))
+	{
+		CurrentInteractable = nullptr;
+		HelpText = FString("");
 	}
 }

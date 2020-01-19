@@ -31,13 +31,23 @@
 /wd4838
 /we4668
 /I .
-/I "D:\UE4 Projects\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Inc\DES203_Project"
-/I "D:\UE4 Projects\interactive-media-production-project\DES203_Project\Source"
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Slate
 /I Runtime
+/I Runtime\Slate\Public
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
 /I Runtime\CoreUObject\Public
+/I Runtime\ApplicationCore\Public
+/I Runtime\RHI\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\InputCore
+/I Runtime\InputCore\Classes
+/I Runtime\InputCore\Public
+/I Runtime\Json\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\SlateCore
+/I Runtime\SlateCore\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\ImageWrapper
+/I Runtime\ImageWrapper\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
@@ -45,18 +55,6 @@
 /I Runtime\Net
 /I Runtime\Net\Core\Classes
 /I Runtime\Net\Core\Public
-/I Runtime\ApplicationCore\Public
-/I Runtime\RHI\Public
-/I Runtime\Json\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\SlateCore
-/I Runtime\SlateCore\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\InputCore
-/I Runtime\InputCore\Classes
-/I Runtime\InputCore\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Slate
-/I Runtime\Slate\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\ImageWrapper
-/I Runtime\ImageWrapper\Public
 /I Runtime\Messaging\Public
 /I Runtime\MessagingCommon\Public
 /I Runtime\RenderCore\Public
@@ -230,6 +228,8 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I Runtime\AudioMixerCore\Public
+/I "D:\UE4 Projects\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Inc\DES203_Project"
+/I "D:\UE4 Projects\interactive-media-production-project\DES203_Project\Source"
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I ThirdParty\PhysX3\PxShared\include

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\DES203_Project.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{6FAE9F77-1304-4820-8F55-C4CAF5AB16C2}</UniqueIdentifier>
+      <UniqueIdentifier>{753EA87F-6D6B-4F62-9D4A-857F1B9D7D7C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\DES203_Project.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{8BD702B7-DFA8-417D-8851-057724A9ECFF}</UniqueIdentifier>
+      <UniqueIdentifier>{F0D996D5-EB52-40F5-8C1B-575AF7AAD8F1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\DES203_Project">
-      <UniqueIdentifier>{A4E87B52-73B6-4A5E-8BCA-147B7EF1D20D}</UniqueIdentifier>
+      <UniqueIdentifier>{7C59FA56-2C67-452F-8507-878C4957804C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\DES203_Project\DES203_Project.Build.cs">
       <Filter>Source\DES203_Project</Filter>
@@ -57,6 +57,18 @@
       <Filter>Source\DES203_Project</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\DES203_Project\DES203_ProjectPlayerController.h">
+      <Filter>Source\DES203_Project</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DES203_Project\Interactable.cpp">
+      <Filter>Source\DES203_Project</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DES203_Project\Interactable.h">
+      <Filter>Source\DES203_Project</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DES203_Project\Pickup.cpp">
+      <Filter>Source\DES203_Project</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DES203_Project\Pickup.h">
       <Filter>Source\DES203_Project</Filter>
     </ClInclude>
   </ItemGroup>
