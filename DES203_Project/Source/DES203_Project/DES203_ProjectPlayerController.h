@@ -38,6 +38,14 @@ protected:
 	/** Input handlers for SetDestination action. */
 	void OnSetDestinationPressed();
 	void OnSetDestinationReleased();
+
+	/* call the character Interact() function*/
+	void CharacterInteract();
+
+	/* call the character's UseItemAtInventorySlot() Function
+	   For now only calls it on the first slot
+	*/
+	void CharacterUseItemAtSlot();
 };
 
 

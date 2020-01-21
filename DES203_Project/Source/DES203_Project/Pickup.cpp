@@ -47,6 +47,6 @@ void APickup::OnPickedUp()
 void APickup::Use_Implementation()
 {
 	// You must override this
-	unimplemented();
+	GLog->Log("Unimplemented");
 }
 	

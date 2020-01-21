@@ -30,10 +30,11 @@ void ADES203_ProjectPlayerController::SetupInputComponent()
 	// set up gameplay key bindings
 	Super::SetupInputComponent();
 
-	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
-
 	InputComponent->BindAction("SetDestination", IE_Pressed, this, &ADES203_ProjectPlayerController::OnSetDestinationPressed);
 	InputComponent->BindAction("SetDestination", IE_Released, this, &ADES203_ProjectPlayerController::OnSetDestinationReleased);
+
+	InputComponent->BindAction("Interact", IE_Released, this, &ADES203_ProjectPlayerController::CharacterInteract);
+	InputComponent->BindAction("Interact", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlot);
 
 }
 
@@ -88,4 +89,16 @@ void ADES203_ProjectPlayerController::OnSetDestinationReleased()
 {
 	// clear flag to indicate we should stop updating the destination
 	bMoveToMouseCursor = false;
+}
+
+void ADES203_ProjectPlayerController::CharacterInteract()
+{
+	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
+	MyCharacter->Interact();
+}
+
+void ADES203_ProjectPlayerController::CharacterUseItemAtSlot()
+{
+	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
+	MyCharacter->UseItemAtInventorySlot(0);
 }
