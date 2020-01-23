@@ -32,10 +32,10 @@ ADES203_ProjectCharacter::ADES203_ProjectCharacter()
 	bUseControllerRotationRoll = false;
 
 	// Configure character movement
-	GetCharacterMovement()->bOrientRotationToMovement = true; // Rotate character to moving direction
-	GetCharacterMovement()->RotationRate = FRotator(0.f, 640.f, 0.f);
-	GetCharacterMovement()->bConstrainToPlane = true;
-	GetCharacterMovement()->bSnapToPlaneAtStart = true;
+	GetCharacterMovement()->bOrientRotationToMovement = false; // Rotate character to moving direction
+	//GetCharacterMovement()->RotationRate = FRotator(0.f, 640.f, 0.f);
+	//GetCharacterMovement()->bConstrainToPlane = true;
+	//GetCharacterMovement()->bSnapToPlaneAtStart = true;
 
 	// Create a camera boom...
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
@@ -93,8 +93,8 @@ void ADES203_ProjectCharacter::Tick(float DeltaSeconds)
 			CursorToWorld->SetWorldLocation(TraceHitResult.Location);
 			CursorToWorld->SetWorldRotation(CursorR);
 		}
-	}
 
+	}
 }
 
 void ADES203_ProjectCharacter::UpdateGold(int32 Amount)
@@ -164,6 +164,18 @@ void ADES203_ProjectCharacter::Interact()
 	{
 		CurrentInteractable->Interact_Implementation();
 	}
+}
+
+void ADES203_ProjectCharacter::MoveForward(float Axis)
+{
+	FVector ForwardVector = GetActorForwardVector();
+	AddMovementInput(FVector(1,0,0), Axis);
+}
+
+void ADES203_ProjectCharacter::MoveRight(float Axis)
+{
+	FVector RightVector = GetActorRightVector();
+	AddMovementInput(FVector(0,1,0), Axis);
 }
 
 void ADES203_ProjectCharacter::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)

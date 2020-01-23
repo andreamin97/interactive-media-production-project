@@ -17,9 +17,37 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 	DES203_PROJECT_API UClass* Z_Construct_UClass_ADES203_ProjectPlayerController();
 	ENGINE_API UClass* Z_Construct_UClass_APlayerController();
 	UPackage* Z_Construct_UPackage__Script_DES203_Project();
+	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_AimAtCursor();
 // End Cross Module References
 	void ADES203_ProjectPlayerController::StaticRegisterNativesADES203_ProjectPlayerController()
 	{
+		UClass* Class = ADES203_ProjectPlayerController::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "AimAtCursor", &ADES203_ProjectPlayerController::execAimAtCursor },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ADES203_ProjectPlayerController_AimAtCursor_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADES203_ProjectPlayerController_AimAtCursor_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "DES203_ProjectPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADES203_ProjectPlayerController_AimAtCursor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADES203_ProjectPlayerController, nullptr, "AimAtCursor", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADES203_ProjectPlayerController_AimAtCursor_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADES203_ProjectPlayerController_AimAtCursor_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_AimAtCursor()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADES203_ProjectPlayerController_AimAtCursor_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ADES203_ProjectPlayerController_NoRegister()
 	{
@@ -28,6 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 	struct Z_Construct_UClass_ADES203_ProjectPlayerController_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -37,6 +66,9 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 	UObject* (*const Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_APlayerController,
 		(UObject* (*)())Z_Construct_UPackage__Script_DES203_Project,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ADES203_ProjectPlayerController_AimAtCursor, "AimAtCursor" }, // 2606296659
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::Class_MetaDataParams[] = {
@@ -53,11 +85,11 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		nullptr,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x008002A4u,
@@ -72,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADES203_ProjectPlayerController, 425505027);
+	IMPLEMENT_CLASS(ADES203_ProjectPlayerController, 3984492985);
 	template<> DES203_PROJECT_API UClass* StaticClass<ADES203_ProjectPlayerController>()
 	{
 		return ADES203_ProjectPlayerController::StaticClass();

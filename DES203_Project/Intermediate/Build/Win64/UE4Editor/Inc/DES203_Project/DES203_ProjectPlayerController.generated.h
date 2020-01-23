@@ -14,8 +14,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define DES203_PROJECT_DES203_ProjectPlayerController_generated_h
 
 #define DES203_Project_Source_DES203_Project_DES203_ProjectPlayerController_h_12_SPARSE_DATA
-#define DES203_Project_Source_DES203_Project_DES203_ProjectPlayerController_h_12_RPC_WRAPPERS
-#define DES203_Project_Source_DES203_Project_DES203_ProjectPlayerController_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define DES203_Project_Source_DES203_Project_DES203_ProjectPlayerController_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execAimAtCursor) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->AimAtCursor(); \
+		P_NATIVE_END; \
+	}
+
+
+#define DES203_Project_Source_DES203_Project_DES203_ProjectPlayerController_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execAimAtCursor) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->AimAtCursor(); \
+		P_NATIVE_END; \
+	}
+
+
 #define DES203_Project_Source_DES203_Project_DES203_ProjectPlayerController_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesADES203_ProjectPlayerController(); \

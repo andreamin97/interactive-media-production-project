@@ -65,6 +65,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void Interact();
 
+	void MoveForward(float Axis);
+	void MoveRight(float Axis);
+
 protected:
 
 
