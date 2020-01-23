@@ -37,6 +37,9 @@ ADES203_ProjectCharacter::ADES203_ProjectCharacter()
 	//GetCharacterMovement()->bConstrainToPlane = true;
 	//GetCharacterMovement()->bSnapToPlaneAtStart = true;
 
+	/* Setup Weapon state*/
+	WeaponState = EWeaponState::WS_Unarmed;
+
 	// Create a camera boom...
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
@@ -115,7 +118,7 @@ bool ADES203_ProjectCharacter::AddItemToInventory(APickup* Item)
 			}
 			else
 			{
-				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("You can't varry any more items."));
+				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("You can't carry any more items."));
 				return false;
 			}
 	}
@@ -180,6 +183,8 @@ void ADES203_ProjectCharacter::MoveRight(float Axis)
 
 void ADES203_ProjectCharacter::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Overlap"));
+
 	if ((CurrentInteractable = Cast<AInteractable>(OtherActor)) != NULL)
 	{
 		HelpText = CurrentInteractable->HelpText;
@@ -189,6 +194,7 @@ void ADES203_ProjectCharacter::BeginOverlap(UPrimitiveComponent* OverlappedCompo
 
 void ADES203_ProjectCharacter::EndOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("End Overlap"));
 	if (CurrentInteractable == Cast<AInteractable>(OtherActor))
 	{
 		CurrentInteractable = nullptr;

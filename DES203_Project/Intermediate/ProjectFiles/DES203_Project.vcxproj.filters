@@ -72,4 +72,14 @@
       <Filter>Source\DES203_Project</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\DES203_Project\RangedWeapon.h">
+      <Filter>Source\DES203_Project</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\DES203_Project\RangedWeapon.cpp">
+      <Filter>Source\DES203_Project</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

@@ -14,6 +14,19 @@ class ADES203_ProjectCharacter : public ACharacter
 public:
 	ADES203_ProjectCharacter();
 
+	UPROPERTY(BlueprintReadWrite)
+		enum EWeaponState : uint8 {
+		WS_Unarmed,
+		WS_Gun,
+		WS_Rifle,
+		WS_Shotgun
+	};
+
+	uint8 WeaponState;
+
+	UPROPERTY(EditANywhere, BlueprintReadWrite, Category = "Equipment")
+		class ARangedWeapon* primaryWeapon;
+
 	UPROPERTY(EditANywhere, BlueprintReadWrite, Category ="UI")
 	FString HelpText;
 
@@ -64,6 +77,9 @@ public:
 	/* interact with the current interactable if there is one*/
 	UFUNCTION(BlueprintCallable)
 	void Interact();
+
+	UFUNCTION(BòueprintCallable)
+		bool EquipWeapon()
 
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
