@@ -47,6 +47,22 @@ class APickup;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execShoot) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		ADES203_ProjectCharacter::Shoot(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execEquipWeapon) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->EquipWeapon(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execInteract) \
 	{ \
 		P_FINISH; \
@@ -126,6 +142,22 @@ class APickup;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->BeginOverlap(Z_Param_OverlappedComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execShoot) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		ADES203_ProjectCharacter::Shoot(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execEquipWeapon) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->EquipWeapon(); \
 		P_NATIVE_END; \
 	} \
  \

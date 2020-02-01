@@ -14,8 +14,44 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define DES203_PROJECT_RangedWeapon_generated_h
 
 #define DES203_Project_Source_DES203_Project_RangedWeapon_h_15_SPARSE_DATA
-#define DES203_Project_Source_DES203_Project_RangedWeapon_h_15_RPC_WRAPPERS
-#define DES203_Project_Source_DES203_Project_RangedWeapon_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define DES203_Project_Source_DES203_Project_RangedWeapon_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnPickedUp) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnPickedUp(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execShoot) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Shoot(); \
+		P_NATIVE_END; \
+	}
+
+
+#define DES203_Project_Source_DES203_Project_RangedWeapon_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnPickedUp) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OnPickedUp(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execShoot) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Shoot(); \
+		P_NATIVE_END; \
+	}
+
+
 #define DES203_Project_Source_DES203_Project_RangedWeapon_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesARangedWeapon(); \
@@ -36,7 +72,7 @@ public: \
 
 #define DES203_Project_Source_DES203_Project_RangedWeapon_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ARangedWeapon(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API ARangedWeapon(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ARangedWeapon) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ARangedWeapon); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ARangedWeapon); \
@@ -48,8 +84,6 @@ public:
 
 
 #define DES203_Project_Source_DES203_Project_RangedWeapon_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ARangedWeapon() { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ARangedWeapon(ARangedWeapon&&); \

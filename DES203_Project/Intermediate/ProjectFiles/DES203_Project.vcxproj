@@ -266,7 +266,9 @@
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\DES203_Project\RangedWeapon.cpp" />
+    <ClCompile Include="..\..\Source\DES203_Project\Weapon.cpp" />
     <ClInclude Include="..\..\Source\DES203_Project\RangedWeapon.h" />
+    <ClInclude Include="..\..\Source\DES203_Project\Weapon.h" />
     <None Include="..\..\DES203_Project.uproject" />
     <None Include="..\..\Source\DES203_Project.Target.cs" />
     <None Include="..\..\Source\DES203_ProjectEditor.Target.cs" />

@@ -26,7 +26,7 @@ public:
 	virtual void Interact_Implementation();
 
 	/* All interactables have a static mesh*/
-	UPROPERTY(EditAnywhere, Category = "Interactable Properties")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interactable Properties")
 	class UStaticMeshComponent* InteractableMesh;
 
 	/* All interactables have an help text*/

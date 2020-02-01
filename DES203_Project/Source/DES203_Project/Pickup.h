@@ -22,7 +22,7 @@ class DES203_PROJECT_API APickup : public AInteractable
 		virtual void Interact_Implementation() override;
 
 		/* Called when the item is pickedup and needs to be cleaned up from the world*/
-		void OnPickedUp();
+		virtual void OnPickedUp();
 
 		UFUNCTION(BlueprintNativeEvent)
 		void Use();

@@ -22,6 +22,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_NATIVE_BEGIN; \
 		P_THIS->AimAtCursor(); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execStopShooting) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->StopShooting(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execStartShooting) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->StartShooting(); \
+		P_NATIVE_END; \
 	}
 
 
@@ -32,6 +48,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->AimAtCursor(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execStopShooting) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->StopShooting(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execStartShooting) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->StartShooting(); \
 		P_NATIVE_END; \
 	}
 

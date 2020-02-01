@@ -9,12 +9,17 @@
 #include "Math/UnrealMathUtility.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "DrawDebugHelpers.h"
+#include "RangedWeapon.h"
+#include "Kismet/KismetSystemLibrary.h"
 #include "Engine/World.h"
 
 ADES203_ProjectPlayerController::ADES203_ProjectPlayerController()
 {
 	bShowMouseCursor = true;
 	DefaultMouseCursor = EMouseCursor::Crosshairs;
+
+	bCanShoot = true;
+	AttackSpeed = 0.25f;
 }
 
 void ADES203_ProjectPlayerController::MoveForward(float Axis)
@@ -29,11 +34,25 @@ void ADES203_ProjectPlayerController::MoveRight(float Axis)
 	MyCharacter->MoveRight(Axis);
 }
 
+void ADES203_ProjectPlayerController::StartShooting()
+{
+	bCanShoot = true;
+	GetWorld()->GetTimerManager().SetTimer(_TimerHandle, this, &ADES203_ProjectPlayerController::Shoot, AttackSpeed, false, false);
+}
+
+void ADES203_ProjectPlayerController::StopShooting()
+{
+	bCanShoot = false;
+	GetWorld()->GetTimerManager().ClearTimer(_TimerHandle);
+}
+
 void ADES203_ProjectPlayerController::PlayerTick(float DeltaTime)
 {
 	Super::PlayerTick(DeltaTime);
 
-	ADES203_ProjectPlayerController::AimAtCursor();
+	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
+
+	ADES203_ProjectPlayerController::AimAtCursor();	
 }
 
 void ADES203_ProjectPlayerController::SetupInputComponent()
@@ -42,12 +61,12 @@ void ADES203_ProjectPlayerController::SetupInputComponent()
 	Super::SetupInputComponent();
 
 	InputComponent->BindAction("Interact", IE_Released, this, &ADES203_ProjectPlayerController::CharacterInteract);
-	InputComponent->BindAction("Interact", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlot);
+	InputComponent->BindAction("UseItem", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlot);
+	InputComponent->BindAction("Shoot", IE_Pressed, this, &ADES203_ProjectPlayerController::StartShooting);
+	InputComponent->BindAction("Shoot", IE_Released, this, &ADES203_ProjectPlayerController::StopShooting);
 
 	InputComponent->BindAxis("MoveForward", this, &ADES203_ProjectPlayerController::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &ADES203_ProjectPlayerController::MoveRight);
-
-
 }
 
 void ADES203_ProjectPlayerController::CharacterInteract()
@@ -74,6 +93,8 @@ void ADES203_ProjectPlayerController::AimAtCursor()
 
 	GetHitResultUnderCursorByChannel(TraceTypeQuery5, true, hitResult);
 
+	MouseLoc = hitResult.Location;
+
 	charLocation = MyCharacter->GetActorLocation();
 	charRotation = MyCharacter->GetActorRotation();
 
@@ -82,4 +103,25 @@ void ADES203_ProjectPlayerController::AimAtCursor()
 	newRotation = FMath::RInterpTo(charRotation, UKismetMathLibrary::FindLookAtRotation(charLocation, hitResult.Location), GetWorld()->DeltaTimeSeconds, 33.0f);
 
 	SetControlRotation(FRotator(charRotation.Pitch, newRotation.Yaw, charRotation.Roll));
+}
+
+void ADES203_ProjectPlayerController::Shoot()
+{
+	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
+
+	if (MyCharacter->MainWeapon != nullptr)
+	{
+		MyCharacter->MainWeapon->Shoot();
+	}
+	else
+	{
+		GLog->Log("No Weapon Equipped");
+	}
+
+	if (bCanShoot)
+	{
+		GetWorld()->GetTimerManager().SetTimer(_TimerHandle, this, &ADES203_ProjectPlayerController::Shoot, AttackSpeed, false);
+	}
+	
+	
 }

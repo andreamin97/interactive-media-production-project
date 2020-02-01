@@ -31,6 +31,9 @@ public:
 	virtual void Use_Implementation() override;
 
 	UFUNCTION(BlueprintCallable)
-		void Shoot();
+	void Shoot();
+
+	UFUNCTION()
+	virtual void OnPickedUp() override;
 
 };

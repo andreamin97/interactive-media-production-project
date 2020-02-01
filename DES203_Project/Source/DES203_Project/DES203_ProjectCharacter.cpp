@@ -13,7 +13,9 @@
 #include "Materials/Material.h"
 #include "Interactable.h"
 #include "Pickup.h"
+#include "RangedWeapon.h"
 #include "Engine/World.h"
+#include "Engine/EngineTypes.h"
 #include "Engine/CollisionProfile.h"
 
 ADES203_ProjectCharacter::ADES203_ProjectCharacter()
@@ -36,9 +38,6 @@ ADES203_ProjectCharacter::ADES203_ProjectCharacter()
 	//GetCharacterMovement()->RotationRate = FRotator(0.f, 640.f, 0.f);
 	//GetCharacterMovement()->bConstrainToPlane = true;
 	//GetCharacterMovement()->bSnapToPlaneAtStart = true;
-
-	/* Setup Weapon state*/
-	WeaponState = EWeaponState::WS_Unarmed;
 
 	// Create a camera boom...
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
@@ -71,6 +70,8 @@ ADES203_ProjectCharacter::ADES203_ProjectCharacter()
 	InteractSphere->OnComponentBeginOverlap.AddDynamic(this, &ADES203_ProjectCharacter::BeginOverlap);
 	InteractSphere->OnComponentEndOverlap.AddDynamic(this, &ADES203_ProjectCharacter::EndOverlap);
 
+	MainWeapon = CreateDefaultSubobject<ARangedWeapon>(TEXT("MainWeapon"));
+	//MainWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale);
 }
 
 void ADES203_ProjectCharacter::BeginPlay()
@@ -150,7 +151,7 @@ void ADES203_ProjectCharacter::UseItemAtInventorySlot(int32 Slot)
 	{
 		Inventory[Slot]->Use_Implementation();
 		//deletes item from the inventory once used
-		//Inventory[Slot] = NULL 
+		//Inventory[Slot] = NULL;
 	}
 
 }
@@ -167,6 +168,16 @@ void ADES203_ProjectCharacter::Interact()
 	{
 		CurrentInteractable->Interact_Implementation();
 	}
+}
+
+bool ADES203_ProjectCharacter::EquipWeapon()
+{
+	return false;
+}
+
+void ADES203_ProjectCharacter::Shoot()
+{
+	unimplemented();
 }
 
 void ADES203_ProjectCharacter::MoveForward(float Axis)

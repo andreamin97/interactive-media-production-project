@@ -14,8 +14,21 @@ class ADES203_ProjectPlayerController : public APlayerController
 public:
 	ADES203_ProjectPlayerController();
 
+	UPROPERTY()
+	float AttackSpeed;
+
+	FVector MouseLoc;
+
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
+
+	FORCEINLINE FVector GetMouseLoc() { return MouseLoc; }
+
+	UFUNCTION()
+	void StartShooting();
+
+	UFUNCTION()
+	void StopShooting();
 
 protected:
 	/** True if the controlled character should navigate to the mouse cursor. */
@@ -36,6 +49,13 @@ protected:
 
 	UFUNCTION(BlueprintCallable)
 	void AimAtCursor();
+
+	void Shoot();
+
+private:
+	bool bCanShoot;
+	
+	FTimerHandle _TimerHandle;
 };
 
 

@@ -43,5 +43,7 @@ D:\UE4 Projects\interactive-media-production-project\DES203_Project\Source\DES20
 D:\UE4 Projects\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Inc\DES203_Project\Interactable.generated.h
 D:\UE4 Projects\interactive-media-production-project\DES203_Project\Source\DES203_Project\Pickup.h
 D:\UE4 Projects\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Inc\DES203_Project\Pickup.generated.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Source\DES203_Project\RangedWeapon.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Inc\DES203_Project\RangedWeapon.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Engine/CollisionProfile.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CollisionProfile.generated.h

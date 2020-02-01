@@ -14,27 +14,17 @@ class ADES203_ProjectCharacter : public ACharacter
 public:
 	ADES203_ProjectCharacter();
 
-	UPROPERTY(BlueprintReadWrite)
-		enum EWeaponState : uint8 {
-		WS_Unarmed,
-		WS_Gun,
-		WS_Rifle,
-		WS_Shotgun
-	};
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equip")
+	class ARangedWeapon* MainWeapon;
 
-	uint8 WeaponState;
-
-	UPROPERTY(EditANywhere, BlueprintReadWrite, Category = "Equipment")
-		class ARangedWeapon* primaryWeapon;
-
-	UPROPERTY(EditANywhere, BlueprintReadWrite, Category ="UI")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category ="UI")
 	FString HelpText;
 
 	/*The Amout of gold the player has*/
-	UPROPERTY(EditANywhere, BlueprintReadWrite, Category = "UI")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
 	int32 Gold;
 
-	UPROPERTY(EditANywhere, BlueprintReadWrite, Category = "UI")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
 	class AInteractable* CurrentInteractable;
 
 	virtual void BeginPlay() override;
@@ -78,14 +68,16 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void Interact();
 
-	UFUNCTION(BòueprintCallable)
-		bool EquipWeapon()
+	UFUNCTION(BlueprintCallable)
+	bool EquipWeapon();
+
+	UFUNCTION(BlueprintCallable)
+	static void Shoot();
 
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
 
 protected:
-
 
 private:
 	/** Top down camera */

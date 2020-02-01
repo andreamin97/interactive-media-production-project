@@ -24,10 +24,12 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_EndOverlap();
+	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_GetItemNameAtInventorySlot();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_GetThumbnailAtInventorySlot();
 	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_Interact();
+	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_Shoot();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_UpdateGold();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_UseItemAtInventorySlot();
 	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
@@ -35,6 +37,7 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	DES203_PROJECT_API UClass* Z_Construct_UClass_AInteractable_NoRegister();
+	DES203_PROJECT_API UClass* Z_Construct_UClass_ARangedWeapon_NoRegister();
 // End Cross Module References
 	void ADES203_ProjectCharacter::StaticRegisterNativesADES203_ProjectCharacter()
 	{
@@ -43,9 +46,11 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 			{ "AddItemToInventory", &ADES203_ProjectCharacter::execAddItemToInventory },
 			{ "BeginOverlap", &ADES203_ProjectCharacter::execBeginOverlap },
 			{ "EndOverlap", &ADES203_ProjectCharacter::execEndOverlap },
+			{ "EquipWeapon", &ADES203_ProjectCharacter::execEquipWeapon },
 			{ "GetItemNameAtInventorySlot", &ADES203_ProjectCharacter::execGetItemNameAtInventorySlot },
 			{ "GetThumbnailAtInventorySlot", &ADES203_ProjectCharacter::execGetThumbnailAtInventorySlot },
 			{ "Interact", &ADES203_ProjectCharacter::execInteract },
+			{ "Shoot", &ADES203_ProjectCharacter::execShoot },
 			{ "UpdateGold", &ADES203_ProjectCharacter::execUpdateGold },
 			{ "UseItemAtInventorySlot", &ADES203_ProjectCharacter::execUseItemAtInventorySlot },
 		};
@@ -236,6 +241,43 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics
+	{
+		struct DES203_ProjectCharacter_eventEquipWeapon_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((DES203_ProjectCharacter_eventEquipWeapon_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(DES203_ProjectCharacter_eventEquipWeapon_Parms), &Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "DES203_ProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADES203_ProjectCharacter, nullptr, "EquipWeapon", nullptr, nullptr, sizeof(DES203_ProjectCharacter_eventEquipWeapon_Parms), Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ADES203_ProjectCharacter_GetItemNameAtInventorySlot_Statics
 	{
 		struct DES203_ProjectCharacter_eventGetItemNameAtInventorySlot_Parms
@@ -335,6 +377,28 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADES203_ProjectCharacter_Interact_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ADES203_ProjectCharacter_Shoot_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADES203_ProjectCharacter_Shoot_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "DES203_ProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADES203_ProjectCharacter_Shoot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADES203_ProjectCharacter, nullptr, "Shoot", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADES203_ProjectCharacter_Shoot_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADES203_ProjectCharacter_Shoot_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_Shoot()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADES203_ProjectCharacter_Shoot_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -456,6 +520,10 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HelpText_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStrPropertyParams NewProp_HelpText;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MainWeapon_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MainWeapon;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -468,9 +536,11 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_AddItemToInventory, "AddItemToInventory" }, // 4000309836
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_BeginOverlap, "BeginOverlap" }, // 2772916651
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_EndOverlap, "EndOverlap" }, // 2161885287
+		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon, "EquipWeapon" }, // 2037407399
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_GetItemNameAtInventorySlot, "GetItemNameAtInventorySlot" }, // 3497638925
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_GetThumbnailAtInventorySlot, "GetThumbnailAtInventorySlot" }, // 3112604109
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_Interact, "Interact" }, // 3502320164
+		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_Shoot, "Shoot" }, // 4200735279
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_UpdateGold, "UpdateGold" }, // 2627536382
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_UseItemAtInventorySlot, "UseItemAtInventorySlot" }, // 3757244509
 	};
@@ -564,6 +634,13 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_HelpText = { "HelpText", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectCharacter, HelpText), METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_HelpText_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_HelpText_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_MainWeapon_MetaData[] = {
+		{ "Category", "Equip" },
+		{ "ModuleRelativePath", "DES203_ProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_MainWeapon = { "MainWeapon", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectCharacter, MainWeapon), Z_Construct_UClass_ARangedWeapon_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_MainWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_MainWeapon_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADES203_ProjectCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory_Inner,
@@ -575,6 +652,7 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_CurrentInteractable,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Gold,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_HelpText,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_MainWeapon,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ADES203_ProjectCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ADES203_ProjectCharacter>::IsAbstract,
@@ -603,7 +681,7 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADES203_ProjectCharacter, 3586548688);
+	IMPLEMENT_CLASS(ADES203_ProjectCharacter, 3375916044);
 	template<> DES203_PROJECT_API UClass* StaticClass<ADES203_ProjectCharacter>()
 	{
 		return ADES203_ProjectCharacter::StaticClass();
