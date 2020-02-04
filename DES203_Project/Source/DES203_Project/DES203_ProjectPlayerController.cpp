@@ -61,7 +61,10 @@ void ADES203_ProjectPlayerController::SetupInputComponent()
 	Super::SetupInputComponent();
 
 	InputComponent->BindAction("Interact", IE_Released, this, &ADES203_ProjectPlayerController::CharacterInteract);
-	InputComponent->BindAction("UseItem", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlot);
+	InputComponent->BindAction("UseItem1", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlotOne);
+	InputComponent->BindAction("UseItem2", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlotTwo);
+	InputComponent->BindAction("UseItem3", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlotThree);
+	InputComponent->BindAction("UseItem4", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlotFour);
 	InputComponent->BindAction("Shoot", IE_Pressed, this, &ADES203_ProjectPlayerController::StartShooting);
 	InputComponent->BindAction("Shoot", IE_Released, this, &ADES203_ProjectPlayerController::StopShooting);
 
@@ -75,10 +78,48 @@ void ADES203_ProjectPlayerController::CharacterInteract()
 	MyCharacter->Interact();
 }
 
-void ADES203_ProjectPlayerController::CharacterUseItemAtSlot()
+void ADES203_ProjectPlayerController::CharacterUseItemAtSlotOne()
 {
 	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
+	
+	if (MyCharacter->MainWeapon != nullptr)
+	{
+		MyCharacter->MainWeapon->OnPickedUp();
+	}	
 	MyCharacter->UseItemAtInventorySlot(0);
+}
+
+void ADES203_ProjectPlayerController::CharacterUseItemAtSlotTwo()
+{
+	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
+	
+	if (MyCharacter->MainWeapon != nullptr)
+	{
+		MyCharacter->MainWeapon->OnPickedUp();
+	}
+	MyCharacter->UseItemAtInventorySlot(1);
+}
+
+void ADES203_ProjectPlayerController::CharacterUseItemAtSlotThree()
+{
+	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
+	
+	if (MyCharacter->MainWeapon != nullptr)
+	{
+		MyCharacter->MainWeapon->OnPickedUp();
+	}
+	MyCharacter->UseItemAtInventorySlot(2);
+}
+
+void ADES203_ProjectPlayerController::CharacterUseItemAtSlotFour()
+{
+	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
+	
+	if (MyCharacter->MainWeapon != nullptr)
+	{
+		MyCharacter->MainWeapon->OnPickedUp();
+	}
+	MyCharacter->UseItemAtInventorySlot(3);
 }
 
 void ADES203_ProjectPlayerController::AimAtCursor()

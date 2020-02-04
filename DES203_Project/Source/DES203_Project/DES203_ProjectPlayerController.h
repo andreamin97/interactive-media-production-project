@@ -45,7 +45,17 @@ protected:
 	/* call the character's UseItemAtInventorySlot() Function
 	   For now only calls it on the first slot
 	*/
-	void CharacterUseItemAtSlot();
+	UFUNCTION()
+	void CharacterUseItemAtSlotOne();
+
+	UFUNCTION()
+	void CharacterUseItemAtSlotTwo();
+
+	UFUNCTION()
+		void CharacterUseItemAtSlotThree();
+
+	UFUNCTION()
+		void CharacterUseItemAtSlotFour();
 
 	UFUNCTION(BlueprintCallable)
 	void AimAtCursor();
