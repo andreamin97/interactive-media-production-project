@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\DES203_Project.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{753EA87F-6D6B-4F62-9D4A-857F1B9D7D7C}</UniqueIdentifier>
+      <UniqueIdentifier>{DE352BC5-3538-4128-B253-599AC0744D74}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\DES203_Project.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{F0D996D5-EB52-40F5-8C1B-575AF7AAD8F1}</UniqueIdentifier>
+      <UniqueIdentifier>{66FA6739-C748-4225-BECB-A4F4BD508800}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\DES203_Project">
-      <UniqueIdentifier>{7C59FA56-2C67-452F-8507-878C4957804C}</UniqueIdentifier>
+      <UniqueIdentifier>{11F594AA-14CE-4DEA-A08B-16628B08BB20}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\DES203_Project\DES203_Project.Build.cs">
       <Filter>Source\DES203_Project</Filter>
@@ -71,21 +71,11 @@
     <ClInclude Include="..\..\Source\DES203_Project\Pickup.h">
       <Filter>Source\DES203_Project</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\DES203_Project\RangedWeapon.h">
-      <Filter>Source\DES203_Project</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\DES203_Project\Weapon.h">
-      <Filter>Source\DES203_Project</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\Source\DES203_Project\RangedWeapon.cpp">
       <Filter>Source\DES203_Project</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\DES203_Project\Weapon.cpp">
+    <ClInclude Include="..\..\Source\DES203_Project\RangedWeapon.h">
       <Filter>Source\DES203_Project</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\UE4 Projects\\interactive-media-production-project\\DES203_Project\\Source\\DES203_Project\\DES203_Project.Build.cs",
-		"D:\\UE4 Projects\\interactive-media-production-project\\DES203_Project\\Source\\DES203_Project.Target.cs",
-		"D:\\UE4 Projects\\interactive-media-production-project\\DES203_Project\\Source\\DES203_ProjectEditor.Target.cs"
+		"C:\\Users\\Admin\\Documents\\GitHub\\interactive-media-production-project\\DES203_Project\\Source\\DES203_Project\\DES203_Project.Build.cs",
+		"C:\\Users\\Admin\\Documents\\GitHub\\interactive-media-production-project\\DES203_Project\\Source\\DES203_Project.Target.cs",
+		"C:\\Users\\Admin\\Documents\\GitHub\\interactive-media-production-project\\DES203_Project\\Source\\DES203_ProjectEditor.Target.cs"
 	],
-	"EngineVersion": "4.24.2"
+	"EngineVersion": "4.24.1"
 }
