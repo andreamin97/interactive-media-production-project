@@ -24,6 +24,38 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execCharacterUseItemAtSlotFour) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CharacterUseItemAtSlotFour(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCharacterUseItemAtSlotThree) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CharacterUseItemAtSlotThree(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCharacterUseItemAtSlotTwo) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CharacterUseItemAtSlotTwo(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCharacterUseItemAtSlotOne) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CharacterUseItemAtSlotOne(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execStopShooting) \
 	{ \
 		P_FINISH; \
@@ -48,6 +80,38 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->AimAtCursor(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCharacterUseItemAtSlotFour) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CharacterUseItemAtSlotFour(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCharacterUseItemAtSlotThree) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CharacterUseItemAtSlotThree(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCharacterUseItemAtSlotTwo) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CharacterUseItemAtSlotTwo(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCharacterUseItemAtSlotOne) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CharacterUseItemAtSlotOne(); \
 		P_NATIVE_END; \
 	} \
  \

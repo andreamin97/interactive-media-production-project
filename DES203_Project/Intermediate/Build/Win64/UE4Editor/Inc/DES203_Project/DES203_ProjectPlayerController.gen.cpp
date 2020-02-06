@@ -18,6 +18,10 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 	ENGINE_API UClass* Z_Construct_UClass_APlayerController();
 	UPackage* Z_Construct_UPackage__Script_DES203_Project();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_AimAtCursor();
+	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotFour();
+	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotOne();
+	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotThree();
+	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotTwo();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_StartShooting();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_StopShooting();
 // End Cross Module References
@@ -26,6 +30,10 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 		UClass* Class = ADES203_ProjectPlayerController::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "AimAtCursor", &ADES203_ProjectPlayerController::execAimAtCursor },
+			{ "CharacterUseItemAtSlotFour", &ADES203_ProjectPlayerController::execCharacterUseItemAtSlotFour },
+			{ "CharacterUseItemAtSlotOne", &ADES203_ProjectPlayerController::execCharacterUseItemAtSlotOne },
+			{ "CharacterUseItemAtSlotThree", &ADES203_ProjectPlayerController::execCharacterUseItemAtSlotThree },
+			{ "CharacterUseItemAtSlotTwo", &ADES203_ProjectPlayerController::execCharacterUseItemAtSlotTwo },
 			{ "StartShooting", &ADES203_ProjectPlayerController::execStartShooting },
 			{ "StopShooting", &ADES203_ProjectPlayerController::execStopShooting },
 		};
@@ -50,6 +58,96 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADES203_ProjectPlayerController_AimAtCursor_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotFour_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotFour_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "DES203_ProjectPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotFour_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADES203_ProjectPlayerController, nullptr, "CharacterUseItemAtSlotFour", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotFour_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotFour_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotFour()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotFour_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotOne_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotOne_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "/* call the character's UseItemAtInventorySlot() Function\n\x09   For now only calls it on the first slot\n\x09*/" },
+		{ "ModuleRelativePath", "DES203_ProjectPlayerController.h" },
+		{ "ToolTip", "call the character's UseItemAtInventorySlot() Function\n         For now only calls it on the first slot" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotOne_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADES203_ProjectPlayerController, nullptr, "CharacterUseItemAtSlotOne", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotOne_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotOne_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotOne()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotOne_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotThree_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotThree_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "DES203_ProjectPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotThree_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADES203_ProjectPlayerController, nullptr, "CharacterUseItemAtSlotThree", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotThree_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotThree_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotThree()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotThree_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotTwo_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotTwo_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "DES203_ProjectPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotTwo_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADES203_ProjectPlayerController, nullptr, "CharacterUseItemAtSlotTwo", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotTwo_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotTwo_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotTwo()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotTwo_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -122,6 +220,10 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ADES203_ProjectPlayerController_AimAtCursor, "AimAtCursor" }, // 2606296659
+		{ &Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotFour, "CharacterUseItemAtSlotFour" }, // 1121326712
+		{ &Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotOne, "CharacterUseItemAtSlotOne" }, // 4125595892
+		{ &Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotThree, "CharacterUseItemAtSlotThree" }, // 3757310819
+		{ &Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotTwo, "CharacterUseItemAtSlotTwo" }, // 1402687867
 		{ &Z_Construct_UFunction_ADES203_ProjectPlayerController_StartShooting, "StartShooting" }, // 2909842775
 		{ &Z_Construct_UFunction_ADES203_ProjectPlayerController_StopShooting, "StopShooting" }, // 1347981676
 	};
@@ -168,7 +270,7 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADES203_ProjectPlayerController, 1449768366);
+	IMPLEMENT_CLASS(ADES203_ProjectPlayerController, 4240156342);
 	template<> DES203_PROJECT_API UClass* StaticClass<ADES203_ProjectPlayerController>()
 	{
 		return ADES203_ProjectPlayerController::StaticClass();

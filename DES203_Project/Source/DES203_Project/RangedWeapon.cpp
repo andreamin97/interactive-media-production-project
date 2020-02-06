@@ -54,6 +54,17 @@ void ARangedWeapon::Shoot()
 	if (GetWorld()->LineTraceSingleByChannel(hitResult, Start, End, ECC_Visibility, CollisionParams))
 	{
 		DrawDebugLine(GetWorld(), Start, hitResult.Location, FColor::Red, false, 1.0f, 10.0f);
+		
+		if (AActor * target = Cast<AActor>(hitResult.Actor))
+		{
+			if (target->ActorHasTag(FName("Enemy")))
+			{
+				//TSubclassOf<UDamageType> const ValidDamageTypeClass = TSubclassOf<UDamageType>(UDamageType::StaticClass());
+				FDamageEvent DamageEvent;
+
+				target->TakeDamage(damage, DamageEvent, PC, this);
+			}
+		}
 	}
 	else
 	{

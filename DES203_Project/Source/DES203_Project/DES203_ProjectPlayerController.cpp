@@ -139,7 +139,8 @@ void ADES203_ProjectPlayerController::AimAtCursor()
 	charLocation = MyCharacter->GetActorLocation();
 	charRotation = MyCharacter->GetActorRotation();
 
-	DrawDebugLine(GetWorld(), FVector(hitResult.Location.X, hitResult.Location.Y, 100), hitResult.Location, FColor::Red, false, 1.0f, 10.0f);
+	// Debug Line
+	//DrawDebugLine(GetWorld(), FVector(hitResult.Location.X, hitResult.Location.Y, 100), hitResult.Location, FColor::Red, false, 1.0f, 10.0f);
 
 	newRotation = FMath::RInterpTo(charRotation, UKismetMathLibrary::FindLookAtRotation(charLocation, hitResult.Location), GetWorld()->DeltaTimeSeconds, 33.0f);
 
