@@ -31,9 +31,22 @@ public:
 	virtual void Use_Implementation() override;
 
 	UFUNCTION(BlueprintCallable)
+	virtual void Shoot_Implementation();
 	void Shoot();
 
 	UFUNCTION()
 	virtual void OnPickedUp() override;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	class UArrowComponent* aimArrow;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	class UParticleSystem* shootEffect;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		class UParticleSystem* shootTrace;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon Statistics")
+		FVector ShootPoint;
 
 };

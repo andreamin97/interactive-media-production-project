@@ -153,7 +153,7 @@ void ADES203_ProjectPlayerController::Shoot()
 
 	if (MyCharacter->MainWeapon != nullptr)
 	{
-		MyCharacter->MainWeapon->Shoot();
+		MyCharacter->MainWeapon->Shoot_Implementation();
 	}
 	else
 	{

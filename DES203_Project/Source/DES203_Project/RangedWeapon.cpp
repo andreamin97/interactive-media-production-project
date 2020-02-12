@@ -8,29 +8,38 @@
 #include "Components/ArrowComponent.h"
 #include "Math/TransformNonVectorized.h"
 #include "Math/Vector.h"
+#include "Particles/ParticleSystem.h"
 #include "RangedWeapon.h"
 
 ARangedWeapon::ARangedWeapon() 
 {
 	range = 300.0f;
+
+	aimArrow = CreateDefaultSubobject<UArrowComponent>(TEXT("AimArrow"));
+	aimArrow->SetupAttachment(InteractableMesh);
+	aimArrow->RelativeLocation = ShootPoint;
 }
 
 void ARangedWeapon::Use_Implementation()
 {
 	if (ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0)))
 	{
+		ADES203_ProjectPlayerController* PC = Cast<ADES203_ProjectPlayerController>(GetWorld()->GetFirstPlayerController());
+
 		GLog->Log("Equipped Weapon");
 		MyCharacter->MainWeapon = this;
+		PC->AttackSpeed = 1 / attacksPerSecond;
 		MyCharacter->MainWeapon->AttachToComponent(MyCharacter->GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, FName("WeaponSocket"));
 		InteractableMesh->SetVisibility(true);
 	}
 }
 
-void ARangedWeapon::Shoot()
+void ARangedWeapon::Shoot_Implementation()
 {
 	ADES203_ProjectPlayerController* PC = Cast<ADES203_ProjectPlayerController>(GetWorld()->GetFirstPlayerController());
 
-	FVector Start = this->GetActorLocation();
+	//FVector Start = this->GetActorLocation();
+	FVector Start = aimArrow->GetComponentLocation();
 	FVector End = PC->GetMouseLoc();
 	
 	End -= Start;
@@ -70,14 +79,12 @@ void ARangedWeapon::Shoot()
 	{
 		DrawDebugLine(GetWorld(), Start, End, FColor::Blue, false, 1.0f, 10.0f);
 	}
+	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), shootEffect, aimArrow->GetComponentTransform());
+	//UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), shootTrace, aimArrow->GetComponentTransform());
 
 }
 
 void ARangedWeapon::OnPickedUp()
 {
 	Super::OnPickedUp();
-
-	ADES203_ProjectPlayerController* PC = Cast<ADES203_ProjectPlayerController>(GetWorld()->GetFirstPlayerController());
-
-	PC->AttackSpeed = 1 / attacksPerSecond;
 }
