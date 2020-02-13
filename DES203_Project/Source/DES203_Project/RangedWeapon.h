@@ -44,6 +44,9 @@ public:
 	class UParticleSystem* shootEffect;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		class UParticleSystemComponent* laserPointer;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		class UParticleSystem* shootTrace;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon Statistics")

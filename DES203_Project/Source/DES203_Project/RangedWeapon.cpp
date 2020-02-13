@@ -9,6 +9,7 @@
 #include "Math/TransformNonVectorized.h"
 #include "Math/Vector.h"
 #include "Particles/ParticleSystem.h"
+#include "Particles/ParticleSystemComponent.h"
 #include "RangedWeapon.h"
 
 ARangedWeapon::ARangedWeapon() 
@@ -18,6 +19,9 @@ ARangedWeapon::ARangedWeapon()
 	aimArrow = CreateDefaultSubobject<UArrowComponent>(TEXT("AimArrow"));
 	aimArrow->SetupAttachment(InteractableMesh);
 	aimArrow->RelativeLocation = ShootPoint;
+
+	laserPointer = CreateDefaultSubobject<UParticleSystemComponent> (TEXT("AimLaser"));
+	laserPointer->SetupAttachment(aimArrow);
 }
 
 void ARangedWeapon::Use_Implementation()
