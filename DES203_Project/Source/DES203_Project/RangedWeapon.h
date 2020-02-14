@@ -17,6 +17,8 @@ class DES203_PROJECT_API ARangedWeapon : public APickup
 public:
 	ARangedWeapon();
 
+	virtual void Tick(float DeltaTime) override;
+
 	bool bIsShooting;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category ="Weapon Statistics")
@@ -51,5 +53,4 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon Statistics")
 		FVector ShootPoint;
-
 };

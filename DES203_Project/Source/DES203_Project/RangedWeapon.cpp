@@ -14,6 +14,8 @@
 
 ARangedWeapon::ARangedWeapon() 
 {
+	PrimaryActorTick.bCanEverTick = true;
+
 	range = 300.0f;
 
 	aimArrow = CreateDefaultSubobject<UArrowComponent>(TEXT("AimArrow"));
@@ -22,6 +24,10 @@ ARangedWeapon::ARangedWeapon()
 
 	laserPointer = CreateDefaultSubobject<UParticleSystemComponent> (TEXT("AimLaser"));
 	laserPointer->SetupAttachment(aimArrow);
+}
+
+void ARangedWeapon::Tick(float DeltaTime)
+{
 }
 
 void ARangedWeapon::Use_Implementation()
@@ -42,25 +48,20 @@ void ARangedWeapon::Shoot_Implementation()
 {
 	ADES203_ProjectPlayerController* PC = Cast<ADES203_ProjectPlayerController>(GetWorld()->GetFirstPlayerController());
 
-	//FVector Start = this->GetActorLocation();
+	FHitResult hitResult;
+	FCollisionQueryParams CollisionParams;
+
 	FVector Start = aimArrow->GetComponentLocation();
 	FVector End = PC->GetMouseLoc();
-	
+
 	End -= Start;
-	//End.X -= Start.X;
-	//End.Y -= Start.Y;
 
 	End.Normalize(1.0);
 	End *= range;
 
 	End += Start;
-	//End.X += Start.X;
-	//End.Y += Start.Y;
 
 	End.Z = Start.Z;
-
-	FHitResult hitResult;
-	FCollisionQueryParams CollisionParams;
 
 	
 
@@ -72,7 +73,6 @@ void ARangedWeapon::Shoot_Implementation()
 		{
 			if (target->ActorHasTag(FName("Enemy")))
 			{
-				//TSubclassOf<UDamageType> const ValidDamageTypeClass = TSubclassOf<UDamageType>(UDamageType::StaticClass());
 				FDamageEvent DamageEvent;
 
 				target->TakeDamage(damage, DamageEvent, PC, this);
