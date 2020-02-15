@@ -15,11 +15,15 @@
 
 ADES203_ProjectPlayerController::ADES203_ProjectPlayerController()
 {
-	bShowMouseCursor = true;
-	DefaultMouseCursor = EMouseCursor::Crosshairs;
+	bShowMouseCursor = false;
+	//DefaultMouseCursor = EMouseCursor::Crosshairs;
 
 	bCanShoot = true;
 	AttackSpeed = 0.25f;
+
+	bIsUsingGamepad = false;
+	bResetGamepadDetectionAfterNoInput = true;
+	GamepadTimeout = 5.f;
 }
 
 void ADES203_ProjectPlayerController::MoveForward(float Axis)
@@ -46,13 +50,52 @@ void ADES203_ProjectPlayerController::StopShooting()
 	GetWorld()->GetTimerManager().ClearTimer(_TimerHandle);
 }
 
+bool ADES203_ProjectPlayerController::InputAxis(FKey Key, float Delta, float DeltaTime, int32 NumSamples, bool bGamepad)
+{
+	bool ret = Super::InputAxis(Key, Delta, DeltaTime, NumSamples, bGamepad);
+	_UpdateGamepad(bGamepad);
+	return ret;
+}
+
+bool ADES203_ProjectPlayerController::InputKey(FKey Key, EInputEvent EventType, float AmountDepressed, bool bGamepad)
+{
+	bool ret = Super::InputKey(Key, EventType, AmountDepressed, bGamepad);
+	_UpdateGamepad(bGamepad);
+	return ret;
+}
+
 void ADES203_ProjectPlayerController::PlayerTick(float DeltaTime)
 {
 	Super::PlayerTick(DeltaTime);
 
 	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
 
-	ADES203_ProjectPlayerController::AimAtCursor();	
+	if (IsLocalController() && bResetGamepadDetectionAfterNoInput && bIsUsingGamepad)
+	{
+		float now = GetWorld()->TimeSeconds;
+		if (now > LastGamepadInputTime + GamepadTimeout)
+		{
+			bIsUsingGamepad = false;
+		}
+	}
+
+	if (bIsUsingGamepad == false)
+	{
+		ADES203_ProjectPlayerController::AimAtCursor();
+	}
+	else
+	{
+		if (XAxis == 0.f && YAxis == 0.f)
+		{
+			//do nothing
+		}
+		else
+		{
+			float angle = FMath::Atan2(YAxis, XAxis);
+			SetControlRotation(FRotator(0.f, FMath::RadiansToDegrees(angle) + 90.f, 0.f));
+		}
+
+	}
 }
 
 void ADES203_ProjectPlayerController::SetupInputComponent()
@@ -70,6 +113,9 @@ void ADES203_ProjectPlayerController::SetupInputComponent()
 
 	InputComponent->BindAxis("MoveForward", this, &ADES203_ProjectPlayerController::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &ADES203_ProjectPlayerController::MoveRight);
+
+	InputComponent->BindAxis("TurnX", this, &ADES203_ProjectPlayerController::SetTurnX);
+	InputComponent->BindAxis("TurnY", this, &ADES203_ProjectPlayerController::SetTurnY);
 }
 
 void ADES203_ProjectPlayerController::CharacterInteract()
@@ -166,4 +212,14 @@ void ADES203_ProjectPlayerController::Shoot()
 	}
 	
 	
+}
+
+void ADES203_ProjectPlayerController::SetTurnX(float Axis)
+{
+	XAxis = Axis;
+}
+
+void ADES203_ProjectPlayerController::SetTurnY(float Axis)
+{
+	YAxis = Axis;
 }

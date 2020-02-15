@@ -20,8 +20,8 @@ void EmptyLinkFunctionForGeneratedCodeRangedWeapon() {}
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ARangedWeapon_OnPickedUp();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ARangedWeapon_Shoot_Implementation();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
-	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystemComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UArrowComponent_NoRegister();
 // End Cross Module References
 	void ARangedWeapon::StaticRegisterNativesARangedWeapon()
@@ -93,13 +93,13 @@ void EmptyLinkFunctionForGeneratedCodeRangedWeapon() {}
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ShootPoint;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_shootTrace_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_shootTrace;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_laserPointer_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_laserPointer;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_shootHit_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_shootHit;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_shootEffect_MetaData[];
 #endif
@@ -147,13 +147,6 @@ void EmptyLinkFunctionForGeneratedCodeRangedWeapon() {}
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ARangedWeapon_Statics::NewProp_ShootPoint = { "ShootPoint", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARangedWeapon, ShootPoint), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_ARangedWeapon_Statics::NewProp_ShootPoint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARangedWeapon_Statics::NewProp_ShootPoint_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootTrace_MetaData[] = {
-		{ "Category", "RangedWeapon" },
-		{ "ModuleRelativePath", "RangedWeapon.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootTrace = { "shootTrace", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARangedWeapon, shootTrace), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootTrace_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootTrace_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedWeapon_Statics::NewProp_laserPointer_MetaData[] = {
 		{ "Category", "RangedWeapon" },
 		{ "EditInline", "true" },
@@ -161,6 +154,13 @@ void EmptyLinkFunctionForGeneratedCodeRangedWeapon() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARangedWeapon_Statics::NewProp_laserPointer = { "laserPointer", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARangedWeapon, laserPointer), Z_Construct_UClass_UParticleSystemComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARangedWeapon_Statics::NewProp_laserPointer_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARangedWeapon_Statics::NewProp_laserPointer_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootHit_MetaData[] = {
+		{ "Category", "RangedWeapon" },
+		{ "ModuleRelativePath", "RangedWeapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootHit = { "shootHit", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARangedWeapon, shootHit), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootHit_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootHit_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootEffect_MetaData[] = {
 		{ "Category", "RangedWeapon" },
@@ -199,8 +199,8 @@ void EmptyLinkFunctionForGeneratedCodeRangedWeapon() {}
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ARangedWeapon_Statics::NewProp_attacksPerSecond = { "attacksPerSecond", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARangedWeapon, attacksPerSecond), METADATA_PARAMS(Z_Construct_UClass_ARangedWeapon_Statics::NewProp_attacksPerSecond_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARangedWeapon_Statics::NewProp_attacksPerSecond_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ARangedWeapon_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedWeapon_Statics::NewProp_ShootPoint,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootTrace,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedWeapon_Statics::NewProp_laserPointer,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootHit,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootEffect,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedWeapon_Statics::NewProp_aimArrow,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedWeapon_Statics::NewProp_range,
@@ -234,7 +234,7 @@ void EmptyLinkFunctionForGeneratedCodeRangedWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ARangedWeapon, 1886370485);
+	IMPLEMENT_CLASS(ARangedWeapon, 3105856126);
 	template<> DES203_PROJECT_API UClass* StaticClass<ARangedWeapon>()
 	{
 		return ARangedWeapon::StaticClass();

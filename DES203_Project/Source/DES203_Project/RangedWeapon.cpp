@@ -52,22 +52,11 @@ void ARangedWeapon::Shoot_Implementation()
 	FCollisionQueryParams CollisionParams;
 
 	FVector Start = aimArrow->GetComponentLocation();
-	FVector End = PC->GetMouseLoc();
-
-	End -= Start;
-
-	End.Normalize(1.0);
-	End *= range;
-
-	End += Start;
-
-	End.Z = Start.Z;
-
-	
+	FVector End = aimArrow->GetComponentLocation() + (aimArrow->GetForwardVector() * range);	
 
 	if (GetWorld()->LineTraceSingleByChannel(hitResult, Start, End, ECC_Visibility, CollisionParams))
 	{
-		DrawDebugLine(GetWorld(), Start, hitResult.Location, FColor::Red, false, 1.0f, 10.0f);
+		//DrawDebugLine(GetWorld(), Start, hitResult.Location, FColor::Red, false, 1.0f, 10.0f);
 		
 		if (AActor * target = Cast<AActor>(hitResult.Actor))
 		{
@@ -81,10 +70,10 @@ void ARangedWeapon::Shoot_Implementation()
 	}
 	else
 	{
-		DrawDebugLine(GetWorld(), Start, End, FColor::Blue, false, 1.0f, 10.0f);
+		//DrawDebugLine(GetWorld(), Start, End, FColor::Blue, false, 1.0f, 10.0f);
 	}
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), shootEffect, aimArrow->GetComponentTransform());
-	//UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), shootTrace, aimArrow->GetComponentTransform());
+	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), shootHit, hitResult.Location);
 
 }
 

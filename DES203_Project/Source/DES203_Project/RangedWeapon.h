@@ -46,10 +46,10 @@ public:
 	class UParticleSystem* shootEffect;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		class UParticleSystemComponent* laserPointer;
+		class UParticleSystem* shootHit;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		class UParticleSystem* shootTrace;
+		class UParticleSystemComponent* laserPointer;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon Statistics")
 		FVector ShootPoint;

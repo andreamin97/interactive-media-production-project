@@ -34,10 +34,7 @@ ADES203_ProjectCharacter::ADES203_ProjectCharacter()
 	bUseControllerRotationRoll = false;
 
 	// Configure character movement
-	GetCharacterMovement()->bOrientRotationToMovement = false; // Rotate character to moving direction
-	//GetCharacterMovement()->RotationRate = FRotator(0.f, 640.f, 0.f);
-	//GetCharacterMovement()->bConstrainToPlane = true;
-	//GetCharacterMovement()->bSnapToPlaneAtStart = true;
+	GetCharacterMovement()->bOrientRotationToMovement = false;;
 
 	// Create a camera boom...
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
@@ -53,6 +50,7 @@ ADES203_ProjectCharacter::ADES203_ProjectCharacter()
 	TopDownCameraComponent->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
 	// Create a decal in the world to show the cursor's location
+	/* NOT USING THE CURSOR TO WORLD DECAL, NOT DELETING IN CASE WE DICEIDE TO ADD AIMING SYSTEM
 	CursorToWorld = CreateDefaultSubobject<UDecalComponent>("CursorToWorld");
 	CursorToWorld->SetupAttachment(RootComponent);
 	static ConstructorHelpers::FObjectFinder<UMaterial> DecalMaterialAsset(TEXT("Material'/Game/TopDownCPP/Blueprints/M_Cursor_Decal.M_Cursor_Decal'"));
@@ -62,6 +60,7 @@ ADES203_ProjectCharacter::ADES203_ProjectCharacter()
 	}
 	CursorToWorld->DecalSize = FVector(16.0f, 32.0f, 32.0f);
 	CursorToWorld->SetRelativeRotation(FRotator(90.0f, 0.0f, 0.0f).Quaternion());
+	*/
 
 	// Activate ticking in order to update the cursor every frame.
 	PrimaryActorTick.bCanEverTick = true;
@@ -71,7 +70,6 @@ ADES203_ProjectCharacter::ADES203_ProjectCharacter()
 	InteractSphere->OnComponentEndOverlap.AddDynamic(this, &ADES203_ProjectCharacter::EndOverlap);
 
 	MainWeapon = CreateDefaultSubobject<ARangedWeapon>(TEXT("MainWeapon"));
-	//MainWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale);
 }
 
 void ADES203_ProjectCharacter::BeginPlay()
@@ -86,6 +84,7 @@ void ADES203_ProjectCharacter::Tick(float DeltaSeconds)
 {
     Super::Tick(DeltaSeconds);
 
+	/* NOT USING THE CURSOR TO WORLD DECAL, NOT DELETING IN CASE WE DICEIDE TO ADD AIMING SYSTEM
 	if (CursorToWorld != nullptr)
 	{
 		if (APlayerController* PC = Cast<APlayerController>(GetController()))
@@ -99,6 +98,7 @@ void ADES203_ProjectCharacter::Tick(float DeltaSeconds)
 		}
 
 	}
+	*/
 }
 
 void ADES203_ProjectCharacter::UpdateGold(int32 Amount)

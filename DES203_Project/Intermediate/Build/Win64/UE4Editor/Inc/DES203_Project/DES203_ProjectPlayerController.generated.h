@@ -16,6 +16,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define DES203_Project_Source_DES203_Project_DES203_ProjectPlayerController_h_12_SPARSE_DATA
 #define DES203_Project_Source_DES203_Project_DES203_ProjectPlayerController_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execSetTurnY) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Axis); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetTurnY(Z_Param_Axis); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetTurnX) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Axis); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetTurnX(Z_Param_Axis); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execAimAtCursor) \
 	{ \
 		P_FINISH; \
@@ -74,6 +92,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define DES203_Project_Source_DES203_Project_DES203_ProjectPlayerController_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSetTurnY) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Axis); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetTurnY(Z_Param_Axis); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetTurnX) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Axis); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetTurnX(Z_Param_Axis); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execAimAtCursor) \
 	{ \
@@ -174,7 +210,12 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADES203_ProjectPlayerController); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADES203_ProjectPlayerController)
 
 
-#define DES203_Project_Source_DES203_Project_DES203_ProjectPlayerController_h_12_PRIVATE_PROPERTY_OFFSET
+#define DES203_Project_Source_DES203_Project_DES203_ProjectPlayerController_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__LastGamepadInputTime() { return STRUCT_OFFSET(ADES203_ProjectPlayerController, LastGamepadInputTime); } \
+	FORCEINLINE static uint32 __PPO__XAxis() { return STRUCT_OFFSET(ADES203_ProjectPlayerController, XAxis); } \
+	FORCEINLINE static uint32 __PPO__YAxis() { return STRUCT_OFFSET(ADES203_ProjectPlayerController, YAxis); }
+
+
 #define DES203_Project_Source_DES203_Project_DES203_ProjectPlayerController_h_9_PROLOG
 #define DES203_Project_Source_DES203_Project_DES203_ProjectPlayerController_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

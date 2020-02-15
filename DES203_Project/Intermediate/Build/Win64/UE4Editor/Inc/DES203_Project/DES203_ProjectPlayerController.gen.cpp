@@ -22,6 +22,8 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotOne();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotThree();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotTwo();
+	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnX();
+	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnY();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_StartShooting();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_StopShooting();
 // End Cross Module References
@@ -34,6 +36,8 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 			{ "CharacterUseItemAtSlotOne", &ADES203_ProjectPlayerController::execCharacterUseItemAtSlotOne },
 			{ "CharacterUseItemAtSlotThree", &ADES203_ProjectPlayerController::execCharacterUseItemAtSlotThree },
 			{ "CharacterUseItemAtSlotTwo", &ADES203_ProjectPlayerController::execCharacterUseItemAtSlotTwo },
+			{ "SetTurnX", &ADES203_ProjectPlayerController::execSetTurnX },
+			{ "SetTurnY", &ADES203_ProjectPlayerController::execSetTurnY },
 			{ "StartShooting", &ADES203_ProjectPlayerController::execStartShooting },
 			{ "StopShooting", &ADES203_ProjectPlayerController::execStopShooting },
 		};
@@ -151,6 +155,70 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnX_Statics
+	{
+		struct DES203_ProjectPlayerController_eventSetTurnX_Parms
+		{
+			float Axis;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Axis;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnX_Statics::NewProp_Axis = { "Axis", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(DES203_ProjectPlayerController_eventSetTurnX_Parms, Axis), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnX_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnX_Statics::NewProp_Axis,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnX_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "DES203_ProjectPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnX_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADES203_ProjectPlayerController, nullptr, "SetTurnX", nullptr, nullptr, sizeof(DES203_ProjectPlayerController_eventSetTurnX_Parms), Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnX_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnX_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnX_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnX_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnX()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnX_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnY_Statics
+	{
+		struct DES203_ProjectPlayerController_eventSetTurnY_Parms
+		{
+			float Axis;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Axis;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnY_Statics::NewProp_Axis = { "Axis", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(DES203_ProjectPlayerController_eventSetTurnY_Parms, Axis), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnY_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnY_Statics::NewProp_Axis,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnY_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "DES203_ProjectPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnY_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADES203_ProjectPlayerController, nullptr, "SetTurnY", nullptr, nullptr, sizeof(DES203_ProjectPlayerController_eventSetTurnY_Parms), Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnY_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnY_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnY_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnY_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnY()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnY_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ADES203_ProjectPlayerController_StartShooting_Statics
 	{
 #if WITH_METADATA
@@ -207,6 +275,32 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_YAxis_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_YAxis;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_XAxis_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_XAxis;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LastGamepadInputTime_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_LastGamepadInputTime;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GamepadTimeout_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_GamepadTimeout;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bResetGamepadDetectionAfterNoInput_MetaData[];
+#endif
+		static void NewProp_bResetGamepadDetectionAfterNoInput_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bResetGamepadDetectionAfterNoInput;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bIsUsingGamepad_MetaData[];
+#endif
+		static void NewProp_bIsUsingGamepad_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bIsUsingGamepad;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AttackSpeed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AttackSpeed;
@@ -224,6 +318,8 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 		{ &Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotOne, "CharacterUseItemAtSlotOne" }, // 4125595892
 		{ &Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotThree, "CharacterUseItemAtSlotThree" }, // 3757310819
 		{ &Z_Construct_UFunction_ADES203_ProjectPlayerController_CharacterUseItemAtSlotTwo, "CharacterUseItemAtSlotTwo" }, // 1402687867
+		{ &Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnX, "SetTurnX" }, // 3240422032
+		{ &Z_Construct_UFunction_ADES203_ProjectPlayerController_SetTurnY, "SetTurnY" }, // 2544749774
 		{ &Z_Construct_UFunction_ADES203_ProjectPlayerController_StartShooting, "StartShooting" }, // 2909842775
 		{ &Z_Construct_UFunction_ADES203_ProjectPlayerController_StopShooting, "StopShooting" }, // 1347981676
 	};
@@ -235,12 +331,75 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_YAxis_MetaData[] = {
+		{ "ModuleRelativePath", "DES203_ProjectPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_YAxis = { "YAxis", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectPlayerController, YAxis), METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_YAxis_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_YAxis_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_XAxis_MetaData[] = {
+		{ "ModuleRelativePath", "DES203_ProjectPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_XAxis = { "XAxis", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectPlayerController, XAxis), METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_XAxis_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_XAxis_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_LastGamepadInputTime_MetaData[] = {
+		{ "Category", "DES203_ProjectPlayerController" },
+		{ "Comment", "// Used to keep track of when we last saw gamepad input\n" },
+		{ "ModuleRelativePath", "DES203_ProjectPlayerController.h" },
+		{ "ToolTip", "Used to keep track of when we last saw gamepad input" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_LastGamepadInputTime = { "LastGamepadInputTime", nullptr, (EPropertyFlags)0x0020080000002014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectPlayerController, LastGamepadInputTime), METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_LastGamepadInputTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_LastGamepadInputTime_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_GamepadTimeout_MetaData[] = {
+		{ "Category", "DES203_ProjectPlayerController" },
+		{ "Comment", "/** How long we can go without receiving a gamepad input before we assume they've stopped using the gamepad */" },
+		{ "EditCondition", "bResetGamepadDetectionAfterNoInput" },
+		{ "ModuleRelativePath", "DES203_ProjectPlayerController.h" },
+		{ "ToolTip", "How long we can go without receiving a gamepad input before we assume they've stopped using the gamepad" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_GamepadTimeout = { "GamepadTimeout", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectPlayerController, GamepadTimeout), METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_GamepadTimeout_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_GamepadTimeout_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_bResetGamepadDetectionAfterNoInput_MetaData[] = {
+		{ "Category", "DES203_ProjectPlayerController" },
+		{ "Comment", "/** Specifies whether we set `bIsUsingGamepad` to `false` if we receive no input for a period of time. If set to 'true', GamepadTimeout will control how long\n\x09\x09we need to go without receiving input before we set `bIsUsingGamepad` to `false`. */" },
+		{ "ModuleRelativePath", "DES203_ProjectPlayerController.h" },
+		{ "ToolTip", "Specifies whether we set `bIsUsingGamepad` to `false` if we receive no input for a period of time. If set to 'true', GamepadTimeout will control how long\n              we need to go without receiving input before we set `bIsUsingGamepad` to `false`." },
+	};
+#endif
+	void Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_bResetGamepadDetectionAfterNoInput_SetBit(void* Obj)
+	{
+		((ADES203_ProjectPlayerController*)Obj)->bResetGamepadDetectionAfterNoInput = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_bResetGamepadDetectionAfterNoInput = { "bResetGamepadDetectionAfterNoInput", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADES203_ProjectPlayerController), &Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_bResetGamepadDetectionAfterNoInput_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_bResetGamepadDetectionAfterNoInput_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_bResetGamepadDetectionAfterNoInput_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_bIsUsingGamepad_MetaData[] = {
+		{ "Category", "DES203_ProjectPlayerController" },
+		{ "Comment", "/** Can be called to check and see if the player is currently using a gamepad */" },
+		{ "ModuleRelativePath", "DES203_ProjectPlayerController.h" },
+		{ "ToolTip", "Can be called to check and see if the player is currently using a gamepad" },
+	};
+#endif
+	void Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_bIsUsingGamepad_SetBit(void* Obj)
+	{
+		((ADES203_ProjectPlayerController*)Obj)->bIsUsingGamepad = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_bIsUsingGamepad = { "bIsUsingGamepad", nullptr, (EPropertyFlags)0x0010000000002014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADES203_ProjectPlayerController), &Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_bIsUsingGamepad_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_bIsUsingGamepad_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_bIsUsingGamepad_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_AttackSpeed_MetaData[] = {
 		{ "ModuleRelativePath", "DES203_ProjectPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_AttackSpeed = { "AttackSpeed", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectPlayerController, AttackSpeed), METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_AttackSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_AttackSpeed_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_YAxis,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_XAxis,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_LastGamepadInputTime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_GamepadTimeout,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_bResetGamepadDetectionAfterNoInput,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_bIsUsingGamepad,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::NewProp_AttackSpeed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ADES203_ProjectPlayerController_Statics::StaticCppClassTypeInfo = {
@@ -270,7 +429,7 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADES203_ProjectPlayerController, 4240156342);
+	IMPLEMENT_CLASS(ADES203_ProjectPlayerController, 1793115260);
 	template<> DES203_PROJECT_API UClass* StaticClass<ADES203_ProjectPlayerController>()
 	{
 		return ADES203_ProjectPlayerController::StaticClass();
