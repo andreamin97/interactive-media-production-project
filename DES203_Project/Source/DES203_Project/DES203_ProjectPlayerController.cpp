@@ -15,8 +15,8 @@
 
 ADES203_ProjectPlayerController::ADES203_ProjectPlayerController()
 {
-	bShowMouseCursor = false;
-	//DefaultMouseCursor = EMouseCursor::Crosshairs;
+	bShowMouseCursor = true;
+	DefaultMouseCursor = EMouseCursor::Crosshairs;
 
 	bCanShoot = true;
 	AttackSpeed = 0.25f;
@@ -157,17 +157,6 @@ void ADES203_ProjectPlayerController::CharacterUseItemAtSlotThree()
 	MyCharacter->UseItemAtInventorySlot(2);
 }
 
-void ADES203_ProjectPlayerController::CharacterUseItemAtSlotFour()
-{
-	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
-	
-	if (MyCharacter->MainWeapon != nullptr)
-	{
-		MyCharacter->MainWeapon->OnPickedUp();
-	}
-	MyCharacter->UseItemAtInventorySlot(3);
-}
-
 void ADES203_ProjectPlayerController::AimAtCursor()
 {
 	FVector mouseLocation, mouseDirection, charLocation;
@@ -216,10 +205,10 @@ void ADES203_ProjectPlayerController::Shoot()
 
 void ADES203_ProjectPlayerController::SetTurnX(float Axis)
 {
-	XAxis = Axis;
+	XAxis = FMath::Clamp(Axis, -1.0f, 1.0f);
 }
 
 void ADES203_ProjectPlayerController::SetTurnY(float Axis)
 {
-	YAxis = Axis;
+	YAxis = FMath::Clamp(Axis, -1.0f, 1.0f);
 }

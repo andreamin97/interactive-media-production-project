@@ -19,7 +19,6 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 	UPackage* Z_Construct_UPackage__Script_DES203_Project();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_AInteractable_Interact();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_AInteractable_ToggleHelpText();
-	UMG_API UClass* Z_Construct_UClass_UWidget_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
 	static FName NAME_AInteractable_Interact = FName(TEXT("Interact"));
@@ -67,7 +66,9 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AInteractable_ToggleHelpText_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//UPROPERTY(EditAnywhere, Category = \"Interactable Properties\")\n//class UWidget* HelpTextUI;\n" },
 		{ "ModuleRelativePath", "Interactable.h" },
+		{ "ToolTip", "UPROPERTY(EditAnywhere, Category = \"Interactable Properties\")\nclass UWidget* HelpTextUI;" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AInteractable_ToggleHelpText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AInteractable, nullptr, "ToggleHelpText", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AInteractable_ToggleHelpText_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AInteractable_ToggleHelpText_Statics::Function_MetaDataParams)) };
@@ -92,10 +93,6 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HelpTextUI_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HelpTextUI;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HelpText_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStrPropertyParams NewProp_HelpText;
@@ -113,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AInteractable_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AInteractable_Interact, "Interact" }, // 4093746660
-		{ &Z_Construct_UFunction_AInteractable_ToggleHelpText, "ToggleHelpText" }, // 1311297437
+		{ &Z_Construct_UFunction_AInteractable_ToggleHelpText, "ToggleHelpText" }, // 4071452509
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AInteractable_Statics::Class_MetaDataParams[] = {
@@ -121,14 +118,6 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 		{ "ModuleRelativePath", "Interactable.h" },
 	};
 #endif
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AInteractable_Statics::NewProp_HelpTextUI_MetaData[] = {
-		{ "Category", "Interactable Properties" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Interactable.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AInteractable_Statics::NewProp_HelpTextUI = { "HelpTextUI", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AInteractable, HelpTextUI), Z_Construct_UClass_UWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AInteractable_Statics::NewProp_HelpTextUI_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AInteractable_Statics::NewProp_HelpTextUI_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AInteractable_Statics::NewProp_HelpText_MetaData[] = {
 		{ "Category", "Interactable Properties" },
@@ -149,7 +138,6 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AInteractable_Statics::NewProp_InteractableMesh = { "InteractableMesh", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AInteractable, InteractableMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AInteractable_Statics::NewProp_InteractableMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AInteractable_Statics::NewProp_InteractableMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AInteractable_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AInteractable_Statics::NewProp_HelpTextUI,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AInteractable_Statics::NewProp_HelpText,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AInteractable_Statics::NewProp_InteractableMesh,
 	};
@@ -180,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AInteractable, 3582433892);
+	IMPLEMENT_CLASS(AInteractable, 2681224503);
 	template<> DES203_PROJECT_API UClass* StaticClass<AInteractable>()
 	{
 		return AInteractable::StaticClass();

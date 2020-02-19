@@ -149,7 +149,7 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APickup, 1885817052);
+	IMPLEMENT_CLASS(APickup, 3559497551);
 	template<> DES203_PROJECT_API UClass* StaticClass<APickup>()
 	{
 		return APickup::StaticClass();

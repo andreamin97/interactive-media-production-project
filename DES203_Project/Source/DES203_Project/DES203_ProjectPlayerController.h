@@ -71,9 +71,6 @@ protected:
 	UFUNCTION()
 		void CharacterUseItemAtSlotThree();
 
-	UFUNCTION()
-		void CharacterUseItemAtSlotFour();
-
 	UFUNCTION(BlueprintCallable)
 	void AimAtCursor();
 

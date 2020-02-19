@@ -33,8 +33,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Interactable Properties")
 	FString HelpText;
 
-	UPROPERTY(EditAnywhere, Category = "Interactable Properties")
-	class UWidget* HelpTextUI;
+	//UPROPERTY(EditAnywhere, Category = "Interactable Properties")
+	//class UWidget* HelpTextUI;
 
 	UFUNCTION()
 	void ToggleHelpText();
