@@ -15,6 +15,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define DES203_Project_Source_DES203_Project_RangedWeapon_h_15_SPARSE_DATA
 #define DES203_Project_Source_DES203_Project_RangedWeapon_h_15_RPC_WRAPPERS \
+	virtual void Shoot_Implementation(); \
  \
 	DECLARE_FUNCTION(execOnPickedUp) \
 	{ \
@@ -24,7 +25,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execShoot_Implementation) \
+	DECLARE_FUNCTION(execShoot) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
@@ -43,7 +44,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execShoot_Implementation) \
+	DECLARE_FUNCTION(execShoot) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
@@ -52,6 +53,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
+#define DES203_Project_Source_DES203_Project_RangedWeapon_h_15_EVENT_PARMS
+#define DES203_Project_Source_DES203_Project_RangedWeapon_h_15_CALLBACK_WRAPPERS
 #define DES203_Project_Source_DES203_Project_RangedWeapon_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesARangedWeapon(); \
@@ -95,13 +98,17 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ARangedWeapon); \
 
 
 #define DES203_Project_Source_DES203_Project_RangedWeapon_h_15_PRIVATE_PROPERTY_OFFSET
-#define DES203_Project_Source_DES203_Project_RangedWeapon_h_12_PROLOG
+#define DES203_Project_Source_DES203_Project_RangedWeapon_h_12_PROLOG \
+	DES203_Project_Source_DES203_Project_RangedWeapon_h_15_EVENT_PARMS
+
+
 #define DES203_Project_Source_DES203_Project_RangedWeapon_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	DES203_Project_Source_DES203_Project_RangedWeapon_h_15_PRIVATE_PROPERTY_OFFSET \
 	DES203_Project_Source_DES203_Project_RangedWeapon_h_15_SPARSE_DATA \
 	DES203_Project_Source_DES203_Project_RangedWeapon_h_15_RPC_WRAPPERS \
+	DES203_Project_Source_DES203_Project_RangedWeapon_h_15_CALLBACK_WRAPPERS \
 	DES203_Project_Source_DES203_Project_RangedWeapon_h_15_INCLASS \
 	DES203_Project_Source_DES203_Project_RangedWeapon_h_15_STANDARD_CONSTRUCTORS \
 public: \
@@ -114,6 +121,7 @@ public: \
 	DES203_Project_Source_DES203_Project_RangedWeapon_h_15_PRIVATE_PROPERTY_OFFSET \
 	DES203_Project_Source_DES203_Project_RangedWeapon_h_15_SPARSE_DATA \
 	DES203_Project_Source_DES203_Project_RangedWeapon_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	DES203_Project_Source_DES203_Project_RangedWeapon_h_15_CALLBACK_WRAPPERS \
 	DES203_Project_Source_DES203_Project_RangedWeapon_h_15_INCLASS_NO_PURE_DECLS \
 	DES203_Project_Source_DES203_Project_RangedWeapon_h_15_ENHANCED_CONSTRUCTORS \
 private: \

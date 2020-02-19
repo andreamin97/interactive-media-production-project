@@ -32,9 +32,9 @@ public:
 
 	virtual void Use_Implementation() override;
 
-	UFUNCTION(BlueprintCallable)
-	virtual void Shoot_Implementation();
+	UFUNCTION(BlueprintNativeEvent)
 	void Shoot();
+	virtual void Shoot_Implementation();
 
 	UFUNCTION()
 	virtual void OnPickedUp() override;

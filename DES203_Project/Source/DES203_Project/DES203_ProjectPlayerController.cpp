@@ -107,7 +107,6 @@ void ADES203_ProjectPlayerController::SetupInputComponent()
 	InputComponent->BindAction("UseItem1", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlotOne);
 	InputComponent->BindAction("UseItem2", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlotTwo);
 	InputComponent->BindAction("UseItem3", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlotThree);
-	InputComponent->BindAction("UseItem4", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlotFour);
 	InputComponent->BindAction("Shoot", IE_Pressed, this, &ADES203_ProjectPlayerController::StartShooting);
 	InputComponent->BindAction("Shoot", IE_Released, this, &ADES203_ProjectPlayerController::StopShooting);
 
@@ -188,7 +187,7 @@ void ADES203_ProjectPlayerController::Shoot()
 
 	if (MyCharacter->MainWeapon != nullptr)
 	{
-		MyCharacter->MainWeapon->Shoot_Implementation();
+		MyCharacter->MainWeapon->Shoot();
 	}
 	else
 	{
