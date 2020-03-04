@@ -1,0 +1,956 @@
+﻿Log file open, 02/19/20 16:24:23
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: DES203_Project
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 1.046537
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.24/Engine/Binaries/DotNET/UnrealBuildTool.exe -Mode=QueryTargets -Project="C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/DES203_Project.uproject" -Output="C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Intermediate/TargetInfo.json"]
+LogInit: Warning: Incompatible or missing module: DES203_Project
+Running C:/Program Files/Epic Games/UE_4.24/Engine/Binaries/DotNET/UnrealBuildTool.exe Development Win64 -Project="C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/DES203_Project.uproject" -TargetType=Editor -Progress -NoHotReloadFromIDE
+Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Admin\Documents\GitHub\interactive-media-production-project).
+Creating makefile for DES203_ProjectEditor (game project files are newer)
+@progress push 5%
+Parsing headers for DES203_ProjectEditor
+  Running UnrealHeaderTool "C:\Users\Admin\Documents\GitHub\interactive-media-production-project\DES203_Project\DES203_Project.uproject" "C:\Users\Admin\Documents\GitHub\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\DES203_ProjectEditor\Development\DES203_ProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+Reflection code generated for DES203_ProjectEditor in 78.4286387 seconds
+@progress pop
+C:\Users\Admin\Documents\GitHub\interactive-media-production-project\DES203_Project\Source\DES203_Project\Interactable.cpp(1): error: Expected Interactable.h to be first header included.
+C:\Users\Admin\Documents\GitHub\interactive-media-production-project\DES203_Project\Source\DES203_Project\Pickup.cpp(1): error: Expected Pickup.h to be first header included.
+C:\Users\Admin\Documents\GitHub\interactive-media-production-project\DES203_Project\Source\DES203_Project\RangedWeapon.cpp(1): error: Expected RangedWeapon.h to be first header included.
+Building DES203_ProjectEditor...
+Using Visual Studio 2019 14.24.28314 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+Building 18 actions with 8 processes...
+  @progress 'Compiling C++ source code...' 0%
+  @progress 'Compiling C++ source code...' 6%
+  [1/18] SharedPCH.Engine.ShadowErrors.cpp
+  @progress 'Compiling C++ source code...' 11%
+  [2/18] DES203_Project.init.gen.cpp
+  @progress 'Compiling C++ source code...' 17%
+  [3/18] DES203_Project.cpp
+  @progress 'Compiling C++ source code...' 22%
+  [4/18] DES203_ProjectGameMode.gen.cpp
+  @progress 'Compiling C++ source code...' 28%
+  [5/18] DES203_ProjectPlayerController.gen.cpp
+  @progress 'Compiling C++ source code...' 33%
+  [6/18] Pickup.cpp
+  @progress 'Compiling C++ source code...' 39%
+  [7/18] Interactable.cpp
+  @progress 'Compiling C++ source code...' 44%
+  [8/18] DES203_ProjectCharacter.cpp
+  @progress 'Compiling C++ source code...' 50%
+  [9/18] Interactable.gen.cpp
+  @progress 'Compiling C++ source code...' 56%
+  [10/18] Pickup.gen.cpp
+  @progress 'Compiling C++ source code...' 61%
+  [11/18] RangedWeapon.gen.cpp
+  @progress 'Compiling C++ source code...' 67%
+  [12/18] DES203_ProjectPlayerController.cpp
+  @progress 'Compiling C++ source code...' 72%
+  [13/18] DES203_ProjectCharacter.gen.cpp
+  @progress 'Compiling C++ source code...' 78%
+  [14/18] RangedWeapon.cpp
+  C:\Users\Admin\Documents\GitHub\interactive-media-production-project\DES203_Project\Source\DES203_Project\RangedWeapon.cpp(23): warning C4996: 'USceneComponent::RelativeLocation': This member will be made private. Please use GetRelativeLocation or SetRelativeLocation. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(154): note: see declaration of 'USceneComponent::RelativeLocation'
+  @progress 'Compiling C++ source code...' 83%
+  [15/18] DES203_ProjectGameMode.cpp
+  @progress 'Compiling C++ source code...' 89%
+  [16/18] UE4Editor-DES203_Project.lib
+     Creating library C:\Users\Admin\Documents\GitHub\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Development\DES203_Project\UE4Editor-DES203_Project.lib and object C:\Users\Admin\Documents\GitHub\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Development\DES203_Project\UE4Editor-DES203_Project.exp
+  @progress 'Compiling C++ source code...' 94%
+  [17/18] UE4Editor-DES203_Project.dll
+     Creating library C:\Users\Admin\Documents\GitHub\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Development\DES203_Project\UE4Editor-DES203_Project.suppressed.lib and object C:\Users\Admin\Documents\GitHub\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Development\DES203_Project\UE4Editor-DES203_Project.suppressed.exp
+  @progress 'Compiling C++ source code...' 100%
+  [18/18] DES203_ProjectEditor.target
+Total time in Parallel executor: 103.25 seconds
+Total execution time: 196.56 seconds
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.24-CL-10757647
+LogInit: Engine Version: 4.24.1-10757647+++UE4+Release-4.24
+LogInit: Compatible Engine Version: 4.24.0-10570792+++UE4+Release-4.24
+LogInit: Net CL: 10570792
+LogInit: OS: Windows 10 (Release 1809) (), CPU: AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx  , GPU: AMD Radeon(TM) Vega 8 Graphics
+LogInit: Compiled (64-bit): Dec 17 2019 02:08:03
+LogInit: Compiled with Visual C++: 19.16.27032.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.24
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.24/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 25
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 3
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 37
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 36
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 2
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 36
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 11
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 2
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 8
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 9
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 8
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2020.02.19-16.28.01:448][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.02.19-16.28.01:448][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.02.19-16.28.01:450][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Engine.ini]
+[2020.02.19-16.28.01:450][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.02.19-16.28.01:450][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Engine.ini]
+[2020.02.19-16.28.01:450][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Engine.ini]
+[2020.02.19-16.28.01:450][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.02.19-16.28.01:450][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.02.19-16.28.01:450][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.02.19-16.28.01:450][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.02.19-16.28.01:450][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.02.19-16.28.01:450][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.02.19-16.28.01:450][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.02.19-16.28.01:450][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.02.19-16.28.01:450][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.02.19-16.28.01:450][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.02.19-16.28.01:450][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.02.19-16.28.01:450][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.02.19-16.28.01:450][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.02.19-16.28.01:450][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.02.19-16.28.01:451][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Engine.ini]
+[2020.02.19-16.28.01:451][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.02.19-16.28.01:451][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.02.19-16.28.01:451][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.02.19-16.28.01:451][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.02.19-16.28.01:451][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.02.19-16.28.01:451][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.02.19-16.28.01:451][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.02.19-16.28.01:451][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.02.19-16.28.01:451][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.02.19-16.28.01:451][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.02.19-16.28.01:451][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.02.19-16.28.01:451][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.02.19-16.28.01:451][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.02.19-16.28.01:451][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Engine.ini]
+[2020.02.19-16.28.01:451][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Engine.ini]
+[2020.02.19-16.28.01:585][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.02.19-16.28.01:585][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.02.19-16.28.01:586][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.02.19-16.28.01:605][  0]LogInit: Selected Device Profile: [Windows]
+[2020.02.19-16.28.01:611][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.02.19-16.28.01:737][  0]LogHAL: Display: Platform has ~ 8 GB [8110292992 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.02.19-16.28.01:737][  0]LogInit: Going up to parent DeviceProfile []
+[2020.02.19-16.28.01:738][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.02.19-16.28.01:738][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.02.19-16.28.01:739][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.02.19-16.28.01:740][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.02.19-16.28.01:740][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.02.19-16.28.01:740][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.02.19-16.28.01:740][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.02.19-16.28.01:774][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.02.19-16.28.01:774][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.02.19-16.28.01:774][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Engine.ini]
+[2020.02.19-16.28.01:893][  0]LogInit: Computer: LAPTOP-J9RKK9I7
+[2020.02.19-16.28.01:893][  0]LogInit: User: Admin
+[2020.02.19-16.28.01:893][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.02.19-16.28.01:893][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.02.19-16.28.01:901][  0]LogMemory: Memory total: Physical=7.6GB (8GB approx)
+[2020.02.19-16.28.01:903][  0]LogMemory: Platform Memory Stats for Windows
+[2020.02.19-16.28.01:903][  0]LogMemory: Process Physical Memory: 110.11 MB used, 110.11 MB peak
+[2020.02.19-16.28.01:903][  0]LogMemory: Process Virtual Memory: 101.28 MB used, 101.28 MB peak
+[2020.02.19-16.28.01:903][  0]LogMemory: Physical Memory: 5711.68 MB used,  2022.89 MB free, 7734.58 MB total
+[2020.02.19-16.28.01:903][  0]LogMemory: Virtual Memory: 5187.93 MB used,  134212536.00 MB free, 134217728.00 MB total
+[2020.02.19-16.28.01:927][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.02.19-16.28.03:801][  0]LogInit: Using OS detected language (en-US).
+[2020.02.19-16.28.03:801][  0]LogInit: Using OS detected locale (en-GB).
+[2020.02.19-16.28.03:850][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2020.02.19-16.28.05:012][  0]LogInit: Setting process to per monitor DPI aware
+[2020.02.19-16.28.06:426][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.02.19-16.28.06:426][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.02.19-16.28.13:296][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.02.19-16.28.13:296][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.02.19-16.28.13:296][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.02.19-16.28.13:296][  0]LogD3D11RHI: D3D11 adapters:
+[2020.02.19-16.28.13:943][  0]LogD3D11RHI:    0. 'AMD Radeon(TM) Vega 8 Graphics' (Feature Level 11_0)
+[2020.02.19-16.28.13:943][  0]LogD3D11RHI:       240/0/3867 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2020.02.19-16.28.14:073][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.02.19-16.28.14:073][  0]LogD3D11RHI:       0/0/3867 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.02.19-16.28.14:073][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.02.19-16.28.14:110][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.02.19-16.28.14:111][  0]LogD3D11RHI:     GPU DeviceId: 0x15dd (for the marketing name, search the web for "GPU Device Id")
+[2020.02.19-16.28.14:111][  0]LogWindows: EnumDisplayDevices:
+[2020.02.19-16.28.14:111][  0]LogWindows:    0. 'AMD Radeon(TM) Vega 8 Graphics' (P:1 D:1)
+[2020.02.19-16.28.14:112][  0]LogWindows:    1. 'AMD Radeon(TM) Vega 8 Graphics' (P:0 D:0)
+[2020.02.19-16.28.14:112][  0]LogWindows:    2. 'AMD Radeon(TM) Vega 8 Graphics' (P:0 D:0)
+[2020.02.19-16.28.14:112][  0]LogWindows:    3. 'AMD Radeon(TM) Vega 8 Graphics' (P:0 D:0)
+[2020.02.19-16.28.14:113][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2020.02.19-16.28.14:113][  0]LogD3D11RHI:     Adapter Name: AMD Radeon(TM) Vega 8 Graphics
+[2020.02.19-16.28.14:113][  0]LogD3D11RHI:   Driver Version: Adrenalin 19.20.36 (internal:26.20.12036.1, unified:26.20.12036.1)
+[2020.02.19-16.28.14:113][  0]LogD3D11RHI:      Driver Date: 9-9-2019
+[2020.02.19-16.28.14:113][  0]LogRHI: Texture pool is 168 MB (70% of 240 MB)
+[2020.02.19-16.28.14:477][  0]LogD3D11RHI: RHI does not have support for 64 bit atomics
+[2020.02.19-16.28.14:477][  0]LogD3D11RHI: Async texture creation enabled
+[2020.02.19-16.28.14:921][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
+[2020.02.19-16.28.15:782][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.02.19-16.28.15:922][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATC'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1a'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTC'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATCClient'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1Client'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1aClient'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTCClient'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.02.19-16.28.15:923][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.02.19-16.28.16:487][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.02.19-16.28.16:487][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.02.19-16.28.16:511][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.02.19-16.28.16:598][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.02.19-16.28.16:762][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.02.19-16.28.16:799][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.02.19-16.28.16:829][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.02.19-16.28.16:888][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.02.19-16.28.16:956][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.02.19-16.28.16:956][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.02.19-16.28.17:010][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.02.19-16.28.17:010][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.02.19-16.28.17:042][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.02.19-16.28.17:069][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.02.19-16.28.17:089][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.02.19-16.28.17:124][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.02.19-16.28.17:124][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.02.19-16.28.17:460][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.02.19-16.28.18:709][  0]LogShaderCompilers: Guid format shader working directory is -53 characters bigger than the processId version (../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Intermediate/Shaders/WorkingDirectory/27600/).
+[2020.02.19-16.28.18:709][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Admin/AppData/Local/Temp/UnrealShaderWorkingDir/C512CE894839C157BFF281A4BCA61242/'.
+[2020.02.19-16.28.18:732][  0]LogXGEController: Cleaning working directory: C:/Users/Admin/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2020.02.19-16.28.18:733][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.02.19-16.28.18:734][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.02.19-16.28.18:734][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.02.19-16.28.28:245][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.02.19-16.28.29:249][  0]LogDerivedDataCache: Loaded boot cache 0.99s 82MB C:/Users/Admin/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2020.02.19-16.28.29:249][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Admin/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc
+[2020.02.19-16.28.29:249][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.02.19-16.28.29:249][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.02.19-16.28.29:249][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.02.19-16.28.29:249][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.02.19-16.28.29:523][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.02.19-16.28.29:524][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.02.19-16.28.29:524][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.02.19-16.28.29:540][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Admin/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.02.19-16.28.29:540][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.02.19-16.28.29:540][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.02.19-16.28.29:651][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.02.19-16.28.29:720][  0]LogSlate: Using FreeType 2.10.0
+[2020.02.19-16.28.29:916][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.02.19-16.28.31:286][  0]LogAssetRegistry: FAssetRegistry took 0.0130 seconds to start up
+[2020.02.19-16.28.50:873][  0]LogInit: Selected Device Profile: [Windows]
+[2020.02.19-16.28.54:297][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.02.19-16.28.54:297][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.02.19-16.28.54:297][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.02.19-16.28.54:297][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.02.19-16.28.54:297][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.02.19-16.28.55:620][  0]LogNetVersion: DES203_Project 1.0.0, NetCL: 10570792, EngineNetVer: 13, GameNetVer: 0 (Checksum: 3280151972)
+[2020.02.19-16.29.17:284][  0]LogPackageLocalizationCache: Processed 10 localized package path(s) for 1 prioritized culture(s) in 0.158519 seconds
+[2020.02.19-16.29.17:326][  0]LogUObjectArray: 46750 objects as part of root set at end of initial load.
+[2020.02.19-16.29.17:326][  0]LogUObjectAllocator: 8137160 out of 0 bytes used by permanent object pool.
+[2020.02.19-16.29.17:326][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.02.19-16.29.28:642][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.02.19-16.29.28:817][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.02.19-16.29.33:164][  0]LogBlueprint: Warning: [Compiler Ue4ASP_Character] InputAction Event references unknown Action 'Crouch' for  InputAction Crouch
+[2020.02.19-16.29.33:165][  0]LogBlueprint: Warning: [Compiler Ue4ASP_Character] InputAction Event references unknown Action 'Jump' for  InputAction Jump
+[2020.02.19-16.29.33:167][  0]LogBlueprint: Warning: [Compiler Ue4ASP_Character] Input Axis Event references unknown Axis 'LookUp' for  InputAxis LookUp
+[2020.02.19-16.29.33:168][  0]LogBlueprint: Warning: [Compiler Ue4ASP_Character] Input Axis Event references unknown Axis 'Turn' for  InputAxis Turn
+[2020.02.19-16.29.41:846][  0]SourceControl: Source control is disabled
+[2020.02.19-16.29.41:870][  0]SourceControl: Source control is disabled
+[2020.02.19-16.29.42:088][  0]SourceControl: Source control is disabled
+[2020.02.19-16.29.42:126][  0]SourceControl: Source control is disabled
+[2020.02.19-16.29.42:178][  0]SourceControl: Source control is disabled
+[2020.02.19-16.29.45:363][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.02.19-16.29.45:561][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.02.19-16.29.45:561][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.02.19-16.29.46:899][  0]LogOcInput: OculusInput pre-init called
+[2020.02.19-16.29.47:065][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.02.19-16.29.47:065][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.02.19-16.29.50:943][  0]LogAutomationTest: Warning: Smoke tests took > 2s to run: 2.71s
+[2020.02.19-16.29.51:126][  0]LogEngine: Initializing Engine...
+[2020.02.19-16.29.51:197][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.02.19-16.29.51:456][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.132 s
+[2020.02.19-16.29.52:589][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.02.19-16.29.53:868][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.02.19-16.29.54:294][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.02.19-16.29.54:295][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.02.19-16.29.54:295][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.02.19-16.29.54:295][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.02.19-16.29.54:295][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.02.19-16.29.54:295][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.02.19-16.29.54:295][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.02.19-16.29.54:324][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.02.19-16.29.54:328][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.02.19-16.29.54:329][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.02.19-16.29.54:555][  0]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.02.19-16.29.54:555][  0]LogAudioMixer: Display: Name: Speakers (Realtek(R) Audio)
+[2020.02.19-16.29.54:555][  0]LogAudioMixer: Display: Is Default: Yes
+[2020.02.19-16.29.54:555][  0]LogAudioMixer: Display: Sample Rate: 48000
+[2020.02.19-16.29.54:555][  0]LogAudioMixer: Display: Channel Count Used: 2
+[2020.02.19-16.29.54:555][  0]LogAudioMixer: Display: Device Channel Count: 2
+[2020.02.19-16.29.54:555][  0]LogAudioMixer: Display: Channel Order:
+[2020.02.19-16.29.54:555][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.02.19-16.29.54:555][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.02.19-16.29.54:861][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2020.02.19-16.29.54:954][  0]LogInit: FAudioDevice initialized.
+[2020.02.19-16.29.54:956][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.02.19-16.29.55:483][  0]LogDerivedDataCache: Saved boot cache 0.53s 91MB C:/Users/Admin/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2020.02.19-16.29.55:499][  0]LogInit: Texture streaming: Enabled
+[2020.02.19-16.29.56:112][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.02.19-16.29.56:129][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.02.19-16.29.56:382][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.02.19-16.29.57:625][  0]LogInit: Transaction tracking system initialized
+[2020.02.19-16.29.59:229][  0]BlueprintLog: New page: Editor Load
+[2020.02.19-16.30.03:456][  0]LocalizationService: Localization service is disabled
+[2020.02.19-16.30.10:434][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/' took 0.07s
+[2020.02.19-16.30.10:434][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.02.19-16.30.10:434][  0]LogCook: Display: Mobile HDR setting 1
+[2020.02.19-16.30.18:239][  0]SourceControl: Source control is disabled
+[2020.02.19-16.30.18:262][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TopDownExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.02.19-16.30.18:276][  0]LightingResults: New page: Lighting Build
+[2020.02.19-16.30.18:618][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.02.19-16.30.18:643][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.02.19-16.30.18:839][  0]MapCheck: New page: Map Check
+[2020.02.19-16.30.18:839][  0]LightingResults: New page: Lighting Build
+[2020.02.19-16.30.20:160][  0]LogUObjectHash: Compacting FUObjectHashTables data took   5.54ms
+[2020.02.19-16.30.21:024][  0]LogLinker: Warning: While loading '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TopDownExampleMap.umap' failed to load '/Game/Levels/TopDownExampleMap_BuiltData': Can't find file.
+[2020.02.19-16.30.21:025][  0]LogLinker: Warning: While loading '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TopDownExampleMap.umap' failed to load '/Game/Levels/TopDownExampleMap_BuiltData': Can't find file.
+[2020.02.19-16.30.21:064][  0]LogLinker: Warning: While loading '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TopDownExampleMap.umap' failed to load '/Game/Levels/TopDownExampleMap_BuiltData': Can't find file.
+[2020.02.19-16.30.21:064][  0]LogLinker: Warning: While loading '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TopDownExampleMap.umap' failed to load '/Game/Levels/TopDownExampleMap_BuiltData': Can't find file.
+[2020.02.19-16.30.21:075][  0]LogLinker: Warning: Failed to load '/Game/Levels/TopDownExampleMap_BuiltData': Can't find file.
+[2020.02.19-16.30.21:075][  0]LogLinker: Warning: Failed to load '/Game/Levels/TopDownExampleMap_BuiltData': Can't find file.
+[2020.02.19-16.30.21:075][  0]LogLinker: Warning: Failed to load '/Game/Levels/TopDownExampleMap_BuiltData': Can't find file.
+[2020.02.19-16.30.21:076][  0]LogLinker: Warning: Failed to load '/Game/Levels/TopDownExampleMap_BuiltData': Can't find file.
+[2020.02.19-16.30.21:171][  0]LogLinker: Warning: While loading '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TopDownExampleMap.umap' failed to load '/Game/Levels/TopDownExampleMap_BuiltData': Can't find file.
+[2020.02.19-16.30.21:171][  0]LoadErrors: Failed to load /Game/Levels/TopDownExampleMap_BuiltData.TopDownExampleMap_BuiltData Referenced by PersistentLevel
+[2020.02.19-16.30.21:171][  0]LogLinker: Warning: While loading '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TopDownExampleMap.umap' failed to load '/Game/Levels/TopDownExampleMap_BuiltData': Can't find file.
+[2020.02.19-16.30.21:171][  0]LoadErrors: Failed to load /Game/Levels/TopDownExampleMap_BuiltData.TopDownExampleMap_BuiltData Referenced by PersistentLevel
+[2020.02.19-16.30.22:234][  0]LogTexture: Display: Building textures: T_Prototype_GrenadeLauncherScope_E (AutoDXT, 2048X2048)
+[2020.02.19-16.30.22:234][  0]LogStaticMesh: Building static mesh GranadeLauncher_SM...
+[2020.02.19-16.30.22:836][  0]LogStaticMesh: Built static mesh [0.68s] /Game/Meshes/GranadeLauncher_SM.GranadeLauncher_SM
+[2020.02.19-16.30.24:331][  0]LogMaterial: Display: Missing cached shader map for material M_Master, compiling. 
+[2020.02.19-16.30.25:462][  0]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 39
+[2020.02.19-16.30.25:462][  0]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 31
+[2020.02.19-16.30.25:462][  0]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 23
+[2020.02.19-16.30.25:462][  0]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 15
+[2020.02.19-16.30.25:463][  0]LogShaderCompilers: Display: Worker (5/5): shaders left to compile 7
+[2020.02.19-16.30.25:465][  0]LogAIModule: Creating AISystem for world TopDownExampleMap
+[2020.02.19-16.30.28:184][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.02.19-16.30.28:719][  0]LogUObjectHash: Compacting FUObjectHashTables data took   4.05ms
+[2020.02.19-16.30.28:731][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.02.19-16.30.28:742][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 10.317ms to complete.
+[2020.02.19-16.30.28:751][  0]LogFileHelpers: Loading map 'TopDownExampleMap' took 10.500
+[2020.02.19-16.30.35:051][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.02.19-16.30.35:068][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.02.19-16.30.35:080][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.02.19-16.30.35:091][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.02.19-16.30.35:747][  0]LogCollectionManager: Loaded 0 collections in 0.002884 seconds
+[2020.02.19-16.30.36:320][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Collections/' took 0.00s
+[2020.02.19-16.30.36:320][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Developers/Admin/Collections/' took 0.00s
+[2020.02.19-16.30.36:320][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Collections/' took 0.00s
+[2020.02.19-16.30.36:320][  0]LogContentBrowser: Native class hierarchy populated in 0.1108 seconds. Added 3021 classes and 719 folders.
+[2020.02.19-16.30.36:698][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2020.02.19-16.30.42:129][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2020.02.19-16.30.42:421][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 2 classes and 3 folders.
+[2020.02.19-16.30.50:800][  0]LogSlate: Took 0.056414 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.02.19-16.30.50:899][  0]LogSlate: Took 0.019076 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.02.19-16.30.51:224][  0]LogSlate: Took 0.124940 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.02.19-16.30.52:787][  0]LogRenderer: Reallocating scene render targets to support 872x444 Format 10 NumSamples 1 (Frame:1).
+[2020.02.19-16.30.56:948][  0]LogSlate: Took 0.171619 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.02.19-16.31.01:142][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2020.02.19-16.31.01:143][  0]LogLoad: (Engine Initialization) Total time: 429.96 seconds
+[2020.02.19-16.31.01:143][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.02.19-16.31.03:646][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.02.19-16.31.04:418][  1]LogSlate: Window 'Message Log' being destroyed
+[2020.02.19-16.31.04:424][  1]LogSlate: Window 'Message Log' being destroyed
+[2020.02.19-16.31.05:100][  2]LogSlate: Took 0.000389 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.02.19-16.31.05:267][  3]LogAssetRegistry: Asset discovery search completed in 153.9858 seconds
+[2020.02.19-16.31.05:330][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000457 seconds (updated 0 objects)
+[2020.02.19-16.31.19:597][409]LogUObjectHash: Compacting FUObjectHashTables data took   1.06ms
+[2020.02.19-16.31.19:721][409]Cmd: MAP LOAD FILE="../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TestLevel1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.02.19-16.31.19:774][409]LightingResults: New page: Lighting Build
+[2020.02.19-16.31.19:776][409]LoadErrors: New page: Loading map: TestLevel1.umap
+[2020.02.19-16.31.19:954][409]LogWorld: UWorld::CleanupWorld for TopDownExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.02.19-16.31.19:981][409]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.02.19-16.31.19:995][409]MapCheck: New page: Map Check
+[2020.02.19-16.31.19:995][409]LightingResults: New page: Lighting Build
+[2020.02.19-16.31.20:201][409]LogUObjectHash: Compacting FUObjectHashTables data took   4.48ms
+[2020.02.19-16.31.21:831][409]LogLinker: Warning: While loading '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TestLevel1.umap' failed to load '/Game/Levels/TestLevel1_BuiltData': Can't find file.
+[2020.02.19-16.31.21:832][409]LogLinker: Warning: While loading '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TestLevel1.umap' failed to load '/Game/Levels/TestLevel1_BuiltData': Can't find file.
+[2020.02.19-16.31.21:834][409]LogLinker: Warning: While loading '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TestLevel1.umap' failed to load '/Game/Levels/TestLevel1_BuiltData': Can't find file.
+[2020.02.19-16.31.21:834][409]LogLinker: Warning: While loading '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TestLevel1.umap' failed to load '/Game/Levels/TestLevel1_BuiltData': Can't find file.
+[2020.02.19-16.31.21:843][409]LogLinker: Warning: While loading '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TestLevel1.umap' failed to load '/Game/Levels/TestLevel1_BuiltData': Can't find file.
+[2020.02.19-16.31.21:843][409]LoadErrors: Failed to load /Game/Levels/TestLevel1_BuiltData.TestLevel1_BuiltData Referenced by PersistentLevel
+[2020.02.19-16.31.21:844][409]LogLinker: Warning: While loading '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TestLevel1.umap' failed to load '/Game/Levels/TestLevel1_BuiltData': Can't find file.
+[2020.02.19-16.31.23:426][409]LogAIModule: Creating AISystem for world TestLevel1
+[2020.02.19-16.31.23:508][409]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.02.19-16.31.23:800][409]LogUObjectHash: Compacting FUObjectHashTables data took   3.77ms
+[2020.02.19-16.31.23:940][409]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.02.19-16.31.23:940][409]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.216ms to complete.
+[2020.02.19-16.31.23:940][409]LogFileHelpers: Loading map 'TestLevel1' took 4.343
+[2020.02.19-16.31.23:950][409]LogSlate: Window 'Open Level' being destroyed
+[2020.02.19-16.31.26:221][516]LogSlate: Window 'Message Log' being destroyed
+[2020.02.19-16.31.26:234][516]LogSlate: Window 'Message Log' being destroyed
+[2020.02.19-16.31.28:312][599]LogTemp: Repeating last play command: Selected Viewport
+[2020.02.19-16.31.28:465][599]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.02.19-16.31.28:504][599]PIE: New page: PIE session: TestLevel1 (19 Feb 2020, 16:31:28)
+[2020.02.19-16.31.28:642][599]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2020.02.19-16.31.28:644][599]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2020.02.19-16.31.28:658][599]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_TestLevel1
+[2020.02.19-16.31.28:694][599]LogPlayLevel: PIE: StaticDuplicateObject took: (0.035953s)
+[2020.02.19-16.31.28:724][599]LogAIModule: Creating AISystem for world TestLevel1
+[2020.02.19-16.31.28:739][599]LogPlayLevel: PIE: World Init took: (0.044561s)
+[2020.02.19-16.31.28:791][599]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/TestLevel1.TestLevel1 to /Game/Levels/UEDPIE_0_TestLevel1.TestLevel1 (0.132407s)
+[2020.02.19-16.31.28:831][599]LogUObjectHash: Compacting FUObjectHashTables data took   2.39ms
+[2020.02.19-16.31.28:848][599]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.02.19-16.31.28:848][599]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.02.19-16.31.28:848][599]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.02.19-16.31.28:848][599]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.02.19-16.31.28:848][599]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.02.19-16.31.28:848][599]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.02.19-16.31.28:848][599]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.02.19-16.31.28:848][599]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.02.19-16.31.28:848][599]LogAudio: Display: Using built-in audio occlusion.
+[2020.02.19-16.31.28:848][599]LogAudioMixer: Display: Initializing audio mixer.
+[2020.02.19-16.31.28:859][599]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.02.19-16.31.28:859][599]LogAudioMixer: Display: Name: Speakers (Realtek(R) Audio)
+[2020.02.19-16.31.28:859][599]LogAudioMixer: Display: Is Default: Yes
+[2020.02.19-16.31.28:859][599]LogAudioMixer: Display: Sample Rate: 48000
+[2020.02.19-16.31.28:859][599]LogAudioMixer: Display: Channel Count Used: 2
+[2020.02.19-16.31.28:859][599]LogAudioMixer: Display: Device Channel Count: 2
+[2020.02.19-16.31.28:859][599]LogAudioMixer: Display: Channel Order:
+[2020.02.19-16.31.28:859][599]LogAudioMixer: Display: 0: FrontLeft
+[2020.02.19-16.31.28:859][599]LogAudioMixer: Display: 1: FrontRight
+[2020.02.19-16.31.28:889][599]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2020.02.19-16.31.28:908][599]LogInit: FAudioDevice initialized.
+[2020.02.19-16.31.29:063][599]LogLoad: Game class is 'TopDown_GameMode_C'
+[2020.02.19-16.31.29:179][599]LogWorld: Bringing World /Game/Levels/UEDPIE_0_TestLevel1.TestLevel1 up for play (max tick rate 0) at 2020.02.19-16.31.29
+[2020.02.19-16.31.29:421][599]LogWorld: Bringing up level for play took: 0.244050
+[2020.02.19-16.31.29:438][599]LogOnline: OSS: Creating online subsystem instance for: :Context_2
+[2020.02.19-16.31.29:607][599]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0008 seconds. Added 20 classes and 0 folders.
+[2020.02.19-16.31.33:042][599]LogScript: Warning: Script Msg: Attempted to access index 9999 from array 'CornerRotationArray' of length 9999 in '/Game/Blueprints/QuadTree/GridData.GridData_C'!
+[2020.02.19-16.31.33:713][599]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_TestLevel1 5.934
+[2020.02.19-16.31.38:079][701]PIE: Warning: FirstPersonProjectile_C_0.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.31.40:172][761]PIE: Warning: FirstPersonProjectile_C_1.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.31.41:700][824]PIE: Warning: FirstPersonProjectile_C_2.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.31.43:598][881]PIE: Warning: FirstPersonProjectile_C_3.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.31.46:041][929]PIE: Warning: FirstPersonProjectile_C_4.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.31.47:567][989]PIE: Warning: FirstPersonProjectile_C_5.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.31.49:107][ 51]PIE: Warning: FirstPersonProjectile_C_6.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.31.50:628][113]PIE: Warning: FirstPersonProjectile_C_7.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.31.55:958][331]No Weapon Equipped
+[2020.02.19-16.31.57:381][389]No Weapon Equipped
+[2020.02.19-16.31.57:820][407]PIE: Warning: FirstPersonProjectile_C_8.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.31.59:372][471]PIE: Warning: FirstPersonProjectile_C_9.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.31.59:419][473]No Weapon Equipped
+[2020.02.19-16.32.00:893][533]PIE: Warning: FirstPersonProjectile_C_10.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.32.03:531][610]PIE: Warning: FirstPersonProjectile_C_11.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.32.05:087][674]PIE: Warning: FirstPersonProjectile_C_12.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.32.05:256][681]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.02.19-16.32.05:256][681]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.02.19-16.32.06:239][681]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.02.19-16.32.06:256][681]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_TestLevel1
+[2020.02.19-16.32.06:275][681]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.02.19-16.32.06:365][681]LogWorld: UWorld::CleanupWorld for TestLevel1, bSessionEnded=true, bCleanupResources=true
+[2020.02.19-16.32.06:505][681]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.02.19-16.32.06:591][681]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.02.19-16.32.06:683][681]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.02.19-16.32.06:758][681]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.02.19-16.32.06:824][681]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.02.19-16.32.06:977][681]LogUObjectHash: Compacting FUObjectHashTables data took   3.39ms
+[2020.02.19-16.32.07:187][682]LogPlayLevel: Display: Destroying online subsystem :Context_2
+[2020.02.19-16.32.09:008][758]LogSlate: Window 'Message Log' being destroyed
+[2020.02.19-16.32.09:038][758]LogSlate: Window 'Message Log' being destroyed
+[2020.02.19-16.37.17:490][231]LogActor: Warning: MasterWeapon_BP_C /Engine/Transient.World_1:PersistentLevel.MasterWeapon_BP_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.02.19-16.37.17:610][232]LogActor: Warning: GranadeLauncher_BP_C /Engine/Transient.World_2:PersistentLevel.GranadeLauncher_BP_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.02.19-16.40.35:862][891]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\Admin\Downloads\Wall.FBX)
+[2020.02.19-16.40.36:309][891]LogFbx: Loading FBX Scene from C:\Users\Admin\Downloads\Wall.FBX
+[2020.02.19-16.40.36:622][891]LogFbx: FBX Scene Loaded Succesfully
+[2020.02.19-16.41.53:393][891]LogSlate: Window 'FBX Import Options' being destroyed
+[2020.02.19-16.41.54:426][891]LogLinker: Failed to load '/Game/Meshes/Complete/Texture_3': Can't find file.
+[2020.02.19-16.41.54:427][891]LogLinker: Failed to load '/Game/Meshes/Complete/Texture_3': Can't find file.
+[2020.02.19-16.41.54:677][891]LogTexture: Display: Building textures: Texture_3 (AutoDXT, 4000X2504)
+[2020.02.19-16.41.55:597][891]LogLinker: Failed to load '/Game/Meshes/Complete/Panel_Texture_1_': Can't find file.
+[2020.02.19-16.41.55:598][891]LogLinker: Failed to load '/Game/Meshes/Complete/Panel_Texture_1_': Can't find file.
+[2020.02.19-16.41.56:064][891]LogTexture: Display: Building textures: Panel_Texture_1_ (AutoDXT, 4000X2504)
+[2020.02.19-16.41.56:925][891]LogLinker: Failed to load '/Game/Meshes/Complete/Texture_1_': Can't find file.
+[2020.02.19-16.41.56:926][891]LogLinker: Failed to load '/Game/Meshes/Complete/Texture_1_': Can't find file.
+[2020.02.19-16.41.57:041][891]LogTexture: Display: Building textures: Texture_1_ (AutoDXT, 4000X2504)
+[2020.02.19-16.41.57:940][891]LogFbx: Display: Triangulating static mesh Wall
+[2020.02.19-16.41.58:633][891]LogStaticMesh: Building static mesh Wall...
+[2020.02.19-16.41.58:640][891]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Complete/Wall.Wall
+[2020.02.19-16.41.58:998][891]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2020.02.19-16.42.05:102][111]LogSlate: Window 'Message Log' being destroyed
+[2020.02.19-16.42.05:129][111]LogSlate: Window 'Message Log' being destroyed
+[2020.02.19-16.42.17:689][581]LogUObjectHash: Compacting FUObjectHashTables data took   4.53ms
+[2020.02.19-16.42.21:808][581]LogSlate: Window 'Delete Assets' being destroyed
+[2020.02.19-16.42.23:095][581]LogUObjectHash: Compacting FUObjectHashTables data took   1.42ms
+[2020.02.19-16.42.29:637][646]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\Admin\Downloads\Wall.FBX)
+[2020.02.19-16.42.29:664][646]LogFbx: Loading FBX Scene from C:\Users\Admin\Downloads\Wall.FBX
+[2020.02.19-16.42.29:809][646]LogFbx: FBX Scene Loaded Succesfully
+[2020.02.19-16.42.35:162][646]LogSlate: Window 'FBX Import Options' being destroyed
+[2020.02.19-16.42.39:037][646]LogTexture: Display: Building textures: Texture_3 (AutoDXT, 4000X2504)
+[2020.02.19-16.42.40:313][646]LogMaterial: Display: Missing cached shader map for material Material__2, compiling. 
+[2020.02.19-16.42.40:353][646]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 15
+[2020.02.19-16.42.40:354][646]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 11
+[2020.02.19-16.42.40:354][646]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 7
+[2020.02.19-16.42.40:354][646]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 3
+[2020.02.19-16.42.41:552][646]LogTexture: Display: Building textures: Panel_Texture_1_ (AutoDXT, 4000X2504)
+[2020.02.19-16.42.42:506][646]LogMaterial: Display: Missing cached shader map for material Material__14, compiling. 
+[2020.02.19-16.42.42:781][646]LogTexture: Display: Building textures: Texture_1_ (AutoDXT, 4000X2504)
+[2020.02.19-16.42.43:950][646]LogMaterial: Display: Missing cached shader map for material Material__15, compiling. 
+[2020.02.19-16.42.43:982][646]LogFbx: Display: Triangulating static mesh Wall
+[2020.02.19-16.42.44:001][646]LogStaticMesh: Building static mesh Wall...
+[2020.02.19-16.42.44:009][646]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Complete/Wall.Wall
+[2020.02.19-16.42.44:121][646]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2020.02.19-16.42.45:836][691]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 30
+[2020.02.19-16.42.46:595][720]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 22
+[2020.02.19-16.42.47:073][739]LogSlate: Window 'Message Log' being destroyed
+[2020.02.19-16.42.47:105][739]LogSlate: Window 'Message Log' being destroyed
+[2020.02.19-16.42.48:022][743]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 16
+[2020.02.19-16.42.48:039][743]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 11
+[2020.02.19-16.42.51:927][854]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 8
+[2020.02.19-16.42.51:927][854]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 5
+[2020.02.19-16.42.51:927][854]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 3
+[2020.02.19-16.42.53:242][913]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 2
+[2020.02.19-16.42.54:071][957]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 1
+[2020.02.19-16.42.58:221][135]LogUObjectHash: Compacting FUObjectHashTables data took   3.91ms
+[2020.02.19-16.42.58:223][135]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/TestLevel1' took 0.051
+[2020.02.19-16.42.58:254][135]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Meshes/Complete/Wall] ([1] browsable assets)...
+[2020.02.19-16.42.58:340][135]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Meshes/Complete/Wall.Wall]
+[2020.02.19-16.42.58:340][135]OBJ SavePackage: Finished generating thumbnails for package [/Game/Meshes/Complete/Wall]
+[2020.02.19-16.42.58:606][135]LogSavePackage: Moving '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Wall_Auto1FD99ADBB4364EC29641F2B8CCC0ED8C3.tmp' to '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Autosaves/Game/Meshes/Complete/Wall_Auto1.uasset'
+[2020.02.19-16.42.58:624][135]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Meshes/Complete/Material__2] ([1] browsable assets)...
+[2020.02.19-16.42.58:658][135]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Meshes/Complete/Material__2.Material__2]
+[2020.02.19-16.42.58:658][135]OBJ SavePackage: Finished generating thumbnails for package [/Game/Meshes/Complete/Material__2]
+[2020.02.19-16.42.58:699][135]LogSavePackage: Moving '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Material__2_Auto14826179648D936963C9672B2BE92CD15.tmp' to '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Autosaves/Game/Meshes/Complete/Material__2_Auto1.uasset'
+[2020.02.19-16.42.58:702][135]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Meshes/Complete/Texture_3] ([1] browsable assets)...
+[2020.02.19-16.42.58:711][135]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Meshes/Complete/Texture_3.Texture_3]
+[2020.02.19-16.42.58:711][135]OBJ SavePackage: Finished generating thumbnails for package [/Game/Meshes/Complete/Texture_3]
+[2020.02.19-16.42.58:773][135]LogSavePackage: Moving '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Texture_3_Auto1822751644DB0C93D34F6F68C90C276DA.tmp' to '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Autosaves/Game/Meshes/Complete/Texture_3_Auto1.uasset'
+[2020.02.19-16.42.58:791][135]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Meshes/Complete/Material__14] ([1] browsable assets)...
+[2020.02.19-16.42.58:825][135]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Meshes/Complete/Material__14.Material__14]
+[2020.02.19-16.42.58:825][135]OBJ SavePackage: Finished generating thumbnails for package [/Game/Meshes/Complete/Material__14]
+[2020.02.19-16.42.58:852][135]LogSavePackage: Moving '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Material__14_Auto10563C0FC4B5D1CD0E3F6CD81AE0710AF.tmp' to '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Autosaves/Game/Meshes/Complete/Material__14_Auto1.uasset'
+[2020.02.19-16.42.58:857][135]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Meshes/Complete/Panel_Texture_1_] ([1] browsable assets)...
+[2020.02.19-16.42.58:865][135]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Meshes/Complete/Panel_Texture_1_.Panel_Texture_1_]
+[2020.02.19-16.42.58:865][135]OBJ SavePackage: Finished generating thumbnails for package [/Game/Meshes/Complete/Panel_Texture_1_]
+[2020.02.19-16.42.58:893][135]LogSavePackage: Moving '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Panel_Texture_1__Auto1EB7CCBF94446D0224631B6B6A8E7F875.tmp' to '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Autosaves/Game/Meshes/Complete/Panel_Texture_1__Auto1.uasset'
+[2020.02.19-16.42.58:896][135]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Meshes/Complete/Material__15] ([1] browsable assets)...
+[2020.02.19-16.42.58:924][135]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Meshes/Complete/Material__15.Material__15]
+[2020.02.19-16.42.58:924][135]OBJ SavePackage: Finished generating thumbnails for package [/Game/Meshes/Complete/Material__15]
+[2020.02.19-16.42.58:953][135]LogSavePackage: Moving '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Material__15_Auto17694740B4275D07C648BAA8B822D1234.tmp' to '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Autosaves/Game/Meshes/Complete/Material__15_Auto1.uasset'
+[2020.02.19-16.42.58:957][135]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Meshes/Complete/Texture_1_] ([1] browsable assets)...
+[2020.02.19-16.42.58:963][135]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Meshes/Complete/Texture_1_.Texture_1_]
+[2020.02.19-16.42.58:963][135]OBJ SavePackage: Finished generating thumbnails for package [/Game/Meshes/Complete/Texture_1_]
+[2020.02.19-16.42.58:995][135]LogSavePackage: Moving '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Texture_1__Auto17A931D2447297116BA5560A91412FC69.tmp' to '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Autosaves/Game/Meshes/Complete/Texture_1__Auto1.uasset'
+[2020.02.19-16.42.58:997][135]LogFileHelpers: Auto-saving content packages took 0.773
+[2020.02.19-16.44.00:760][ 82]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/QuadTree/GridData.GridData
+[2020.02.19-16.44.02:687][ 82]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0017 seconds. Added 121 classes and 0 folders.
+[2020.02.19-16.44.06:294][ 82]LogSlate: Took 0.017337 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2020.02.19-16.44.07:136][ 83]LogSlate: Took 0.011847 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.02.19-16.44.32:086][904]BlueprintLog: New page: Compile GridData
+[2020.02.19-16.44.33:563][904]LogUObjectHash: Compacting FUObjectHashTables data took   6.21ms
+[2020.02.19-16.44.36:957][978]LogSavePackage: Moving '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/GridDataB62BDDEF4892390809159FBD0767E086.tmp' to '../../../../../../Users/Admin/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Blueprints/QuadTree/GridData.uasset'
+[2020.02.19-16.44.37:063][978]AssetCheck: New page: Asset Save: GridData
+[2020.02.19-16.44.37:063][978]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/QuadTree/GridData.GridData
+[2020.02.19-16.45.38:520][807]LogTemp: Repeating last play command: Selected Viewport
+[2020.02.19-16.45.39:398][807]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.02.19-16.45.39:399][807]PIE: New page: PIE session: TestLevel1 (19 Feb 2020, 16:45:39)
+[2020.02.19-16.45.39:399][807]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_TestLevel1
+[2020.02.19-16.45.39:441][807]LogPlayLevel: PIE: StaticDuplicateObject took: (0.041153s)
+[2020.02.19-16.45.39:443][807]LogAIModule: Creating AISystem for world TestLevel1
+[2020.02.19-16.45.39:444][807]LogPlayLevel: PIE: World Init took: (0.002832s)
+[2020.02.19-16.45.39:444][807]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/TestLevel1.TestLevel1 to /Game/Levels/UEDPIE_0_TestLevel1.TestLevel1 (0.044409s)
+[2020.02.19-16.45.39:585][807]LogUObjectHash: Compacting FUObjectHashTables data took   7.59ms
+[2020.02.19-16.45.39:588][807]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.02.19-16.45.39:588][807]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.02.19-16.45.39:588][807]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.02.19-16.45.39:588][807]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.02.19-16.45.39:588][807]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.02.19-16.45.39:588][807]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.02.19-16.45.39:588][807]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.02.19-16.45.39:588][807]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.02.19-16.45.39:588][807]LogAudio: Display: Using built-in audio occlusion.
+[2020.02.19-16.45.39:588][807]LogAudioMixer: Display: Initializing audio mixer.
+[2020.02.19-16.45.39:595][807]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.02.19-16.45.39:595][807]LogAudioMixer: Display: Name: Speakers (Realtek(R) Audio)
+[2020.02.19-16.45.39:595][807]LogAudioMixer: Display: Is Default: Yes
+[2020.02.19-16.45.39:595][807]LogAudioMixer: Display: Sample Rate: 48000
+[2020.02.19-16.45.39:595][807]LogAudioMixer: Display: Channel Count Used: 2
+[2020.02.19-16.45.39:595][807]LogAudioMixer: Display: Device Channel Count: 2
+[2020.02.19-16.45.39:595][807]LogAudioMixer: Display: Channel Order:
+[2020.02.19-16.45.39:595][807]LogAudioMixer: Display: 0: FrontLeft
+[2020.02.19-16.45.39:595][807]LogAudioMixer: Display: 1: FrontRight
+[2020.02.19-16.45.39:627][807]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2020.02.19-16.45.39:630][807]LogInit: FAudioDevice initialized.
+[2020.02.19-16.45.39:646][807]LogLoad: Game class is 'TopDown_GameMode_C'
+[2020.02.19-16.45.39:649][807]LogWorld: Bringing World /Game/Levels/UEDPIE_0_TestLevel1.TestLevel1 up for play (max tick rate 0) at 2020.02.19-16.45.39
+[2020.02.19-16.45.39:649][807]LogWorld: Bringing up level for play took: 0.001633
+[2020.02.19-16.45.39:650][807]LogOnline: OSS: Creating online subsystem instance for: :Context_8
+[2020.02.19-16.45.44:114][807]LogScript: Warning: Script Msg: Attempted to access index 9999 from array 'CornerRotationArray' of length 9999 in '/Game/Blueprints/QuadTree/GridData.GridData_C'!
+[2020.02.19-16.45.44:175][807]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_TestLevel1 4.397
+[2020.02.19-16.45.44:988][807]LogMaterial: Warning: Material /Game/Meshes/Complete/Material__14.Material__14 missing bUsedWithInstancedStaticMeshes=True! Default Material will be used in game.
+[2020.02.19-16.45.44:988][807]LogMaterial: Warning:      The material will recompile every editor launch until resaved.
+[2020.02.19-16.45.44:988][807]LogMaterial: Warning: Material /Game/Meshes/Complete/Material__15.Material__15 missing bUsedWithInstancedStaticMeshes=True! Default Material will be used in game.
+[2020.02.19-16.45.44:988][807]LogMaterial: Warning:      The material will recompile every editor launch until resaved.
+[2020.02.19-16.45.46:610][850]No Weapon Equipped
+[2020.02.19-16.45.54:238][124]PIE: Warning: FirstPersonProjectile_C_0.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.45.55:802][181]PIE: Warning: FirstPersonProjectile_C_1.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.45.57:859][257]PIE: Warning: FirstPersonProjectile_C_2.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.45.59:953][334]PIE: Warning: FirstPersonProjectile_C_3.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.46.01:488][390]PIE: Warning: FirstPersonProjectile_C_4.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.46.03:037][446]PIE: Warning: FirstPersonProjectile_C_5.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.46.04:597][505]PIE: Warning: FirstPersonProjectile_C_6.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.46.06:143][565]PIE: Warning: FirstPersonProjectile_C_7.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.46.09:228][673]PIE: Warning: FirstPersonProjectile_C_8.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.46.10:777][726]PIE: Warning: FirstPersonProjectile_C_9.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.02.19-16.46.28:764][285]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.02.19-16.46.28:765][285]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.02.19-16.46.28:766][285]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.02.19-16.46.28:766][285]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_TestLevel1
+[2020.02.19-16.46.28:776][285]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.02.19-16.46.28:786][285]LogWorld: UWorld::CleanupWorld for TestLevel1, bSessionEnded=true, bCleanupResources=true
+[2020.02.19-16.46.28:917][285]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.02.19-16.46.28:942][285]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.02.19-16.46.28:974][285]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.02.19-16.46.29:048][285]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.02.19-16.46.29:056][285]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.02.19-16.46.29:199][285]LogUObjectHash: Compacting FUObjectHashTables data took   8.23ms
+[2020.02.19-16.46.29:385][286]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2020.02.19-16.46.30:960][330]LogSlate: Window 'Message Log' being destroyed
+[2020.02.19-16.46.31:002][330]LogSlate: Window 'Message Log' being destroyed
+[2020.02.19-16.46.44:610][573]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/Meshes/GreyBoxWall.GreyBoxWall
+[2020.02.19-16.46.49:392][574]LogRenderer: Reallocating scene render targets to support 872x500 Format 10 NumSamples 1 (Frame:1).
+[2020.02.19-16.48.11:466][888]LogSlate: Window 'Project Settings' being destroyed
+[2020.02.19-16.48.11:476][888]LogSlate: Window 'Project Settings' being destroyed
+[2020.02.19-16.50.32:628][ 61]LogRenderer: Reallocating scene render targets to support 1004x624 Format 10 NumSamples 1 (Frame:3501).
+[2020.02.19-16.50.52:043][316]LogUObjectHash: Compacting FUObjectHashTables data took  10.58ms
+[2020.02.19-16.50.58:473][316]LogSlate: Window 'Delete Assets' being destroyed
