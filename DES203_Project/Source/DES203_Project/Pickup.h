@@ -34,6 +34,6 @@ class DES203_PROJECT_API APickup : public AInteractable
 		UPROPERTY(EditAnywhere, Category = "Pickup Properties")
 		FString itemName;
 
-		UPROPERTY(EditAnywhere, Category = "Pickup Properties")
+		UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Pickup Properties")
 		UTexture2D* PickupThumbnail;
 };

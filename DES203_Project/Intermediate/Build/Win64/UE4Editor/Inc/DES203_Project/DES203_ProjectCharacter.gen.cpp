@@ -29,6 +29,7 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_GetThumbnailAtInventorySlot();
 	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_Interact();
+	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_NextWeapon();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_Shoot();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_UpdateGold();
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_UseItemAtInventorySlot();
@@ -50,6 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 			{ "GetItemNameAtInventorySlot", &ADES203_ProjectCharacter::execGetItemNameAtInventorySlot },
 			{ "GetThumbnailAtInventorySlot", &ADES203_ProjectCharacter::execGetThumbnailAtInventorySlot },
 			{ "Interact", &ADES203_ProjectCharacter::execInteract },
+			{ "NextWeapon", &ADES203_ProjectCharacter::execNextWeapon },
 			{ "Shoot", &ADES203_ProjectCharacter::execShoot },
 			{ "UpdateGold", &ADES203_ProjectCharacter::execUpdateGold },
 			{ "UseItemAtInventorySlot", &ADES203_ProjectCharacter::execUseItemAtInventorySlot },
@@ -245,26 +247,22 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 	{
 		struct DES203_ProjectCharacter_eventEquipWeapon_Parms
 		{
-			bool ReturnValue;
+			int32 Slot;
 		};
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_Slot;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	void Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((DES203_ProjectCharacter_eventEquipWeapon_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(DES203_ProjectCharacter_eventEquipWeapon_Parms), &Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::NewProp_Slot = { "Slot", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(DES203_ProjectCharacter_eventEquipWeapon_Parms, Slot), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::NewProp_Slot,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Inventory Functions" },
 		{ "ModuleRelativePath", "DES203_ProjectCharacter.h" },
 	};
 #endif
@@ -380,6 +378,29 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ADES203_ProjectCharacter_NextWeapon_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADES203_ProjectCharacter_NextWeapon_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Inventory Functions" },
+		{ "ModuleRelativePath", "DES203_ProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADES203_ProjectCharacter_NextWeapon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADES203_ProjectCharacter, nullptr, "NextWeapon", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADES203_ProjectCharacter_NextWeapon_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADES203_ProjectCharacter_NextWeapon_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADES203_ProjectCharacter_NextWeapon()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADES203_ProjectCharacter_NextWeapon_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ADES203_ProjectCharacter_Shoot_Statics
 	{
 #if WITH_METADATA
@@ -484,10 +505,10 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Inventory_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EquippedItems_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Inventory;
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Inventory_Inner;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_EquippedItems;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_EquippedItems_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InteractSphereSize_MetaData[];
 #endif
@@ -508,6 +529,24 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TopDownCameraComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_TopDownCameraComponent;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ItemIndex_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_ItemIndex;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponIndex_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_WeaponIndex;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EquippedWeapons_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_EquippedWeapons;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_EquippedWeapons_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Inventory_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Inventory;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Inventory_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentInteractable_MetaData[];
 #endif
@@ -536,10 +575,11 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_AddItemToInventory, "AddItemToInventory" }, // 4000309836
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_BeginOverlap, "BeginOverlap" }, // 2772916651
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_EndOverlap, "EndOverlap" }, // 2161885287
-		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon, "EquipWeapon" }, // 2037407399
+		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_EquipWeapon, "EquipWeapon" }, // 533381903
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_GetItemNameAtInventorySlot, "GetItemNameAtInventorySlot" }, // 3497638925
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_GetThumbnailAtInventorySlot, "GetThumbnailAtInventorySlot" }, // 3112604109
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_Interact, "Interact" }, // 3502320164
+		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_NextWeapon, "NextWeapon" }, // 2380345419
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_Shoot, "Shoot" }, // 4200735279
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_UpdateGold, "UpdateGold" }, // 2627536382
 		{ &Z_Construct_UFunction_ADES203_ProjectCharacter_UseItemAtInventorySlot, "UseItemAtInventorySlot" }, // 3757244509
@@ -554,15 +594,15 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory_MetaData[] = {
-		{ "Category", "DES203_ProjectCharacter" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_EquippedItems_MetaData[] = {
+		{ "Category", "Equipment" },
 		{ "Comment", "/*the ??ayers inventory, reprsented as a TArray of pickup objects*/" },
 		{ "ModuleRelativePath", "DES203_ProjectCharacter.h" },
 		{ "ToolTip", "the ??ayers inventory, reprsented as a TArray of pickup objects" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory = { "Inventory", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectCharacter, Inventory), METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory_Inner = { "Inventory", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_APickup_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_EquippedItems = { "EquippedItems", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectCharacter, EquippedItems), METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_EquippedItems_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_EquippedItems_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_EquippedItems_Inner = { "EquippedItems", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_APickup_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_InteractSphereSize_MetaData[] = {
 		{ "Category", "Interact" },
@@ -612,6 +652,36 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_TopDownCameraComponent = { "TopDownCameraComponent", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectCharacter, TopDownCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_TopDownCameraComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_TopDownCameraComponent_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_ItemIndex_MetaData[] = {
+		{ "Category", "DES203_ProjectCharacter" },
+		{ "ModuleRelativePath", "DES203_ProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_ItemIndex = { "ItemIndex", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectCharacter, ItemIndex), nullptr, METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_ItemIndex_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_ItemIndex_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_WeaponIndex_MetaData[] = {
+		{ "Category", "DES203_ProjectCharacter" },
+		{ "ModuleRelativePath", "DES203_ProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_WeaponIndex = { "WeaponIndex", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectCharacter, WeaponIndex), nullptr, METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_WeaponIndex_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_WeaponIndex_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_EquippedWeapons_MetaData[] = {
+		{ "Category", "Equipment" },
+		{ "ModuleRelativePath", "DES203_ProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_EquippedWeapons = { "EquippedWeapons", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectCharacter, EquippedWeapons), METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_EquippedWeapons_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_EquippedWeapons_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_EquippedWeapons_Inner = { "EquippedWeapons", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_APickup_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory_MetaData[] = {
+		{ "Category", "Equipment" },
+		{ "ModuleRelativePath", "DES203_ProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory = { "Inventory", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectCharacter, Inventory), METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory_Inner = { "Inventory", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_APickup_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_CurrentInteractable_MetaData[] = {
 		{ "Category", "UI" },
 		{ "ModuleRelativePath", "DES203_ProjectCharacter.h" },
@@ -636,19 +706,25 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_HelpText = { "HelpText", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectCharacter, HelpText), METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_HelpText_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_HelpText_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_MainWeapon_MetaData[] = {
-		{ "Category", "Equip" },
+		{ "Category", "DES203_ProjectCharacter" },
 		{ "ModuleRelativePath", "DES203_ProjectCharacter.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_MainWeapon = { "MainWeapon", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectCharacter, MainWeapon), Z_Construct_UClass_ARangedWeapon_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_MainWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_MainWeapon_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADES203_ProjectCharacter_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_EquippedItems,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_EquippedItems_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_InteractSphereSize,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_InteractSphere,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_CursorToWorld,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_TopDownCameraComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_ItemIndex,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_WeaponIndex,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_EquippedWeapons,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_EquippedWeapons_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Inventory_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_CurrentInteractable,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Gold,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_HelpText,
@@ -681,7 +757,7 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADES203_ProjectCharacter, 3375916044);
+	IMPLEMENT_CLASS(ADES203_ProjectCharacter, 181091972);
 	template<> DES203_PROJECT_API UClass* StaticClass<ADES203_ProjectCharacter>()
 	{
 		return ADES203_ProjectCharacter::StaticClass();

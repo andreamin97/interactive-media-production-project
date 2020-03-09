@@ -55,19 +55,28 @@ class APickup;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execEquipWeapon) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->EquipWeapon(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execInteract) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->Interact(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execNextWeapon) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->NextWeapon(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execEquipWeapon) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Slot); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->EquipWeapon(Z_Param_Slot); \
 		P_NATIVE_END; \
 	} \
  \
@@ -153,19 +162,28 @@ class APickup;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execEquipWeapon) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->EquipWeapon(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execInteract) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->Interact(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execNextWeapon) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->NextWeapon(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execEquipWeapon) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_Slot); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->EquipWeapon(Z_Param_Slot); \
 		P_NATIVE_END; \
 	} \
  \
@@ -263,7 +281,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADES203_ProjectCharacter); \
 	FORCEINLINE static uint32 __PPO__CursorToWorld() { return STRUCT_OFFSET(ADES203_ProjectCharacter, CursorToWorld); } \
 	FORCEINLINE static uint32 __PPO__InteractSphere() { return STRUCT_OFFSET(ADES203_ProjectCharacter, InteractSphere); } \
 	FORCEINLINE static uint32 __PPO__InteractSphereSize() { return STRUCT_OFFSET(ADES203_ProjectCharacter, InteractSphereSize); } \
-	FORCEINLINE static uint32 __PPO__Inventory() { return STRUCT_OFFSET(ADES203_ProjectCharacter, Inventory); }
+	FORCEINLINE static uint32 __PPO__EquippedItems() { return STRUCT_OFFSET(ADES203_ProjectCharacter, EquippedItems); }
 
 
 #define DES203_Project_Source_DES203_Project_DES203_ProjectCharacter_h_9_PROLOG

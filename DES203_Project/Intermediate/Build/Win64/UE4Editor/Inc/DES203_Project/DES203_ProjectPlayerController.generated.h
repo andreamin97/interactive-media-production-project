@@ -58,6 +58,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execCharacterNextWeapon) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CharacterNextWeapon(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execCharacterUseItemAtSlotOne) \
 	{ \
 		P_FINISH; \
@@ -124,6 +132,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->CharacterUseItemAtSlotTwo(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCharacterNextWeapon) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CharacterNextWeapon(); \
 		P_NATIVE_END; \
 	} \
  \

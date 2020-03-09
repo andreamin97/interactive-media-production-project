@@ -14,7 +14,7 @@ class ADES203_ProjectCharacter : public ACharacter
 public:
 	ADES203_ProjectCharacter();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Equip")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class ARangedWeapon* MainWeapon;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category ="UI")
@@ -26,6 +26,19 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
 	class AInteractable* CurrentInteractable;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Equipment)
+		TArray<class APickup*> Inventory;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Equipment)
+		TArray<class APickup*> EquippedWeapons;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		uint8 WeaponIndex;
+
+	UPROPERTY(EditAnywhere, BlueprintReadwrite)
+		uint8 ItemIndex;
 
 	virtual void BeginPlay() override;
 
@@ -61,15 +74,18 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Inventory Functions")
 		void UseItemAtInventorySlot(int32 Slot);
 
+	UFUNCTION(BlueprintCallable, Category = "Inventory Functions")
+		void EquipWeapon(int32 Slot);
+
+	UFUNCTION(BlueprintCallable, Category = "Inventory Functions")
+		void NextWeapon();
+
 	/* toggles the inventory*/
 	void ToggleInventory();
 
 	/* interact with the current interactable if there is one*/
 	UFUNCTION(BlueprintCallable)
 	void Interact();
-
-	UFUNCTION(BlueprintCallable)
-	bool EquipWeapon();
 
 	UFUNCTION(BlueprintCallable)
 	static void Shoot();
@@ -99,8 +115,9 @@ private:
 	float InteractSphereSize;
 
 	/*the èòayers inventory, reprsented as a TArray of pickup objects*/
-	UPROPERTY(EditAnywhere)
-		TArray<class APickup*> Inventory;
+
+	UPROPERTY(EditAnywhere, Category = Equipment)
+		TArray<class APickup*> EquippedItems;
 
 	UFUNCTION()
 	void BeginOverlap(UPrimitiveComponent* OverlappedComponent,

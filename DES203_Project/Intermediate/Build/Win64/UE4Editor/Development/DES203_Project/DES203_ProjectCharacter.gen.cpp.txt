@@ -1,9 +1,9 @@
-C:\Users\Admin\Documents\GitHub\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Development\DES203_Project\Definitions.DES203_Project.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Development\DES203_Project\Definitions.DES203_Project.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\Admin\Documents\GitHub\interactive-media-production-project\DES203_Project\Source\DES203_Project/DES203_ProjectCharacter.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Source\DES203_Project/DES203_ProjectCharacter.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\Users\Admin\Documents\GitHub\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Inc\DES203_Project\DES203_ProjectCharacter.generated.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Inc\DES203_Project\DES203_ProjectCharacter.generated.h

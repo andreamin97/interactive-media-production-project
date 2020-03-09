@@ -66,6 +66,9 @@ protected:
 	void CharacterUseItemAtSlotOne();
 
 	UFUNCTION()
+		void CharacterNextWeapon();
+
+	UFUNCTION()
 	void CharacterUseItemAtSlotTwo();
 
 	UFUNCTION()

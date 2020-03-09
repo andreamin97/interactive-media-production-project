@@ -239,7 +239,7 @@ void EmptyLinkFunctionForGeneratedCodeRangedWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ARangedWeapon, 2122401523);
+	IMPLEMENT_CLASS(ARangedWeapon, 1042197069);
 	template<> DES203_PROJECT_API UClass* StaticClass<ARangedWeapon>()
 	{
 		return ARangedWeapon::StaticClass();

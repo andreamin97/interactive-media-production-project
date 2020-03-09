@@ -70,6 +70,7 @@ ADES203_ProjectCharacter::ADES203_ProjectCharacter()
 	InteractSphere->OnComponentEndOverlap.AddDynamic(this, &ADES203_ProjectCharacter::EndOverlap);
 
 	MainWeapon = CreateDefaultSubobject<ARangedWeapon>(TEXT("MainWeapon"));
+	WeaponIndex = 0;
 }
 
 void ADES203_ProjectCharacter::BeginPlay()
@@ -77,6 +78,8 @@ void ADES203_ProjectCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	Inventory.SetNum(10);
+	EquippedItems.SetNum(3);
+	EquippedWeapons.SetNum(3);
 	CurrentInteractable = nullptr;
 }
 
@@ -156,6 +159,76 @@ void ADES203_ProjectCharacter::UseItemAtInventorySlot(int32 Slot)
 
 }
 
+/*
+Put the weapon in the @Slot at the beginning of the equipped weapons array, and moves the rest, kicking the last one
+*/
+void ADES203_ProjectCharacter::EquipWeapon(int32 Slot)
+{
+	EquippedWeapons[2] = EquippedWeapons[1];
+	EquippedWeapons[1] = EquippedWeapons[0];
+	EquippedWeapons[0] = Inventory[Slot];
+	Inventory[Slot] = NULL;
+}
+
+/*
+games crashes on switching to a nullptr value 
+*/
+void ADES203_ProjectCharacter::NextWeapon()
+{
+	switch (WeaponIndex)
+	{
+	case 0:
+		if (MainWeapon != nullptr)
+		{
+			MainWeapon->OnPickedUp();
+		}
+		if (EquippedWeapons[1])
+		{
+			WeaponIndex = 1;
+			EquippedWeapons[WeaponIndex]->Use();
+		}
+			
+		break;
+
+	case 1:
+		if (MainWeapon != nullptr)
+		{
+			MainWeapon->OnPickedUp();
+		}
+		if (EquippedWeapons[2])
+		{
+			WeaponIndex = 2;
+			EquippedWeapons[WeaponIndex]->Use();
+		}
+		else if (EquippedWeapons[0])
+		{
+			WeaponIndex = 0;
+			EquippedWeapons[WeaponIndex]->Use();
+		}
+		break;
+
+	case 2:
+		if (MainWeapon != nullptr)
+		{
+			MainWeapon->OnPickedUp();
+		}
+		if (EquippedWeapons[0])
+		{
+			WeaponIndex = 0;
+			EquippedWeapons[WeaponIndex]->Use();
+		}
+		else if (EquippedWeapons[1])
+		{
+			WeaponIndex = 1;
+			EquippedWeapons[WeaponIndex]->Use();
+		}
+		break;
+	
+	default:
+		break;
+	}
+}
+
 void ADES203_ProjectCharacter::ToggleInventory()
 {
 
@@ -168,11 +241,6 @@ void ADES203_ProjectCharacter::Interact()
 	{
 		CurrentInteractable->Interact_Implementation();
 	}
-}
-
-bool ADES203_ProjectCharacter::EquipWeapon()
-{
-	return false;
 }
 
 void ADES203_ProjectCharacter::Shoot()

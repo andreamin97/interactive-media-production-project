@@ -109,6 +109,7 @@ void ADES203_ProjectPlayerController::SetupInputComponent()
 	InputComponent->BindAction("UseItem3", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlotThree);
 	InputComponent->BindAction("Shoot", IE_Pressed, this, &ADES203_ProjectPlayerController::StartShooting);
 	InputComponent->BindAction("Shoot", IE_Released, this, &ADES203_ProjectPlayerController::StopShooting);
+	InputComponent->BindAction("NextWeapon", IE_Pressed, this, &ADES203_ProjectPlayerController::CharacterNextWeapon);
 
 	InputComponent->BindAxis("MoveForward", this, &ADES203_ProjectPlayerController::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &ADES203_ProjectPlayerController::MoveRight);
@@ -131,7 +132,17 @@ void ADES203_ProjectPlayerController::CharacterUseItemAtSlotOne()
 	{
 		MyCharacter->MainWeapon->OnPickedUp();
 	}	
-	MyCharacter->UseItemAtInventorySlot(0);
+	if (MyCharacter->Inventory[0] != NULL)
+		MyCharacter->UseItemAtInventorySlot(0);
+	MyCharacter->EquipWeapon(0);
+}
+
+void ADES203_ProjectPlayerController::CharacterNextWeapon()
+{
+	if (ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0)))
+	{
+		MyCharacter->NextWeapon();
+	}
 }
 
 void ADES203_ProjectPlayerController::CharacterUseItemAtSlotTwo()
@@ -142,7 +153,9 @@ void ADES203_ProjectPlayerController::CharacterUseItemAtSlotTwo()
 	{
 		MyCharacter->MainWeapon->OnPickedUp();
 	}
-	MyCharacter->UseItemAtInventorySlot(1);
+	if (MyCharacter->Inventory[1] != NULL)
+		MyCharacter->UseItemAtInventorySlot(1);
+	MyCharacter->EquipWeapon(1);
 }
 
 void ADES203_ProjectPlayerController::CharacterUseItemAtSlotThree()
@@ -153,7 +166,10 @@ void ADES203_ProjectPlayerController::CharacterUseItemAtSlotThree()
 	{
 		MyCharacter->MainWeapon->OnPickedUp();
 	}
-	MyCharacter->UseItemAtInventorySlot(2);
+	if (MyCharacter->Inventory[2] != NULL)
+		MyCharacter->UseItemAtInventorySlot(2);
+
+	MyCharacter->EquipWeapon(2);
 }
 
 void ADES203_ProjectPlayerController::AimAtCursor()
