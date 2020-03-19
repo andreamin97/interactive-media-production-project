@@ -106,6 +106,10 @@ void EmptyLinkFunctionForGeneratedCodeRangedWeapon() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_shootHit;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_tracerEffect_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_tracerEffect;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_shootEffect_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_shootEffect;
@@ -167,6 +171,13 @@ void EmptyLinkFunctionForGeneratedCodeRangedWeapon() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootHit = { "shootHit", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARangedWeapon, shootHit), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootHit_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootHit_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedWeapon_Statics::NewProp_tracerEffect_MetaData[] = {
+		{ "Category", "RangedWeapon" },
+		{ "ModuleRelativePath", "RangedWeapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARangedWeapon_Statics::NewProp_tracerEffect = { "tracerEffect", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARangedWeapon, tracerEffect), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARangedWeapon_Statics::NewProp_tracerEffect_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARangedWeapon_Statics::NewProp_tracerEffect_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootEffect_MetaData[] = {
 		{ "Category", "RangedWeapon" },
 		{ "ModuleRelativePath", "RangedWeapon.h" },
@@ -206,6 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeRangedWeapon() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedWeapon_Statics::NewProp_ShootPoint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedWeapon_Statics::NewProp_laserPointer,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootHit,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedWeapon_Statics::NewProp_tracerEffect,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedWeapon_Statics::NewProp_shootEffect,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedWeapon_Statics::NewProp_aimArrow,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARangedWeapon_Statics::NewProp_range,
@@ -239,7 +251,7 @@ void EmptyLinkFunctionForGeneratedCodeRangedWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ARangedWeapon, 1042197069);
+	IMPLEMENT_CLASS(ARangedWeapon, 2514330475);
 	template<> DES203_PROJECT_API UClass* StaticClass<ARangedWeapon>()
 	{
 		return ARangedWeapon::StaticClass();

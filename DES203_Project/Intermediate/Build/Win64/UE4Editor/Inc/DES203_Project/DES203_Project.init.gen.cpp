@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeDES203_Project_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x2705D67A,
+				0x09F2B06B,
 				0x37EE994F,
 				METADATA_PARAMS(nullptr, 0)
 			};

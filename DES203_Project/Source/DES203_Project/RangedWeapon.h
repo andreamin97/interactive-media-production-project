@@ -46,6 +46,9 @@ public:
 	class UParticleSystem* shootEffect;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		class UParticleSystem* tracerEffect;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		class UParticleSystem* shootHit;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
