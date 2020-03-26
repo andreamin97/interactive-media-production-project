@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\DES203_Project.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{21E85820-AB63-486C-88A6-79DC4447677C}</UniqueIdentifier>
+      <UniqueIdentifier>{F41D89E1-A3AB-47E3-A52F-75C865BE4295}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\DES203_Project.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{7F8763E5-FAD4-452A-91DA-DF1DA17C4895}</UniqueIdentifier>
+      <UniqueIdentifier>{B12EEF70-BC0F-430E-9B5D-628646E27152}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\DES203_Project">
-      <UniqueIdentifier>{5A7DF887-3295-4D5E-ADE5-FD96C54B7418}</UniqueIdentifier>
+      <UniqueIdentifier>{8B183C9F-A4E5-4805-8567-42CB88BAF829}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\DES203_Project\DES203_Project.Build.cs">
       <Filter>Source\DES203_Project</Filter>
