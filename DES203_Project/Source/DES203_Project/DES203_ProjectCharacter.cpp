@@ -164,10 +164,17 @@ Put the weapon in the @Slot at the beginning of the equipped weapons array, and 
 */
 void ADES203_ProjectCharacter::EquipWeapon(int32 Slot)
 {
-	EquippedWeapons[2] = EquippedWeapons[1];
-	EquippedWeapons[1] = EquippedWeapons[0];
-	EquippedWeapons[0] = Inventory[Slot];
-	Inventory[Slot] = NULL;
+	if (Inventory[Slot] != nullptr)
+	{
+		APickup* temp;
+
+		temp = EquippedWeapons[2];
+		EquippedWeapons[2] = EquippedWeapons[1];
+		EquippedWeapons[1] = EquippedWeapons[0];
+		EquippedWeapons[0] = Inventory[Slot];
+		Inventory[Slot] = temp;
+	}
+	
 }
 
 /*

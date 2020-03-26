@@ -25,6 +25,8 @@ ADES203_ProjectGameMode::ADES203_ProjectGameMode()
 	}
 
 	HUDState = EHUDState::HS_Ingame;
+
+	CurrentShop = nullptr;
 }
 
 void ADES203_ProjectGameMode::ApplyHUDChanges()
