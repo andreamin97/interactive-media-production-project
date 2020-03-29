@@ -11,6 +11,7 @@
 #include "DrawDebugHelpers.h"
 #include "RangedWeapon.h"
 #include "Kismet/KismetSystemLibrary.h"
+#include "DES203_ProjectGameMode.h"
 #include "Engine/World.h"
 
 ADES203_ProjectPlayerController::ADES203_ProjectPlayerController()
@@ -110,6 +111,7 @@ void ADES203_ProjectPlayerController::SetupInputComponent()
 	InputComponent->BindAction("Shoot", IE_Pressed, this, &ADES203_ProjectPlayerController::StartShooting);
 	InputComponent->BindAction("Shoot", IE_Released, this, &ADES203_ProjectPlayerController::StopShooting);
 	InputComponent->BindAction("NextWeapon", IE_Pressed, this, &ADES203_ProjectPlayerController::CharacterNextWeapon);
+	InputComponent->BindAction("ToggleInventory", IE_Pressed, this, &ADES203_ProjectPlayerController::ToggleInventory);
 
 	InputComponent->BindAxis("MoveForward", this, &ADES203_ProjectPlayerController::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &ADES203_ProjectPlayerController::MoveRight);
@@ -216,6 +218,20 @@ void ADES203_ProjectPlayerController::Shoot()
 	}
 	
 	
+}
+
+void ADES203_ProjectPlayerController::ToggleInventory()
+{
+	ADES203_ProjectGameMode* GM = Cast<ADES203_ProjectGameMode>(GetWorld()->GetAuthGameMode());
+
+	if (GM->GetHudState() == GM->HS_Ingame)
+	{
+		GM->ChangeHUDState(GM->HS_Inventory);
+	}
+	else
+	{
+		GM->ChangeHUDState(GM->HS_Ingame);
+	}
 }
 
 void ADES203_ProjectPlayerController::SetTurnX(float Axis)

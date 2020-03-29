@@ -34,6 +34,9 @@ public:
 	/* applies HUD to screen, returns true if successful, false otherwise*/
 	bool ApplyHUD(TSubclassOf<class UUserWidget> WidgetToApply, bool bShowMouseCursor, bool bEnableClickEvents);
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		class AShop* CurrentShop;
+
 protected:
 
 	uint8 HUDState;

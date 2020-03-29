@@ -77,7 +77,11 @@ protected:
 	UFUNCTION(BlueprintCallable)
 	void AimAtCursor();
 
+	UFUNCTION()
 	void Shoot();
+
+	UFUNCTION()
+		void ToggleInventory();
 
 	FORCEINLINE void _UpdateGamepad(bool bGamepad)
 	{
