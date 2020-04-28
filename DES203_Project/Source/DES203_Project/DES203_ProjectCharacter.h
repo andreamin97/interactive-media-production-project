@@ -33,11 +33,13 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Equipment)
 		TArray<class APickup*> EquippedWeapons;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Equipment)
+		TArray<class APickup*> EquippedItems;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		uint8 WeaponIndex;
 
-	UPROPERTY(EditAnywhere, BlueprintReadwrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		uint8 ItemIndex;
 
 	virtual void BeginPlay() override;
@@ -80,6 +82,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Inventory Functions")
 		void NextWeapon();
 
+	UFUNCTION(BlueprintCallable, Category = "Inventory Functions")
+		void NextItem();
+
 	/* toggles the inventory*/
 	void ToggleInventory();
 
@@ -113,11 +118,6 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Interact")
 	float InteractSphereSize;
-
-	/*the èòayers inventory, reprsented as a TArray of pickup objects*/
-
-	UPROPERTY(EditAnywhere, Category = Equipment)
-		TArray<class APickup*> EquippedItems;
 
 	UFUNCTION()
 	void BeginOverlap(UPrimitiveComponent* OverlappedComponent,

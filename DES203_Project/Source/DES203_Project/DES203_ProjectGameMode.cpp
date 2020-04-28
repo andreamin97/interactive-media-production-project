@@ -55,6 +55,11 @@ void ADES203_ProjectGameMode::ApplyHUDChanges()
 			ApplyHUD(ShopGeneralHUDClass, true, true);
 			break;
 		}
+		case EHUDState::HS_Dialogue:
+		{
+			ApplyHUD(DialogHUDClass, true, true);
+			break;
+		}
 		default:
 		{
 			ApplyHUD(IngameHUDClass, false, false);

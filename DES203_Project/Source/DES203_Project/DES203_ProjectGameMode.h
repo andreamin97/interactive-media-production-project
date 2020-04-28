@@ -20,7 +20,8 @@ public:
 	{
 		HS_Ingame,
 		HS_Inventory,
-		HS_Shop_General
+		HS_Shop_General,
+		HS_Dialogue
 	};
 
 	/* checks the hud state and calls applyHUD accordingly*/
@@ -37,6 +38,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		class AShop* CurrentShop;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		class ANPC* CurrentNPC;
+
 protected:
 
 	uint8 HUDState;
@@ -50,6 +54,9 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "UIWidgets", Meta = (BlueprintProtected = "true"))
 	TSubclassOf<class UUserWidget> ShopGeneralHUDClass;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "UIWidgets", Meta = (BlueprintProtected = "true"))
+		TSubclassOf<class UUserWidget> DialogHUDClass;
 
 	UPROPERTY()
 	class UUserWidget* CurrentWidget;

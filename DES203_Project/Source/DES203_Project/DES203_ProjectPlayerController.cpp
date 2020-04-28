@@ -106,8 +106,6 @@ void ADES203_ProjectPlayerController::SetupInputComponent()
 
 	InputComponent->BindAction("Interact", IE_Released, this, &ADES203_ProjectPlayerController::CharacterInteract);
 	InputComponent->BindAction("UseItem1", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlotOne);
-	InputComponent->BindAction("UseItem2", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlotTwo);
-	InputComponent->BindAction("UseItem3", IE_Released, this, &ADES203_ProjectPlayerController::CharacterUseItemAtSlotThree);
 	InputComponent->BindAction("Shoot", IE_Pressed, this, &ADES203_ProjectPlayerController::StartShooting);
 	InputComponent->BindAction("Shoot", IE_Released, this, &ADES203_ProjectPlayerController::StopShooting);
 	InputComponent->BindAction("NextWeapon", IE_Pressed, this, &ADES203_ProjectPlayerController::CharacterNextWeapon);
@@ -130,13 +128,10 @@ void ADES203_ProjectPlayerController::CharacterUseItemAtSlotOne()
 {
 	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
 	
-	if (MyCharacter->MainWeapon != nullptr)
+	if (MyCharacter->EquippedItems[0] != nullptr)
 	{
-		MyCharacter->MainWeapon->OnPickedUp();
-	}	
-	if (MyCharacter->Inventory[0] != NULL)
-		MyCharacter->UseItemAtInventorySlot(0);
-	MyCharacter->EquipWeapon(0);
+		MyCharacter->EquippedItems[0]->Use();
+	}
 }
 
 void ADES203_ProjectPlayerController::CharacterNextWeapon()

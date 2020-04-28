@@ -8,7 +8,7 @@
 
 AShop::AShop()
 {
-	ShopInventory.SetNum(5);
+	ShopInventory.SetNum(3);
 }
 
 void AShop::BeginPlay()

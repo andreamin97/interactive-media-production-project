@@ -20,6 +20,8 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectGameMode() {}
 	DES203_PROJECT_API UFunction* Z_Construct_UFunction_ADES203_ProjectGameMode_ChangeHUDState();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	DES203_PROJECT_API UClass* Z_Construct_UClass_ANPC_NoRegister();
+	DES203_PROJECT_API UClass* Z_Construct_UClass_AShop_NoRegister();
 // End Cross Module References
 	void ADES203_ProjectGameMode::StaticRegisterNativesADES203_ProjectGameMode()
 	{
@@ -78,6 +80,10 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectGameMode() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CurrentWidget;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DialogHUDClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_DialogHUDClass;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ShopGeneralHUDClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ShopGeneralHUDClass;
@@ -89,6 +95,14 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectGameMode() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IngameHUDClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_IngameHUDClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentNPC_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CurrentNPC;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentShop_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CurrentShop;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -116,6 +130,14 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectGameMode() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_CurrentWidget = { "CurrentWidget", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectGameMode, CurrentWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_CurrentWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_CurrentWidget_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_DialogHUDClass_MetaData[] = {
+		{ "BlueprintProtected", "true" },
+		{ "Category", "UIWidgets" },
+		{ "ModuleRelativePath", "DES203_ProjectGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_DialogHUDClass = { "DialogHUDClass", nullptr, (EPropertyFlags)0x0024080000010005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectGameMode, DialogHUDClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_DialogHUDClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_DialogHUDClass_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_ShopGeneralHUDClass_MetaData[] = {
 		{ "BlueprintProtected", "true" },
 		{ "Category", "UIWidgets" },
@@ -141,11 +163,28 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectGameMode() {}
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_IngameHUDClass = { "IngameHUDClass", nullptr, (EPropertyFlags)0x0024080000010005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectGameMode, IngameHUDClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_IngameHUDClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_IngameHUDClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_CurrentNPC_MetaData[] = {
+		{ "Category", "DES203_ProjectGameMode" },
+		{ "ModuleRelativePath", "DES203_ProjectGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_CurrentNPC = { "CurrentNPC", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectGameMode, CurrentNPC), Z_Construct_UClass_ANPC_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_CurrentNPC_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_CurrentNPC_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_CurrentShop_MetaData[] = {
+		{ "Category", "DES203_ProjectGameMode" },
+		{ "ModuleRelativePath", "DES203_ProjectGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_CurrentShop = { "CurrentShop", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectGameMode, CurrentShop), Z_Construct_UClass_AShop_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_CurrentShop_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_CurrentShop_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADES203_ProjectGameMode_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_CurrentWidget,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_DialogHUDClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_ShopGeneralHUDClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_InventoryHUDClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_IngameHUDClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_CurrentNPC,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectGameMode_Statics::NewProp_CurrentShop,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ADES203_ProjectGameMode_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ADES203_ProjectGameMode>::IsAbstract,
@@ -174,7 +213,7 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADES203_ProjectGameMode, 2461079136);
+	IMPLEMENT_CLASS(ADES203_ProjectGameMode, 3860323852);
 	template<> DES203_PROJECT_API UClass* StaticClass<ADES203_ProjectGameMode>()
 	{
 		return ADES203_ProjectGameMode::StaticClass();

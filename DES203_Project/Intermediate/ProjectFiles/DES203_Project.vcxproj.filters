@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\DES203_Project.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F41D89E1-A3AB-47E3-A52F-75C865BE4295}</UniqueIdentifier>
+      <UniqueIdentifier>{AF8EE915-55E8-40D7-8C90-617B834C79AA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\DES203_Project.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{B12EEF70-BC0F-430E-9B5D-628646E27152}</UniqueIdentifier>
+      <UniqueIdentifier>{8C44478E-458A-4AFD-BE58-FE152FF1FAEC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\DES203_Project">
-      <UniqueIdentifier>{8B183C9F-A4E5-4805-8567-42CB88BAF829}</UniqueIdentifier>
+      <UniqueIdentifier>{25260FE2-01F0-4039-92F9-397543E6D801}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\DES203_Project\DES203_Project.Build.cs">
       <Filter>Source\DES203_Project</Filter>
@@ -65,6 +65,12 @@
     <ClInclude Include="..\..\Source\DES203_Project\Interactable.h">
       <Filter>Source\DES203_Project</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\DES203_Project\Item.cpp">
+      <Filter>Source\DES203_Project</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DES203_Project\Item.h">
+      <Filter>Source\DES203_Project</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\DES203_Project\Pickup.cpp">
       <Filter>Source\DES203_Project</Filter>
     </ClCompile>
@@ -77,5 +83,21 @@
     <ClInclude Include="..\..\Source\DES203_Project\RangedWeapon.h">
       <Filter>Source\DES203_Project</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\DES203_Project\Shop.cpp">
+      <Filter>Source\DES203_Project</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DES203_Project\Shop.h">
+      <Filter>Source\DES203_Project</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\DES203_Project\NPC.h">
+      <Filter>Source\DES203_Project</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\DES203_Project\NPC.cpp">
+      <Filter>Source\DES203_Project</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

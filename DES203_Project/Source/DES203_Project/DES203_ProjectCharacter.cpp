@@ -16,6 +16,7 @@
 #include "RangedWeapon.h"
 #include "Engine/World.h"
 #include "Engine/EngineTypes.h"
+#include "Item.h"
 #include "Engine/CollisionProfile.h"
 
 ADES203_ProjectCharacter::ADES203_ProjectCharacter()
@@ -78,8 +79,8 @@ void ADES203_ProjectCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	Inventory.SetNum(10);
-	EquippedItems.SetNum(3);
 	EquippedWeapons.SetNum(3);
+	EquippedItems.SetNum(3);
 	CurrentInteractable = nullptr;
 }
 
@@ -167,12 +168,26 @@ void ADES203_ProjectCharacter::EquipWeapon(int32 Slot)
 	if (Inventory[Slot] != nullptr)
 	{
 		APickup* temp;
-
-		temp = EquippedWeapons[2];
-		EquippedWeapons[2] = EquippedWeapons[1];
-		EquippedWeapons[1] = EquippedWeapons[0];
-		EquippedWeapons[0] = Inventory[Slot];
-		Inventory[Slot] = temp;
+			
+		if (Cast<ARangedWeapon>(Inventory[Slot]))
+		{
+			temp = EquippedWeapons[2];
+			EquippedWeapons[2] = EquippedWeapons[1];
+			EquippedWeapons[1] = EquippedWeapons[0];
+			EquippedWeapons[0] = Inventory[Slot];
+			Inventory[Slot] = temp;
+			WeaponIndex = 0;
+			EquippedWeapons[0]->Use();
+		}
+		else
+		{
+			temp = EquippedItems[2];
+			EquippedItems[2] = EquippedItems[1];
+			EquippedItems[1] = EquippedItems[0];
+			EquippedItems[0] = Inventory[Slot];
+			Inventory[Slot] = temp;
+		}
+		
 	}
 	
 }
@@ -231,6 +246,48 @@ void ADES203_ProjectCharacter::NextWeapon()
 		}
 		break;
 	
+	default:
+		break;
+	}
+}
+
+void ADES203_ProjectCharacter::NextItem()
+{
+	switch (ItemIndex)
+	{
+	case 0:
+		if (EquippedItems[1])
+		{
+			ItemIndex = 1;
+		}
+		else if (EquippedItems[2])
+		{
+			ItemIndex = 2;
+		}
+		break;
+
+	case 1:
+		if (EquippedItems[2])
+		{
+			ItemIndex = 2;
+		}
+		else if (EquippedItems[0])
+		{
+			ItemIndex = 0;
+		}
+		break;
+
+	case 2:
+		if (EquippedItems[0])
+		{
+			ItemIndex = 0;
+		}
+		else if (EquippedItems[1])
+		{
+			ItemIndex = 1;
+		}
+		break;
+
 	default:
 		break;
 	}
