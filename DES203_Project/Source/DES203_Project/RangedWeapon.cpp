@@ -20,7 +20,7 @@ ARangedWeapon::ARangedWeapon()
 
 	aimArrow = CreateDefaultSubobject<UArrowComponent>(TEXT("AimArrow"));
 	aimArrow->SetupAttachment(InteractableMesh);
-	aimArrow->RelativeLocation = ShootPoint;
+	//aimArrow->RelativeLocation = ShootPoint;
 
 	laserPointer = CreateDefaultSubobject<UParticleSystemComponent> (TEXT("AimLaser"));
 	laserPointer->SetupAttachment(aimArrow);

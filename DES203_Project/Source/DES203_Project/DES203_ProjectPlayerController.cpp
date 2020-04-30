@@ -201,6 +201,7 @@ void ADES203_ProjectPlayerController::Shoot()
 	if (MyCharacter->MainWeapon != nullptr)
 	{
 		MyCharacter->MainWeapon->Shoot();
+		//GLog->Log("Shoot");
 	}
 	else
 	{
