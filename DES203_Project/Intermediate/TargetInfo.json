@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "DES203_Project",
-			"Path": "D:\\UE4 Projects\\interactive-media-production-project\\DES203_Project\\Source\\DES203_Project.Target.cs",
+			"Path": "C:\\Users\\pieta\\Documents\\GitHub\\interactive-media-production-project\\DES203_Project\\Source\\DES203_Project.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "DES203_ProjectEditor",
-			"Path": "D:\\UE4 Projects\\interactive-media-production-project\\DES203_Project\\Source\\DES203_ProjectEditor.Target.cs",
+			"Path": "C:\\Users\\pieta\\Documents\\GitHub\\interactive-media-production-project\\DES203_Project\\Source\\DES203_ProjectEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
