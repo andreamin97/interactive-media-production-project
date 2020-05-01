@@ -1,7 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿Log file open, 04/30/20 17:42:20
 =======
 ﻿Log file open, 05/01/20 01:22:02
+>>>>>>> master
+=======
+﻿Log file open, 05/01/20 14:30:55
 >>>>>>> master
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
@@ -14,9 +18,13 @@ LogInit: Display: Running engine for game: DES203_Project
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
 <<<<<<< HEAD
+<<<<<<< HEAD
 LogStats: Stats thread started at 1.017730
 =======
 LogStats: Stats thread started at 0.064873
+>>>>>>> master
+=======
+LogStats: Stats thread started at 0.519444
 >>>>>>> master
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
@@ -147,7 +155,7 @@ LogInit: Compiled (64-bit): Jan 24 2020 02:05:53
 LogInit: Compiled with Visual C++: 19.16.27032.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.24
-LogInit: Command Line:  -EpicPortal -epicusername=EatYourLumps -epicuserid=3b71ce60d2e043b19c5b11e01013bfe5 -epiclocale=en
+LogInit: Command Line: 
 LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.24/Engine/Binaries/Win64/
 >>>>>>> master
 LogInit: Installed Engine Build: 1
@@ -181,6 +189,7 @@ LogInit: Presizing for max 25165824 objects, including 0 objects not considered 
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
+<<<<<<< HEAD
 <<<<<<< HEAD
 [2020.04.30-16.42.21:977][  0]LogConfig: Setting CVar [[r.VSync:0]]
 [2020.04.30-16.42.21:977][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
@@ -11092,64 +11101,569 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.05.01-00.22.29:024][631]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
 [2020.05.01-00.22.29:027][631]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'EquippedWeapons' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
 [2020.05.01-00.22.29:027][631]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+=======
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Engine.ini]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Engine.ini]
+[2020.05.01-13.30.58:646][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Engine.ini]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.05.01-13.30.58:646][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Engine.ini]
+[2020.05.01-13.30.58:647][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.05.01-13.30.58:647][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.05.01-13.30.58:647][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.05.01-13.30.58:647][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.05.01-13.30.58:647][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.05.01-13.30.58:647][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.05.01-13.30.58:647][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.05.01-13.30.58:647][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.05.01-13.30.58:647][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.05.01-13.30.58:647][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.05.01-13.30.58:647][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.05.01-13.30.58:647][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.05.01-13.30.58:647][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.05.01-13.30.58:647][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Engine.ini]
+[2020.05.01-13.30.58:647][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Engine.ini]
+[2020.05.01-13.30.58:648][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:648][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.05.01-13.30.58:648][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.05.01-13.30.58:648][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:648][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.05.01-13.30.58:649][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.05.01-13.30.58:650][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.05.01-13.30.58:650][  0]LogInit: Selected Device Profile: [Windows]
+[2020.05.01-13.30.58:650][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.05.01-13.30.58:672][  0]LogHAL: Display: Platform has ~ 16 GB [17128443904 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.05.01-13.30.58:672][  0]LogInit: Going up to parent DeviceProfile []
+[2020.05.01-13.30.58:672][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:672][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.05.01-13.30.58:672][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.05.01-13.30.58:672][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.05.01-13.30.58:673][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Scalability.ini]
+[2020.05.01-13.30.58:673][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.05.01-13.30.58:674][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.05.01-13.30.58:674][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.05.01-13.30.58:674][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.05.01-13.30.58:700][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.05.01-13.30.58:700][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.05.01-13.30.58:700][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Config/Windows/Engine.ini]
+[2020.05.01-13.30.58:700][  0]LogInit: Computer: DESKTOP-VA5NR4F
+[2020.05.01-13.30.58:700][  0]LogInit: User: pieta
+[2020.05.01-13.30.58:700][  0]LogInit: CPU Page size=4096, Cores=6
+[2020.05.01-13.30.58:700][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.05.01-13.30.58:701][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2020.05.01-13.30.58:701][  0]LogMemory: Platform Memory Stats for Windows
+[2020.05.01-13.30.58:701][  0]LogMemory: Process Physical Memory: 107.04 MB used, 107.05 MB peak
+[2020.05.01-13.30.58:701][  0]LogMemory: Process Virtual Memory: 101.77 MB used, 101.77 MB peak
+[2020.05.01-13.30.58:701][  0]LogMemory: Physical Memory: 5720.85 MB used,  10614.11 MB free, 16334.96 MB total
+[2020.05.01-13.30.58:701][  0]LogMemory: Virtual Memory: 5159.48 MB used,  134212568.00 MB free, 134217728.00 MB total
+[2020.05.01-13.30.58:705][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.05.01-13.31.00:007][  0]LogInit: Using OS detected language (en-GB).
+[2020.05.01-13.31.00:007][  0]LogInit: Using OS detected locale (en-GB).
+[2020.05.01-13.31.00:008][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2020.05.01-13.31.01:271][  0]LogInit: Setting process to per monitor DPI aware
+[2020.05.01-13.31.01:633][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.05.01-13.31.01:633][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.05.01-13.31.06:041][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.05.01-13.31.06:041][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.05.01-13.31.06:041][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.05.01-13.31.06:041][  0]LogD3D11RHI: D3D11 adapters:
+[2020.05.01-13.31.06:088][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2020.05.01-13.31.06:088][  0]LogD3D11RHI:       4043/0/8167 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2020.05.01-13.31.06:090][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.05.01-13.31.06:090][  0]LogD3D11RHI:       0/0/8167 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.05.01-13.31.06:090][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.05.01-13.31.06:096][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.05.01-13.31.06:096][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2020.05.01-13.31.06:096][  0]LogWindows: EnumDisplayDevices:
+[2020.05.01-13.31.06:096][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2020.05.01-13.31.06:097][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2020.05.01-13.31.06:097][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2020.05.01-13.31.06:097][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2020.05.01-13.31.06:097][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2020.05.01-13.31.06:097][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2020.05.01-13.31.06:097][  0]LogD3D11RHI:   Driver Version: 417.01 (internal:25.21.14.1701, unified:417.01)
+[2020.05.01-13.31.06:097][  0]LogD3D11RHI:      Driver Date: 11-15-2018
+[2020.05.01-13.31.06:097][  0]LogRHI: Texture pool is 2830 MB (70% of 4043 MB)
+[2020.05.01-13.31.06:127][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2020.05.01-13.31.06:127][  0]LogD3D11RHI: Async texture creation enabled
+[2020.05.01-13.31.06:192][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2020.05.01-13.31.06:608][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATC'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1a'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTC'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATCClient'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1Client'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1aClient'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTCClient'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.05.01-13.31.06:664][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.05.01-13.31.06:794][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.05.01-13.31.06:794][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.05.01-13.31.06:815][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.05.01-13.31.06:832][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.05.01-13.31.06:841][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.05.01-13.31.06:858][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.05.01-13.31.06:872][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.05.01-13.31.06:884][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.05.01-13.31.06:939][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.05.01-13.31.06:939][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.05.01-13.31.06:964][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.05.01-13.31.06:964][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.05.01-13.31.06:979][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.05.01-13.31.06:996][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.05.01-13.31.07:014][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.05.01-13.31.07:032][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.05.01-13.31.07:032][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.05.01-13.31.07:149][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.05.01-13.31.07:528][  0]LogShaderCompilers: Guid format shader working directory is -53 characters bigger than the processId version (../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Intermediate/Shaders/WorkingDirectory/17736/).
+[2020.05.01-13.31.07:529][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/pieta/AppData/Local/Temp/UnrealShaderWorkingDir/795DA6984767A00506519F8C1B45CE3D/'.
+[2020.05.01-13.31.07:541][  0]LogXGEController: Cleaning working directory: C:/Users/pieta/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2020.05.01-13.31.07:541][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.05.01-13.31.07:541][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.05.01-13.31.07:541][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.05.01-13.31.12:203][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.05.01-13.31.13:164][  0]LogDerivedDataCache: Loaded boot cache 0.96s 85MB C:/Users/pieta/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2020.05.01-13.31.13:164][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/pieta/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc
+[2020.05.01-13.31.13:164][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.05.01-13.31.13:164][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.05.01-13.31.13:165][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.05.01-13.31.13:165][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.05.01-13.31.13:287][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.05.01-13.31.13:287][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.05.01-13.31.13:287][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.05.01-13.31.13:288][  0]LogDerivedDataCache: Using Local data cache path C:/Users/pieta/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.05.01-13.31.13:288][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.05.01-13.31.13:288][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.05.01-13.31.13:313][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.05.01-13.31.13:316][  0]LogSlate: Using FreeType 2.10.0
+[2020.05.01-13.31.13:342][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.05.01-13.31.15:016][  0]LogAssetRegistry: FAssetRegistry took 0.0030 seconds to start up
+[2020.05.01-13.31.15:575][  0]LogInit: Selected Device Profile: [Windows]
+[2020.05.01-13.31.16:394][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.05.01-13.31.16:394][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.05.01-13.31.16:394][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.05.01-13.31.16:394][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.05.01-13.31.16:394][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.05.01-13.31.16:542][  0]LogNetVersion: DES203_Project 1.0.0, NetCL: 10570792, EngineNetVer: 13, GameNetVer: 0 (Checksum: 3280151972)
+[2020.05.01-13.31.38:038][  0]LogPackageLocalizationCache: Processed 10 localized package path(s) for 1 prioritized culture(s) in 0.061238 seconds
+[2020.05.01-13.31.38:045][  0]LogUObjectArray: 46750 objects as part of root set at end of initial load.
+[2020.05.01-13.31.38:045][  0]LogUObjectAllocator: 8137160 out of 0 bytes used by permanent object pool.
+[2020.05.01-13.31.38:045][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.05.01-13.31.40:777][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.05.01-13.31.40:801][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.05.01-13.31.41:470][  0]LogBlueprint: Warning: [Compiler Ue4ASP_Character] InputAction Event references unknown Action 'Crouch' for  InputAction Crouch
+[2020.05.01-13.31.41:470][  0]LogBlueprint: Warning: [Compiler Ue4ASP_Character] InputAction Event references unknown Action 'Jump' for  InputAction Jump
+[2020.05.01-13.31.41:470][  0]LogBlueprint: Warning: [Compiler Ue4ASP_Character] Input Axis Event references unknown Axis 'LookUp' for  InputAxis LookUp
+[2020.05.01-13.31.41:470][  0]LogBlueprint: Warning: [Compiler Ue4ASP_Character] Input Axis Event references unknown Axis 'Turn' for  InputAxis Turn
+[2020.05.01-13.31.42:654][  0]SourceControl: Source control is disabled
+[2020.05.01-13.31.42:654][  0]SourceControl: Source control is disabled
+[2020.05.01-13.31.42:683][  0]SourceControl: Source control is disabled
+[2020.05.01-13.31.42:760][  0]SourceControl: Source control is disabled
+[2020.05.01-13.31.42:791][  0]SourceControl: Source control is disabled
+[2020.05.01-13.31.43:569][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.05.01-13.31.43:653][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.05.01-13.31.43:653][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.05.01-13.31.44:048][  0]LogOcInput: OculusInput pre-init called
+[2020.05.01-13.31.44:091][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.05.01-13.31.44:091][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.05.01-13.31.44:334][  0]LogEngine: Initializing Engine...
+[2020.05.01-13.31.44:334][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.05.01-13.31.44:335][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.05.01-13.31.45:376][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.05.01-13.31.45:416][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.05.01-13.31.45:421][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.05.01-13.31.45:421][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.05.01-13.31.45:421][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.05.01-13.31.45:421][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.05.01-13.31.45:421][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.05.01-13.31.45:421][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.05.01-13.31.45:421][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.05.01-13.31.45:421][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.05.01-13.31.45:421][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.05.01-13.31.45:421][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.05.01-13.31.45:461][  0]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.05.01-13.31.45:461][  0]LogAudioMixer: Display: Name: Headphones (2- High Definition Audio Device)
+[2020.05.01-13.31.45:461][  0]LogAudioMixer: Display: Is Default: Yes
+[2020.05.01-13.31.45:461][  0]LogAudioMixer: Display: Sample Rate: 44100
+[2020.05.01-13.31.45:461][  0]LogAudioMixer: Display: Channel Count Used: 2
+[2020.05.01-13.31.45:461][  0]LogAudioMixer: Display: Device Channel Count: 2
+[2020.05.01-13.31.45:461][  0]LogAudioMixer: Display: Channel Order:
+[2020.05.01-13.31.45:461][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.05.01-13.31.45:461][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.05.01-13.31.45:477][  0]LogAudioMixer: Display: Using Audio Device Headphones (2- High Definition Audio Device)
+[2020.05.01-13.31.45:479][  0]LogInit: FAudioDevice initialized.
+[2020.05.01-13.31.45:479][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.05.01-13.31.45:666][  0]LogDerivedDataCache: Saved boot cache 0.19s 84MB C:/Users/pieta/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2020.05.01-13.31.45:670][  0]LogInit: Texture streaming: Enabled
+[2020.05.01-13.31.45:868][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.05.01-13.31.45:868][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.05.01-13.31.45:869][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.05.01-13.31.46:214][  0]LogInit: Transaction tracking system initialized
+[2020.05.01-13.31.46:392][  0]BlueprintLog: New page: Editor Load
+[2020.05.01-13.31.46:984][  0]LocalizationService: Localization service is disabled
+[2020.05.01-13.31.49:194][  0]LogFileCache: Scanning file cache for directory 'C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/' took 0.02s
+[2020.05.01-13.31.49:194][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.05.01-13.31.49:194][  0]LogCook: Display: Mobile HDR setting 1
+[2020.05.01-13.31.51:233][  0]SourceControl: Source control is disabled
+[2020.05.01-13.31.51:233][  0]Cmd: MAP LOAD FILE="../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TopDownExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.05.01-13.31.51:233][  0]LightingResults: New page: Lighting Build
+[2020.05.01-13.31.51:242][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.05.01-13.31.51:242][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.05.01-13.31.51:242][  0]MapCheck: New page: Map Check
+[2020.05.01-13.31.51:242][  0]LightingResults: New page: Lighting Build
+[2020.05.01-13.31.51:258][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.37ms
+[2020.05.01-13.31.51:987][  0]LogLinker: Warning: While loading '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Enemies/EnemyMeshes/Drone/WingedDroneUvmappedF_pCylinder9.uasset' failed to load '/Game/Enemies/Blueprints/Meshes/Drone/lambert1': Can't find file.
+[2020.05.01-13.31.51:988][  0]LogLinker: Warning: While loading '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Enemies/EnemyMeshes/Drone/WingedDroneUvmappedF_pCylinder9.uasset' failed to load '/Game/Enemies/Blueprints/Meshes/Drone/lambert1': Can't find file.
+[2020.05.01-13.31.51:988][  0]LogLinker: Warning: While loading '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Enemies/EnemyMeshes/Drone/WingedDroneUvmappedF_pCylinder9.uasset' failed to load '/Game/Enemies/Blueprints/Meshes/Drone/lambert1': Can't find file.
+[2020.05.01-13.31.51:988][  0]LogLinker: Warning: While loading '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Enemies/EnemyMeshes/Drone/WingedDroneUvmappedF_pCylinder9.uasset' failed to load '/Game/Enemies/Blueprints/Meshes/Drone/lambert1': Can't find file.
+[2020.05.01-13.31.52:695][  0]LogLinker: Warning: While loading '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Enemies/EnemyMeshes/Drone/WingedDroneUvmappedF_pCylinder9.uasset' failed to load '/Game/Enemies/Blueprints/Meshes/Drone/lambert1': Can't find file.
+[2020.05.01-13.31.52:695][  0]LoadErrors: Failed to load /Game/Enemies/Blueprints/Meshes/Drone/lambert1.lambert1 Referenced by WingedDroneUvmappedF_pCylinder9
+[2020.05.01-13.31.52:695][  0]LogLinker: Warning: While loading '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Enemies/EnemyMeshes/Drone/WingedDroneUvmappedF_pCylinder9.uasset' failed to load '/Game/Enemies/Blueprints/Meshes/Drone/lambert1': Can't find file.
+[2020.05.01-13.31.52:695][  0]LoadErrors: Failed to load /Game/Enemies/Blueprints/Meshes/Drone/lambert1.lambert1 Referenced by WingedDroneUvmappedF_pCylinder9
+[2020.05.01-13.31.52:695][  0]LogLinker: Warning: While loading '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Enemies/EnemyMeshes/Drone/WingedDroneUvmappedF_pCylinder9.uasset' failed to load '/Game/Enemies/Blueprints/Meshes/Drone/lambert1': Can't find file.
+[2020.05.01-13.31.52:695][  0]LoadErrors: Failed to load /Game/Enemies/Blueprints/Meshes/Drone/lambert1.lambert1 Referenced by WingedDroneUvmappedF_pCylinder9
+[2020.05.01-13.31.52:696][  0]LogLinker: Warning: While loading '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Enemies/EnemyMeshes/Drone/WingedDroneUvmappedF_pCylinder9.uasset' failed to load '/Game/Enemies/Blueprints/Meshes/Drone/lambert1': Can't find file.
+[2020.05.01-13.31.52:696][  0]LoadErrors: Failed to load /Game/Enemies/Blueprints/Meshes/Drone/lambert1.lambert1 Referenced by WingedDroneUvmappedF_pCylinder9
+[2020.05.01-13.31.54:167][  0]LogAIModule: Creating AISystem for world TopDownExampleMap
+[2020.05.01-13.31.54:204][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.05.01-13.31.54:232][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
+[2020.05.01-13.31.54:232][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.05.01-13.31.54:232][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.168ms to complete.
+[2020.05.01-13.31.54:232][  0]LogFileHelpers: Loading map 'TopDownExampleMap' took 3.000
+[2020.05.01-13.31.54:987][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.01-13.31.54:993][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.01-13.31.54:998][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.01-13.31.55:002][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.01-13.31.55:040][  0]LogCollectionManager: Loaded 0 collections in 0.001743 seconds
+[2020.05.01-13.31.55:114][  0]LogFileCache: Scanning file cache for directory 'C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Collections/' took 0.00s
+[2020.05.01-13.31.55:114][  0]LogFileCache: Scanning file cache for directory 'C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Developers/pieta/Collections/' took 0.00s
+[2020.05.01-13.31.55:114][  0]LogFileCache: Scanning file cache for directory 'C:/Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Collections/' took 0.00s
+[2020.05.01-13.31.55:114][  0]LogContentBrowser: Native class hierarchy populated in 0.0117 seconds. Added 3024 classes and 719 folders.
+[2020.05.01-13.31.55:161][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.05.01-13.31.56:372][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.05.01-13.31.56:416][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 2 classes and 3 folders.
+[2020.05.01-13.31.56:586][  0]LogSlate: Took 0.032170 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.05.01-13.31.56:614][  0]LogSlate: Took 0.026268 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.05.01-13.31.56:642][  0]LogSlate: Took 0.023925 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.05.01-13.31.56:932][  0]LogRenderer: Reallocating scene render targets to support 1324x836 Format 10 NumSamples 1 (Frame:1).
+[2020.05.01-13.31.57:195][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.05.01-13.31.57:195][  0]LogLoad: (Engine Initialization) Total time: 128.42 seconds
+[2020.05.01-13.31.57:195][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.05.01-13.31.57:326][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.05.01-13.31.57:438][  0]LogSlate: Took 0.018580 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.05.01-13.32.00:118][ 38]LogAssetRegistry: Asset discovery search completed in 45.1029 seconds
+[2020.05.01-13.32.00:121][ 38]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000007 seconds (updated 0 objects)
+[2020.05.01-13.32.01:796][234]LogTemp: Repeating last play command: Selected Viewport
+[2020.05.01-13.32.01:814][234]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/Levels/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
+[2020.05.01-13.32.01:814][234]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.05.01-13.32.01:865][234]PIE: New page: PIE session: TopDownExampleMap (1 May 2020, 15:32:01)
+[2020.05.01-13.32.01:866][234]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2020.05.01-13.32.01:867][234]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2020.05.01-13.32.01:867][234]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_TopDownExampleMap
+[2020.05.01-13.32.01:882][234]LogPlayLevel: PIE: StaticDuplicateObject took: (0.014217s)
+[2020.05.01-13.32.01:893][234]LogAIModule: Creating AISystem for world TopDownExampleMap
+[2020.05.01-13.32.01:893][234]LogPlayLevel: PIE: World Init took: (0.011358s)
+[2020.05.01-13.32.01:893][234]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/TopDownExampleMap.TopDownExampleMap to /Game/Levels/UEDPIE_0_TopDownExampleMap.TopDownExampleMap (0.025833s)
+[2020.05.01-13.32.01:917][234]LogUObjectHash: Compacting FUObjectHashTables data took   1.44ms
+[2020.05.01-13.32.01:918][234]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.05.01-13.32.01:919][234]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.05.01-13.32.01:919][234]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.05.01-13.32.01:919][234]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.05.01-13.32.01:919][234]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.05.01-13.32.01:919][234]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.05.01-13.32.01:919][234]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.05.01-13.32.01:919][234]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.05.01-13.32.01:919][234]LogAudio: Display: Using built-in audio occlusion.
+[2020.05.01-13.32.01:919][234]LogAudioMixer: Display: Initializing audio mixer.
+[2020.05.01-13.32.01:936][234]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.05.01-13.32.01:936][234]LogAudioMixer: Display: Name: Headphones (2- High Definition Audio Device)
+[2020.05.01-13.32.01:936][234]LogAudioMixer: Display: Is Default: Yes
+[2020.05.01-13.32.01:936][234]LogAudioMixer: Display: Sample Rate: 44100
+[2020.05.01-13.32.01:936][234]LogAudioMixer: Display: Channel Count Used: 2
+[2020.05.01-13.32.01:936][234]LogAudioMixer: Display: Device Channel Count: 2
+[2020.05.01-13.32.01:936][234]LogAudioMixer: Display: Channel Order:
+[2020.05.01-13.32.01:936][234]LogAudioMixer: Display: 0: FrontLeft
+[2020.05.01-13.32.01:936][234]LogAudioMixer: Display: 1: FrontRight
+[2020.05.01-13.32.01:944][234]LogAudioMixer: Display: Using Audio Device Headphones (2- High Definition Audio Device)
+[2020.05.01-13.32.01:945][234]LogInit: FAudioDevice initialized.
+[2020.05.01-13.32.03:062][234]LogLinker: Error: HOTRELOADED_DES203_ProjectGameMode_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/UI/Shop_UI.uasset)
+[2020.05.01-13.32.03:062][234]LogLinker: Error: HOTRELOADED_DES203_ProjectGameMode_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/UI/Shop_UI.uasset)
+[2020.05.01-13.32.03:086][234]LogLinker: Error: HOTRELOADED_DES203_ProjectGameMode_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/UI/Shop_UI.uasset)
+[2020.05.01-13.32.03:086][234]LogLinker: Error: HOTRELOADED_DES203_ProjectGameMode_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/UI/Shop_UI.uasset)
+[2020.05.01-13.32.05:619][234]LogLoad: Game class is 'TopDown_GameMode_C'
+[2020.05.01-13.32.05:621][234]LogWorld: Bringing World /Game/Levels/UEDPIE_0_TopDownExampleMap.TopDownExampleMap up for play (max tick rate 0) at 2020.05.01-14.32.05
+[2020.05.01-13.32.05:622][234]LogWorld: Bringing up level for play took: 0.002152
+[2020.05.01-13.32.05:622][234]LogOnline: OSS: Creating online subsystem instance for: :Context_1
+[2020.05.01-13.32.05:636][234]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
+[2020.05.01-13.32.05:639][234]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'EquippedWeapons' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
+[2020.05.01-13.32.05:639][234]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+>>>>>>> master
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_0:01D4
-[2020.05.01-00.22.29:027][631]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property CallFunc_Array_Get_Item". Blueprint:  InGame_UI Function:  Get Brush 0 Graph:  GetBrush_0 Node:  Return Node
-[2020.05.01-00.22.29:027][631]LogScript: Warning: Script Msg: Attempted to access index 1 from array 'EquippedWeapons' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
-[2020.05.01-00.22.29:027][631]LogScript: Warning: Script Msg: Attempted to access index 2 from array 'EquippedWeapons' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
-[2020.05.01-00.22.29:027][631]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item_5
+[2020.05.01-13.32.05:639][234]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property CallFunc_Array_Get_Item". Blueprint:  InGame_UI Function:  Get Brush 0 Graph:  GetBrush_0 Node:  Return Node
+[2020.05.01-13.32.05:639][234]LogScript: Warning: Script Msg: Attempted to access index 1 from array 'EquippedWeapons' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
+[2020.05.01-13.32.05:639][234]LogScript: Warning: Script Msg: Attempted to access index 2 from array 'EquippedWeapons' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
+[2020.05.01-13.32.05:639][234]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item_5
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_1:04A3
-[2020.05.01-00.22.29:027][631]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property CallFunc_Array_Get_Item_5". Blueprint:  InGame_UI Function:  Get Brush 1 Graph:  GetBrush_1 Node:  Return Node
-[2020.05.01-00.22.29:027][631]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'EquippedItems' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
-[2020.05.01-00.22.29:027][631]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+[2020.05.01-13.32.05:639][234]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property CallFunc_Array_Get_Item_5". Blueprint:  InGame_UI Function:  Get Brush 1 Graph:  GetBrush_1 Node:  Return Node
+[2020.05.01-13.32.05:639][234]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'EquippedItems' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
+[2020.05.01-13.32.05:639][234]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_3:0195
-[2020.05.01-00.22.29:027][631]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property CallFunc_Array_Get_Item". Blueprint:  InGame_UI Function:  Get Brush 3 Graph:  GetBrush_3 Node:  Return Node
-[2020.05.01-00.22.29:027][631]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_TopDownExampleMap 0.917
-[2020.05.01-00.22.29:027][631]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/Levels/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2020.05.01-00.22.29:034][631]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+[2020.05.01-13.32.05:639][234]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property CallFunc_Array_Get_Item". Blueprint:  InGame_UI Function:  Get Brush 3 Graph:  GetBrush_3 Node:  Return Node
+[2020.05.01-13.32.05:639][234]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_TopDownExampleMap 3.337
+[2020.05.01-13.32.05:639][234]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/Levels/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
+[2020.05.01-13.32.05:683][234]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_0:01D4
-[2020.05.01-00.22.29:034][631]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item_5
+[2020.05.01-13.32.05:683][234]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item_5
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_1:04A3
-[2020.05.01-00.22.29:034][631]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+[2020.05.01-13.32.05:683][234]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_3:0195
-[2020.05.01-00.22.29:037][631]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+[2020.05.01-13.32.05:685][234]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_0:01D4
-[2020.05.01-00.22.29:037][631]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item_5
+[2020.05.01-13.32.05:685][234]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item_5
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_1:04A3
-[2020.05.01-00.22.29:037][631]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+[2020.05.01-13.32.05:685][234]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_3:0195
-[2020.05.01-00.22.29:062][632]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+[2020.05.01-13.32.05:803][235]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_0:01D4
-[2020.05.01-00.22.29:063][632]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item_5
+[2020.05.01-13.32.05:803][235]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item_5
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_1:04A3
-[2020.05.01-00.22.29:063][632]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+[2020.05.01-13.32.05:803][235]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_3:0195
-[2020.05.01-00.22.29:066][632]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+[2020.05.01-13.32.05:807][235]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_0:01D4
-[2020.05.01-00.22.29:067][632]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item_5
+[2020.05.01-13.32.05:807][235]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item_5
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_1:04A3
-[2020.05.01-00.22.29:067][632]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+[2020.05.01-13.32.05:807][235]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_3:0195
-[2020.05.01-00.22.29:073][633]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
+[2020.05.01-13.32.05:812][236]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_0:01D4
-[2020.05.01-00.22.29:073][633]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item_5
+[2020.05.01-13.32.05:812][236]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item_5
 	InGame_UI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InGame_UI_C_0
 	Function /Game/UI/InGame_UI.InGame_UI_C:GetBrush_1:04A3
+<<<<<<< HEAD
 [2020.05.01-00.22.30:262][776]PIE: Warning: FirstPersonProjectile_C_0.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
 [2020.05.01-00.22.31:762][956]PIE: Warning: FirstPersonProjectile_C_1.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
 [2020.05.01-00.22.32:362][ 28]Press F to interact with item.
@@ -13229,4 +13743,193 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.05.01-00.32.57:314][311]LogD3D11RHI: CleanupD3DDevice
 [2020.05.01-00.32.57:324][311]LogExit: Exiting.
 [2020.05.01-00.32.57:368][311]Log file closed, 05/01/20 01:32:57
+>>>>>>> master
+=======
+[2020.05.01-13.32.07:279][406]PIE: Warning: FirstPersonProjectile_C_0.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.05.01-13.32.08:779][586]PIE: Warning: FirstPersonProjectile_C_1.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.05.01-13.32.10:053][739]Press F to interact with item.
+[2020.05.01-13.32.10:280][766]PIE: Warning: FirstPersonProjectile_C_2.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.05.01-13.32.10:529][796]Press F to interact with item.
+[2020.05.01-13.32.12:539][ 37]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.05.01-13.32.12:539][ 37]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.05.01-13.32.12:539][ 37]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/Levels/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
+[2020.05.01-13.32.12:540][ 37]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.01-13.32.12:540][ 37]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_TopDownExampleMap
+[2020.05.01-13.32.12:540][ 37]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.05.01-13.32.12:540][ 37]LogWorld: UWorld::CleanupWorld for TopDownExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.05.01-13.32.12:540][ 37]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.05.01-13.32.12:546][ 37]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.05.01-13.32.12:546][ 37]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/Levels/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
+[2020.05.01-13.32.12:550][ 37]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.05.01-13.32.12:569][ 37]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.05.01-13.32.12:571][ 37]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.01-13.32.12:581][ 37]LogUObjectHash: Compacting FUObjectHashTables data took   2.54ms
+[2020.05.01-13.32.12:663][ 39]LogPlayLevel: Display: Destroying online subsystem :Context_1
+[2020.05.01-13.32.13:607][124]LogSlate: Window 'Message Log' being destroyed
+[2020.05.01-13.32.13:609][124]LogSlate: Window 'Message Log' being destroyed
+[2020.05.01-13.32.31:193][430]LogTemp: Repeating last play command: Selected Viewport
+[2020.05.01-13.32.31:212][430]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/Levels/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
+[2020.05.01-13.32.31:212][430]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.05.01-13.32.31:212][430]PIE: New page: PIE session: TopDownExampleMap (1 May 2020, 15:32:31)
+[2020.05.01-13.32.31:213][430]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_TopDownExampleMap
+[2020.05.01-13.32.31:223][430]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009998s)
+[2020.05.01-13.32.31:224][430]LogAIModule: Creating AISystem for world TopDownExampleMap
+[2020.05.01-13.32.31:224][430]LogPlayLevel: PIE: World Init took: (0.001202s)
+[2020.05.01-13.32.31:224][430]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/TopDownExampleMap.TopDownExampleMap to /Game/Levels/UEDPIE_0_TopDownExampleMap.TopDownExampleMap (0.011361s)
+[2020.05.01-13.32.31:245][430]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2020.05.01-13.32.31:247][430]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.05.01-13.32.31:247][430]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.05.01-13.32.31:247][430]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.05.01-13.32.31:247][430]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.05.01-13.32.31:247][430]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.05.01-13.32.31:247][430]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.05.01-13.32.31:247][430]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.05.01-13.32.31:247][430]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.05.01-13.32.31:247][430]LogAudio: Display: Using built-in audio occlusion.
+[2020.05.01-13.32.31:247][430]LogAudioMixer: Display: Initializing audio mixer.
+[2020.05.01-13.32.31:264][430]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.05.01-13.32.31:264][430]LogAudioMixer: Display: Name: Headphones (2- High Definition Audio Device)
+[2020.05.01-13.32.31:264][430]LogAudioMixer: Display: Is Default: Yes
+[2020.05.01-13.32.31:264][430]LogAudioMixer: Display: Sample Rate: 44100
+[2020.05.01-13.32.31:264][430]LogAudioMixer: Display: Channel Count Used: 2
+[2020.05.01-13.32.31:264][430]LogAudioMixer: Display: Device Channel Count: 2
+[2020.05.01-13.32.31:264][430]LogAudioMixer: Display: Channel Order:
+[2020.05.01-13.32.31:264][430]LogAudioMixer: Display: 0: FrontLeft
+[2020.05.01-13.32.31:265][430]LogAudioMixer: Display: 1: FrontRight
+[2020.05.01-13.32.31:273][430]LogAudioMixer: Display: Using Audio Device Headphones (2- High Definition Audio Device)
+[2020.05.01-13.32.31:274][430]LogInit: FAudioDevice initialized.
+[2020.05.01-13.32.31:284][430]LogLoad: Game class is 'TopDown_GameMode_C'
+[2020.05.01-13.32.31:286][430]LogWorld: Bringing World /Game/Levels/UEDPIE_0_TopDownExampleMap.TopDownExampleMap up for play (max tick rate 0) at 2020.05.01-14.32.31
+[2020.05.01-13.32.31:286][430]LogWorld: Bringing up level for play took: 0.001602
+[2020.05.01-13.32.31:287][430]LogOnline: OSS: Creating online subsystem instance for: :Context_2
+[2020.05.01-13.32.31:290][430]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'EquippedWeapons' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
+[2020.05.01-13.32.31:290][430]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property CallFunc_Array_Get_Item". Blueprint:  InGame_UI Function:  Get Brush 0 Graph:  GetBrush_0 Node:  Return Node
+[2020.05.01-13.32.31:290][430]LogScript: Warning: Script Msg: Attempted to access index 1 from array 'EquippedWeapons' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
+[2020.05.01-13.32.31:290][430]LogScript: Warning: Script Msg: Attempted to access index 2 from array 'EquippedWeapons' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
+[2020.05.01-13.32.31:290][430]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property CallFunc_Array_Get_Item_5". Blueprint:  InGame_UI Function:  Get Brush 1 Graph:  GetBrush_1 Node:  Return Node
+[2020.05.01-13.32.31:290][430]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'EquippedItems' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
+[2020.05.01-13.32.31:290][430]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property CallFunc_Array_Get_Item". Blueprint:  InGame_UI Function:  Get Brush 3 Graph:  GetBrush_3 Node:  Return Node
+[2020.05.01-13.32.31:290][430]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_TopDownExampleMap 0.988
+[2020.05.01-13.32.31:290][430]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/Levels/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
+[2020.05.01-13.32.32:429][564]PIE: Warning: FirstPersonProjectile_C_0.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.05.01-13.32.33:812][730]Press F to interact with item.
+[2020.05.01-13.32.33:929][744]PIE: Warning: FirstPersonProjectile_C_1.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.05.01-13.32.35:430][924]PIE: Warning: FirstPersonProjectile_C_2.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.05.01-13.32.36:930][104]PIE: Warning: FirstPersonProjectile_C_3.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.05.01-13.32.38:430][284]PIE: Warning: FirstPersonProjectile_C_4.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.05.01-13.32.38:805][329]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.05.01-13.32.38:805][329]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.05.01-13.32.38:805][329]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/Levels/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
+[2020.05.01-13.32.38:805][329]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.01-13.32.38:805][329]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_TopDownExampleMap
+[2020.05.01-13.32.38:806][329]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.05.01-13.32.38:806][329]LogWorld: UWorld::CleanupWorld for TopDownExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.05.01-13.32.38:806][329]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.05.01-13.32.38:815][329]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.05.01-13.32.38:815][329]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/Levels/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
+[2020.05.01-13.32.38:819][329]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.05.01-13.32.38:846][329]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.05.01-13.32.38:849][329]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.01-13.32.38:852][329]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
+[2020.05.01-13.32.38:916][330]LogPlayLevel: Display: Destroying online subsystem :Context_2
+[2020.05.01-13.32.39:845][412]LogSlate: Window 'Message Log' being destroyed
+[2020.05.01-13.32.39:848][412]LogSlate: Window 'Message Log' being destroyed
+[2020.05.01-13.33.48:036][ 76]LogEditorViewport: Clicking on Actor (LMB): EnemyTurretBP_C (EnemyTurretBP)
+[2020.05.01-13.33.53:803][654]LogSlate: Took 0.000199 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.05.01-13.33.53:817][654]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Enemies/Blueprints/EnemyTurretBP.EnemyTurretBP
+[2020.05.01-13.33.54:124][654]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 121 classes and 0 folders.
+[2020.05.01-13.33.55:277][654]LogSlate: Took 0.020448 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2020.05.01-13.33.55:497][655]LogSlate: Took 0.050599 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.05.01-13.34.07:237][  8]LogSelectionDetails: Warning: NavigateToFunctionSource:  Unable to find symbols for 'UGameplayStatics::GetPlayerCharacter' [The specified module could not be found.]
+[2020.05.01-13.34.31:358][833]LogEditorTransaction: Undo Delete current selection
+[2020.05.01-13.34.33:405][ 46]BlueprintLog: New page: Compile EnemyTurretBP
+[2020.05.01-13.34.33:692][ 46]LogUObjectHash: Compacting FUObjectHashTables data took   4.29ms
+[2020.05.01-13.42.15:429][161]LogUObjectHash: Compacting FUObjectHashTables data took   3.74ms
+[2020.05.01-13.42.15:690][161]LogSavePackage: Moving '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/TopDownExampleMap_Auto147BAD6F7437F736B83A6CF8CCE94BCEF.tmp' to '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Autosaves/Game/Levels/TopDownExampleMap_Auto1.umap'
+[2020.05.01-13.42.15:692][161]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/TopDownExampleMap' took 0.292
+[2020.05.01-13.42.15:692][161]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.292
+[2020.05.01-13.42.15:692][161]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Enemies/Blueprints/EnemyTurretBP] ([1] browsable assets)...
+[2020.05.01-13.42.15:718][161]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Enemies/Blueprints/EnemyTurretBP.EnemyTurretBP]
+[2020.05.01-13.42.15:718][161]OBJ SavePackage: Finished generating thumbnails for package [/Game/Enemies/Blueprints/EnemyTurretBP]
+[2020.05.01-13.42.15:773][161]LogSavePackage: Moving '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/EnemyTurretBP_Auto1702F6573407A1CB447F28889A267CA23.tmp' to '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/Autosaves/Game/Enemies/Blueprints/EnemyTurretBP_Auto1.uasset'
+[2020.05.01-13.42.15:775][161]LogFileHelpers: Auto-saving content packages took 0.083
+[2020.05.01-13.45.27:401][122]BlueprintLog: New page: Compile EnemyTurretBP
+[2020.05.01-13.45.27:670][122]LogUObjectHash: Compacting FUObjectHashTables data took   3.67ms
+[2020.05.01-13.45.29:429][315]LogTemp: Repeating last play command: Selected Viewport
+[2020.05.01-13.45.29:448][315]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/Levels/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
+[2020.05.01-13.45.29:448][315]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.05.01-13.45.29:448][315]PIE: New page: PIE session: TopDownExampleMap (1 May 2020, 15:45:29)
+[2020.05.01-13.45.29:448][315]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_TopDownExampleMap
+[2020.05.01-13.45.29:458][315]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009920s)
+[2020.05.01-13.45.29:460][315]LogAIModule: Creating AISystem for world TopDownExampleMap
+[2020.05.01-13.45.29:460][315]LogPlayLevel: PIE: World Init took: (0.001528s)
+[2020.05.01-13.45.29:460][315]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/TopDownExampleMap.TopDownExampleMap to /Game/Levels/UEDPIE_0_TopDownExampleMap.TopDownExampleMap (0.011650s)
+[2020.05.01-13.45.29:487][315]LogUObjectHash: Compacting FUObjectHashTables data took   3.33ms
+[2020.05.01-13.45.29:489][315]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.05.01-13.45.29:489][315]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.05.01-13.45.29:489][315]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.05.01-13.45.29:489][315]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.05.01-13.45.29:489][315]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.05.01-13.45.29:489][315]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.05.01-13.45.29:489][315]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.05.01-13.45.29:489][315]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.05.01-13.45.29:489][315]LogAudio: Display: Using built-in audio occlusion.
+[2020.05.01-13.45.29:489][315]LogAudioMixer: Display: Initializing audio mixer.
+[2020.05.01-13.45.29:507][315]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.05.01-13.45.29:507][315]LogAudioMixer: Display: Name: Headphones (2- High Definition Audio Device)
+[2020.05.01-13.45.29:507][315]LogAudioMixer: Display: Is Default: Yes
+[2020.05.01-13.45.29:507][315]LogAudioMixer: Display: Sample Rate: 44100
+[2020.05.01-13.45.29:507][315]LogAudioMixer: Display: Channel Count Used: 2
+[2020.05.01-13.45.29:507][315]LogAudioMixer: Display: Device Channel Count: 2
+[2020.05.01-13.45.29:507][315]LogAudioMixer: Display: Channel Order:
+[2020.05.01-13.45.29:507][315]LogAudioMixer: Display: 0: FrontLeft
+[2020.05.01-13.45.29:507][315]LogAudioMixer: Display: 1: FrontRight
+[2020.05.01-13.45.29:515][315]LogAudioMixer: Display: Using Audio Device Headphones (2- High Definition Audio Device)
+[2020.05.01-13.45.29:516][315]LogInit: FAudioDevice initialized.
+[2020.05.01-13.45.29:526][315]LogLoad: Game class is 'TopDown_GameMode_C'
+[2020.05.01-13.45.29:528][315]LogWorld: Bringing World /Game/Levels/UEDPIE_0_TopDownExampleMap.TopDownExampleMap up for play (max tick rate 0) at 2020.05.01-14.45.29
+[2020.05.01-13.45.29:528][315]LogWorld: Bringing up level for play took: 0.001777
+[2020.05.01-13.45.29:529][315]LogOnline: OSS: Creating online subsystem instance for: :Context_9
+[2020.05.01-13.45.29:531][315]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'EquippedWeapons' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
+[2020.05.01-13.45.29:532][315]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property CallFunc_Array_Get_Item". Blueprint:  InGame_UI Function:  Get Brush 0 Graph:  GetBrush_0 Node:  Return Node
+[2020.05.01-13.45.29:532][315]LogScript: Warning: Script Msg: Attempted to access index 1 from array 'EquippedWeapons' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
+[2020.05.01-13.45.29:532][315]LogScript: Warning: Script Msg: Attempted to access index 2 from array 'EquippedWeapons' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
+[2020.05.01-13.45.29:532][315]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property CallFunc_Array_Get_Item_5". Blueprint:  InGame_UI Function:  Get Brush 1 Graph:  GetBrush_1 Node:  Return Node
+[2020.05.01-13.45.29:532][315]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'EquippedItems' of length 0 in '/Script/DES203_Project.DES203_ProjectCharacter'!
+[2020.05.01-13.45.29:532][315]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property CallFunc_Array_Get_Item". Blueprint:  InGame_UI Function:  Get Brush 3 Graph:  GetBrush_3 Node:  Return Node
+[2020.05.01-13.45.29:532][315]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_TopDownExampleMap -0.771
+[2020.05.01-13.45.29:532][315]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/Levels/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
+[2020.05.01-13.45.30:651][447]PIE: Warning: FirstPersonProjectile_C_0.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.05.01-13.45.32:151][627]PIE: Warning: FirstPersonProjectile_C_1.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.05.01-13.45.33:651][807]PIE: Warning: FirstPersonProjectile_C_2.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.05.01-13.45.35:151][987]PIE: Warning: FirstPersonProjectile_C_3.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.05.01-13.45.35:376][ 14]Press F to interact with item.
+[2020.05.01-13.45.36:651][167]PIE: Warning: FirstPersonProjectile_C_4.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.05.01-13.45.38:153][347]PIE: Warning: FirstPersonProjectile_C_5.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.05.01-13.45.39:653][527]PIE: Warning: FirstPersonProjectile_C_6.Sphere FirstPersonProjectileMesh has to have 'Simulate Physics' enabled if you'd like to AddImpulse. 
+[2020.05.01-13.45.39:820][547]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.05.01-13.45.39:820][547]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.05.01-13.45.39:821][547]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/Levels/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
+[2020.05.01-13.45.39:821][547]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.01-13.45.39:821][547]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_TopDownExampleMap
+[2020.05.01-13.45.39:821][547]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.05.01-13.45.39:821][547]LogWorld: UWorld::CleanupWorld for TopDownExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.05.01-13.45.39:821][547]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.05.01-13.45.39:832][547]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.05.01-13.45.39:832][547]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/Levels/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/Levels/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
+[2020.05.01-13.45.39:838][547]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.05.01-13.45.39:868][547]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.05.01-13.45.39:871][547]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.01-13.45.39:875][547]LogUObjectHash: Compacting FUObjectHashTables data took   2.83ms
+[2020.05.01-13.45.39:928][548]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2020.05.01-13.45.40:781][622]LogSlate: Window 'Message Log' being destroyed
+[2020.05.01-13.45.40:783][622]LogSlate: Window 'Message Log' being destroyed
+[2020.05.01-13.45.51:838][ 84]LogUObjectHash: Compacting FUObjectHashTables data took   2.23ms
+[2020.05.01-13.45.51:951][ 84]LogUObjectHash: Compacting FUObjectHashTables data took   0.99ms
+[2020.05.01-13.45.52:200][ 84]LogSavePackage: Moving '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/TopDownExampleMap851EB2DD446C667CD24A43A41BC60A7A.tmp' to '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Levels/TopDownExampleMap.umap'
+[2020.05.01-13.45.52:244][ 84]LogFileHelpers: Saving map 'TopDownExampleMap' took 0.326
+[2020.05.01-13.45.52:303][ 84]LogSavePackage: Moving '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Saved/EnemyTurretBP6285EFA542F7B39774A807B845938562.tmp' to '../../../../../../Users/pieta/Documents/GitHub/interactive-media-production-project/DES203_Project/Content/Enemies/Blueprints/EnemyTurretBP.uasset'
+[2020.05.01-13.45.52:328][ 84]AssetCheck: New page: Asset Save: multiple assets
+[2020.05.01-13.45.52:329][ 84]LogContentValidation: Display: Validating World /Game/Levels/TopDownExampleMap.TopDownExampleMap
+[2020.05.01-13.45.52:329][ 84]LogContentValidation: Display: Validating Blueprint /Game/Enemies/Blueprints/EnemyTurretBP.EnemyTurretBP
 >>>>>>> master
