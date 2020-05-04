@@ -1,7 +1,7 @@
-C:\Users\pieta\Documents\GitHub\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Development\DES203_Project\Definitions.DES203_Project.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\pieta\Documents\GitHub\interactive-media-production-project\DES203_Project\Source\DES203_Project/NPC.h
-c:\users\pieta\documents\github\interactive-media-production-project\des203_project\source\des203_project\Interactable.h
-c:\users\pieta\documents\github\interactive-media-production-project\des203_project\intermediate\build\win64\ue4editor\inc\des203_project\Interactable.generated.h
-c:\users\pieta\documents\github\interactive-media-production-project\des203_project\intermediate\build\win64\ue4editor\inc\des203_project\NPC.generated.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Development\DES203_Project\Definitions.DES203_Project.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Source\DES203_Project/NPC.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Source\DES203_Project\Interactable.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Inc\DES203_Project\Interactable.generated.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Inc\DES203_Project\NPC.generated.h

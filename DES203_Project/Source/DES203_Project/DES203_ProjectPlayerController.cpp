@@ -30,13 +30,17 @@ ADES203_ProjectPlayerController::ADES203_ProjectPlayerController()
 void ADES203_ProjectPlayerController::MoveForward(float Axis)
 {
 	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
-	MyCharacter->MoveForward(Axis);
+
+	if(MyCharacter->bIsDead==false)
+		MyCharacter->MoveForward(Axis);
 }
 
 void ADES203_ProjectPlayerController::MoveRight(float Axis)
 {
 	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
-	MyCharacter->MoveRight(Axis);
+
+	if(MyCharacter->bIsDead==false)
+		MyCharacter->MoveRight(Axis);
 }
 
 void ADES203_ProjectPlayerController::StartShooting()
@@ -110,6 +114,7 @@ void ADES203_ProjectPlayerController::SetupInputComponent()
 	InputComponent->BindAction("Shoot", IE_Released, this, &ADES203_ProjectPlayerController::StopShooting);
 	InputComponent->BindAction("NextWeapon", IE_Pressed, this, &ADES203_ProjectPlayerController::CharacterNextWeapon);
 	InputComponent->BindAction("ToggleInventory", IE_Pressed, this, &ADES203_ProjectPlayerController::ToggleInventory);
+	InputComponent->BindAction("Back", IE_Pressed, this, &ADES203_ProjectPlayerController::Back);
 
 	InputComponent->BindAxis("MoveForward", this, &ADES203_ProjectPlayerController::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &ADES203_ProjectPlayerController::MoveRight);
@@ -140,33 +145,6 @@ void ADES203_ProjectPlayerController::CharacterNextWeapon()
 	{
 		MyCharacter->NextWeapon();
 	}
-}
-
-void ADES203_ProjectPlayerController::CharacterUseItemAtSlotTwo()
-{
-	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
-	
-	if (MyCharacter->MainWeapon != nullptr)
-	{
-		MyCharacter->MainWeapon->OnPickedUp();
-	}
-	if (MyCharacter->Inventory[1] != NULL)
-		MyCharacter->UseItemAtInventorySlot(1);
-	MyCharacter->EquipWeapon(1);
-}
-
-void ADES203_ProjectPlayerController::CharacterUseItemAtSlotThree()
-{
-	ADES203_ProjectCharacter* MyCharacter = Cast<ADES203_ProjectCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
-	
-	if (MyCharacter->MainWeapon != nullptr)
-	{
-		MyCharacter->MainWeapon->OnPickedUp();
-	}
-	if (MyCharacter->Inventory[2] != NULL)
-		MyCharacter->UseItemAtInventorySlot(2);
-
-	MyCharacter->EquipWeapon(2);
 }
 
 void ADES203_ProjectPlayerController::AimAtCursor()
@@ -214,6 +192,12 @@ void ADES203_ProjectPlayerController::Shoot()
 	}
 	
 	
+}
+
+void ADES203_ProjectPlayerController::Back()
+{
+	ADES203_ProjectGameMode* GM = Cast<ADES203_ProjectGameMode>(GetWorld()->GetAuthGameMode());
+	GM->ChangeHUDState(GM->HS_Ingame);
 }
 
 void ADES203_ProjectPlayerController::ToggleInventory()

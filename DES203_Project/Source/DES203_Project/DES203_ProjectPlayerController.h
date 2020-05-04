@@ -68,17 +68,14 @@ protected:
 	UFUNCTION()
 		void CharacterNextWeapon();
 
-	UFUNCTION()
-	void CharacterUseItemAtSlotTwo();
-
-	UFUNCTION()
-		void CharacterUseItemAtSlotThree();
-
 	UFUNCTION(BlueprintCallable)
 	void AimAtCursor();
 
 	UFUNCTION()
 	void Shoot();
+
+	UFUNCTION()
+    void Back();
 
 	UFUNCTION()
 		void ToggleInventory();

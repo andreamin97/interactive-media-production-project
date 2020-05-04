@@ -326,6 +326,7 @@ void ADES203_ProjectCharacter::MoveRight(float Axis)
 
 void ADES203_ProjectCharacter::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+	GLog->Log("BeginOverlap");
 	if ((CurrentInteractable = Cast<AInteractable>(OtherActor)) != NULL)
 	{
 		HelpText = CurrentInteractable->HelpText;

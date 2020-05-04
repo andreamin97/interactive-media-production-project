@@ -550,6 +550,11 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_TopDownCameraComponent;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bIsDead_MetaData[];
+#endif
+		static void NewProp_bIsDead_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bIsDead;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ItemIndex_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FBytePropertyParams NewProp_ItemIndex;
@@ -668,6 +673,17 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_TopDownCameraComponent = { "TopDownCameraComponent", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectCharacter, TopDownCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_TopDownCameraComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_TopDownCameraComponent_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_bIsDead_MetaData[] = {
+		{ "Category", "DES203_ProjectCharacter" },
+		{ "ModuleRelativePath", "DES203_ProjectCharacter.h" },
+	};
+#endif
+	void Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_bIsDead_SetBit(void* Obj)
+	{
+		((ADES203_ProjectCharacter*)Obj)->bIsDead = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_bIsDead = { "bIsDead", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADES203_ProjectCharacter), &Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_bIsDead_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_bIsDead_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_bIsDead_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_ItemIndex_MetaData[] = {
 		{ "Category", "DES203_ProjectCharacter" },
 		{ "ModuleRelativePath", "DES203_ProjectCharacter.h" },
@@ -715,9 +731,9 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Gold_MetaData[] = {
 		{ "Category", "UI" },
-		{ "Comment", "/*The Amout of gold the player has*/" },
+		{ "Comment", "/*The Amount of gold the player has*/" },
 		{ "ModuleRelativePath", "DES203_ProjectCharacter.h" },
-		{ "ToolTip", "The Amout of gold the player has" },
+		{ "ToolTip", "The Amount of gold the player has" },
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Gold = { "Gold", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADES203_ProjectCharacter, Gold), METADATA_PARAMS(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Gold_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_Gold_MetaData)) };
@@ -741,6 +757,7 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_CursorToWorld,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_TopDownCameraComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_bIsDead,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_ItemIndex,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_WeaponIndex,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADES203_ProjectCharacter_Statics::NewProp_EquippedItems,
@@ -781,7 +798,7 @@ void EmptyLinkFunctionForGeneratedCodeDES203_ProjectCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADES203_ProjectCharacter, 1930596381);
+	IMPLEMENT_CLASS(ADES203_ProjectCharacter, 3912580702);
 	template<> DES203_PROJECT_API UClass* StaticClass<ADES203_ProjectCharacter>()
 	{
 		return ADES203_ProjectCharacter::StaticClass();

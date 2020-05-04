@@ -16,7 +16,7 @@ void AShop::BeginPlay()
 	Super::BeginPlay();
 
 
-	for (int i = 0; i <= 4; i++)
+	for (int i = 0; i < 3; i++)
 	{
 		if(Cast<APickup>(ShopInventory[i]))
 			ShopInventory[i]->OnPickedUp();

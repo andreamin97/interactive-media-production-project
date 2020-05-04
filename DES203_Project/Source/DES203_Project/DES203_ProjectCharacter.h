@@ -20,7 +20,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category ="UI")
 	FString HelpText;
 
-	/*The Amout of gold the player has*/
+	/*The Amount of gold the player has*/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
 	int32 Gold;
 
@@ -42,6 +42,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		uint8 ItemIndex;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool bIsDead=false;
+
 	virtual void BeginPlay() override;
 
 	// Called every frame.
@@ -55,7 +58,7 @@ public:
 	FORCEINLINE class UDecalComponent* GetCursorToWorld() { return CursorToWorld; }
 
 	/*Updates the coins
-	@params Amount, anount to update the coins by, can be positive or negatve
+	@params Amount, amount to update the coins by, can be positive or negative
 	*/
 	UFUNCTION(BlueprintCallable, Category = "Inventory Functions")
 		void UpdateGold(int32 Amount);

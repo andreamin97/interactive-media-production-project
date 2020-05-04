@@ -1,84 +1,84 @@
-C:\Users\pieta\Documents\GitHub\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Development\DES203_Project\Definitions.DES203_Project.h
-c:\users\pieta\documents\github\interactive-media-production-project\des203_project\source\des203_project\DES203_ProjectCharacter.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\Users\pieta\Documents\GitHub\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Inc\DES203_Project\DES203_ProjectCharacter.generated.h
-c:\users\pieta\documents\github\interactive-media-production-project\des203_project\source\des203_project\DES203_Project.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Core.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/MonolithicHeaderBoilerplate.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\GenericPlatform/GenericPlatformNamedPipe.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\HAL/PlatformNamedPipe.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Windows/WindowsPlatformNamedPipe.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\GenericPlatform/GenericPlatformCriticalSection.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\HAL/PlatformFile.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Windows/WindowsPlatformFile.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\HAL/PlatformIncludes.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/MonolithicHeaderBoilerplate.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/MessageDialog.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\ProfilingDebugging/ScopedDebugInfo.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\ProfilingDebugging/ExternalProfiler.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/StringUtility.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Serialization/NameAsStringProxyArchive.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Containers/MRUArray.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Containers/TransArray.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Containers/ArrayBuilder.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/SingleThreadEvent.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\HAL/ThreadManager.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Containers/StaticBitArray.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Containers/MapBuilder.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\HAL/ThreadingBase.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Internationalization/TextLocalizationManagerGlobals.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Internationalization/Culture.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Logging/LogSuppressionInterface.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\HAL/OutputDevices.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Logging/LogScopedVerbosityOverride.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/OutputDeviceNull.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/OutputDeviceMemory.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/OutputDeviceFile.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/OutputDeviceDebug.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/OutputDeviceArchiveWrapper.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/OutputDeviceAnsiError.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/TimeGuard.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Serialization/LargeMemoryWriter.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Serialization/LargeMemoryData.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Serialization/LargeMemoryReader.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Serialization/BufferArchive.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Serialization/ArrayReader.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Serialization/ArrayWriter.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Serialization/BufferWriter.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/WildcardString.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Containers/CircularQueue.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/OutputDeviceHelper.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/ScopedSlowTask.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/CallbackDevice.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/LocalTimestampDirectoryVisitor.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\UObject/BlueprintsObjectVersion.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\UObject/BuildObjectVersion.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\UObject/CoreObjectVersion.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\UObject/EditorObjectVersion.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\UObject/FrameworkObjectVersion.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\UObject/MobileObjectVersion.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\UObject/NetworkingObjectVersion.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\UObject/OnlineObjectVersion.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\UObject/PhysicsObjectVersion.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\UObject/PlatformObjectVersion.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\UObject/SequencerObjectVersion.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\UObject/VRObjectVersion.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/OutputDeviceConsole.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\core\public\Misc/MonitoredProcess.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Engine/CollisionProfile.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CollisionProfile.generated.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
-c:\program files\epic games\ue_4.24\engine\source\runtime\engine\classes\kismet\GameplayStaticsTypes.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
-c:\users\pieta\documents\github\interactive-media-production-project\des203_project\source\des203_project\Pickup.h
-c:\users\pieta\documents\github\interactive-media-production-project\des203_project\source\des203_project\Interactable.h
-C:\Users\pieta\Documents\GitHub\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Inc\DES203_Project\Interactable.generated.h
-C:\Users\pieta\Documents\GitHub\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Inc\DES203_Project\Pickup.generated.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Development\DES203_Project\Definitions.DES203_Project.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Source\DES203_Project\DES203_ProjectCharacter.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Inc\DES203_Project\DES203_ProjectCharacter.generated.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Source\DES203_Project\DES203_Project.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Core.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\GenericPlatform/GenericPlatformNamedPipe.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\HAL/PlatformNamedPipe.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Windows/WindowsPlatformNamedPipe.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\GenericPlatform/GenericPlatformCriticalSection.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\HAL/PlatformFile.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Windows/WindowsPlatformFile.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\HAL/PlatformIncludes.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/MessageDialog.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\ProfilingDebugging/ScopedDebugInfo.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\ProfilingDebugging/ExternalProfiler.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/StringUtility.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Serialization/NameAsStringProxyArchive.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Containers/MRUArray.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Containers/TransArray.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Containers/ArrayBuilder.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/SingleThreadEvent.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\HAL/ThreadManager.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Containers/StaticBitArray.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Containers/MapBuilder.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\HAL/ThreadingBase.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Internationalization/TextLocalizationManagerGlobals.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Internationalization/Culture.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Logging/LogSuppressionInterface.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\HAL/OutputDevices.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Logging/LogScopedVerbosityOverride.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceNull.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceMemory.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceFile.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceDebug.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceArchiveWrapper.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceAnsiError.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/TimeGuard.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Serialization/LargeMemoryWriter.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Serialization/LargeMemoryData.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Serialization/LargeMemoryReader.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Serialization/BufferArchive.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Serialization/ArrayReader.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Serialization/ArrayWriter.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Serialization/BufferWriter.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/WildcardString.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Containers/CircularQueue.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceHelper.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/ScopedSlowTask.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/CallbackDevice.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/LocalTimestampDirectoryVisitor.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\UObject/BlueprintsObjectVersion.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\UObject/BuildObjectVersion.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\UObject/CoreObjectVersion.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\UObject/EditorObjectVersion.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\UObject/FrameworkObjectVersion.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\UObject/MobileObjectVersion.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\UObject/NetworkingObjectVersion.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\UObject/OnlineObjectVersion.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\UObject/PhysicsObjectVersion.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\UObject/PlatformObjectVersion.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\UObject/SequencerObjectVersion.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\UObject/VRObjectVersion.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceConsole.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/MonitoredProcess.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Engine/CollisionProfile.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CollisionProfile.generated.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+D:\Programmi\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Source\DES203_Project\Pickup.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Source\DES203_Project\Interactable.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Inc\DES203_Project\Interactable.generated.h
+D:\UE4 Projects\interactive-media-production-project\DES203_Project\Intermediate\Build\Win64\UE4Editor\Inc\DES203_Project\Pickup.generated.h
