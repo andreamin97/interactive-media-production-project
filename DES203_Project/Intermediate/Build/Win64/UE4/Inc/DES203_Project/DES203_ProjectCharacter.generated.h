@@ -63,6 +63,14 @@ class APickup;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execNextItem) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->NextItem(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execNextWeapon) \
 	{ \
 		P_FINISH; \
@@ -167,6 +175,14 @@ class APickup;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->Interact(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execNextItem) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->NextItem(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -280,8 +296,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADES203_ProjectCharacter); \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(ADES203_ProjectCharacter, CameraBoom); } \
 	FORCEINLINE static uint32 __PPO__CursorToWorld() { return STRUCT_OFFSET(ADES203_ProjectCharacter, CursorToWorld); } \
 	FORCEINLINE static uint32 __PPO__InteractSphere() { return STRUCT_OFFSET(ADES203_ProjectCharacter, InteractSphere); } \
-	FORCEINLINE static uint32 __PPO__InteractSphereSize() { return STRUCT_OFFSET(ADES203_ProjectCharacter, InteractSphereSize); } \
-	FORCEINLINE static uint32 __PPO__EquippedItems() { return STRUCT_OFFSET(ADES203_ProjectCharacter, EquippedItems); }
+	FORCEINLINE static uint32 __PPO__InteractSphereSize() { return STRUCT_OFFSET(ADES203_ProjectCharacter, InteractSphereSize); }
 
 
 #define DES203_Project_Source_DES203_Project_DES203_ProjectCharacter_h_9_PROLOG

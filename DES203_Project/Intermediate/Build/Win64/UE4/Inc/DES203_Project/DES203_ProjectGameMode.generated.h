@@ -84,6 +84,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADES203_ProjectGameMode); \
 	FORCEINLINE static uint32 __PPO__IngameHUDClass() { return STRUCT_OFFSET(ADES203_ProjectGameMode, IngameHUDClass); } \
 	FORCEINLINE static uint32 __PPO__InventoryHUDClass() { return STRUCT_OFFSET(ADES203_ProjectGameMode, InventoryHUDClass); } \
 	FORCEINLINE static uint32 __PPO__ShopGeneralHUDClass() { return STRUCT_OFFSET(ADES203_ProjectGameMode, ShopGeneralHUDClass); } \
+	FORCEINLINE static uint32 __PPO__DialogHUDClass() { return STRUCT_OFFSET(ADES203_ProjectGameMode, DialogHUDClass); } \
 	FORCEINLINE static uint32 __PPO__CurrentWidget() { return STRUCT_OFFSET(ADES203_ProjectGameMode, CurrentWidget); }
 
 

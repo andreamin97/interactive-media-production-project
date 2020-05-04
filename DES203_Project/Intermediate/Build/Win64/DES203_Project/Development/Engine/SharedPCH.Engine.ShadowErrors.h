@@ -1,4 +1,4 @@
-// PCH for C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\EngineSharedPCH.h
+// PCH for D:\Programmi\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\EngineSharedPCH.h
 #define IS_PROGRAM 0
 #define UE_GAME 1
 #define ENABLE_PGO_PROFILE 0
@@ -27,7 +27,7 @@
 #define WITH_SERVER_CODE 1
 #define WITH_CEF3 1
 #define WITH_LIVE_CODING 1
-#define UE_LIVE_CODING_ENGINE_DIR "C:\\Program Files\\Epic Games\\UE_4.24\\Engine"
+#define UE_LIVE_CODING_ENGINE_DIR "D:\\Programmi\\Epic Games\\UE_4.24\\Engine"
 #define UE_LIVE_CODING_PROJECT "D:\\UE4 Projects\\interactive-media-production-project\\DES203_Project\\DES203_Project.uproject"
 #define WITH_XGE_CONTROLLER 0
 #define UBT_MODULE_MANIFEST "UE4.modules"
@@ -43,7 +43,7 @@
 #define OVERRIDE_PLATFORM_HEADER_NAME Windows
 #define NDEBUG 1
 #define UE_BUILD_DEVELOPMENT 1
-#define UE_ENGINE_DIRECTORY "C:/Program Files/Epic Games/UE_4.24/Engine/"
+#define UE_ENGINE_DIRECTORY "../../../../../Programmi/Epic Games/UE_4.24/Engine/"
 #define UE_IS_ENGINE_MODULE 1
 #define INCLUDE_CHAOS 0
 #define WITH_PHYSX 1
@@ -227,4 +227,4 @@
 #define AUDIOMIXERCORE_API 
 #define ANIMATIONCORE_VTABLE 
 #define ANIMATIONCORE_API 
-#include "C:/Program Files/Epic Games/UE_4.24/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h"
+#include "D:/Programmi/Epic Games/UE_4.24/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h"

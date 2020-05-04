@@ -42,6 +42,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execBack) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Back(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execShoot) \
 	{ \
 		P_FINISH; \
@@ -55,22 +63,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->AimAtCursor(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execCharacterUseItemAtSlotThree) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->CharacterUseItemAtSlotThree(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execCharacterUseItemAtSlotTwo) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->CharacterUseItemAtSlotTwo(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -135,6 +127,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execBack) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Back(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execShoot) \
 	{ \
 		P_FINISH; \
@@ -148,22 +148,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->AimAtCursor(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execCharacterUseItemAtSlotThree) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->CharacterUseItemAtSlotThree(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execCharacterUseItemAtSlotTwo) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->CharacterUseItemAtSlotTwo(); \
 		P_NATIVE_END; \
 	} \
  \
